@@ -61,7 +61,7 @@ protected:
 
 private:
     Ui::GuiMainWindow *ui;
-    XPEVIEWER::OPTIONS xOptions;
+    XOptions xOptions;
     FW_DEF::OPTIONS formatOptions;
 
     QFile *pFile;
