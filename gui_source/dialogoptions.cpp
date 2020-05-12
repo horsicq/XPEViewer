@@ -50,6 +50,11 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
     pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
 
+    if(pOptions->isRestartNeeded())
+    {
+        QMessageBox::information(this,tr("Information"),tr("Please restart the application"));
+    }
+
     this->close();
 }
 
