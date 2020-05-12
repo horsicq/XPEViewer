@@ -37,6 +37,7 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
 
     QList<XOptions::ID> listIDs;
 
+    listIDs.append(XOptions::ID_STYLE);
     listIDs.append(XOptions::ID_STAYONTOP);
     listIDs.append(XOptions::ID_SCANAFTEROPEN);
     listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
