@@ -27,5 +27,6 @@
 #define X_APPLICATIONVERSION "0.01"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
+#define X_OPTIONSFILE "xpeviewer.ini"
 
 #endif // _GLOBAL_H

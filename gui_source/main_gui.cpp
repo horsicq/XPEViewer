@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
 
-    XOptions::adjustApplicationView("xpeviewer.ini");
+    XOptions::adjustApplicationView(X_OPTIONSFILE);
 
     GuiMainWindow w;
     w.show();

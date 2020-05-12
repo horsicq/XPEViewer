@@ -33,7 +33,7 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
 
     setAcceptDrops(true);
 
-    xOptions.setName("xpeviewer.ini");
+    xOptions.setName(X_OPTIONSFILE);
 
     QList<XOptions::ID> listIDs;
 
