@@ -20,7 +20,7 @@
 //
 #include "guimainwindow.h"
 #include <QApplication>
-#include <QStyleFactory>
+#include "xoptions.h"
 
 int main(int argc, char *argv[])
 {
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
 
-    QApplication::setStyle(QStyleFactory::create("Fusion"));
+    XOptions::adjustApplicationView();
 
     GuiMainWindow w;
     w.show();
