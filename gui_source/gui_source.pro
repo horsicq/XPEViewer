@@ -25,10 +25,6 @@ include(../build.pri)
 
 XCONFIG += use_disasm
 
-contains(XCONFIG, use_disasm) {
-    DEFINES += USE_DISASM
-}
-
 !contains(XCONFIG, pewidget) {
     XCONFIG += pewidget
     include(../FormatWidgets/PE/pewidget.pri)
