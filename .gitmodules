@@ -43,3 +43,6 @@
 [submodule "XTranslation"]
 	path = XTranslation
 	url = https://github.com/horsicq/XTranslation.git
+[submodule "XArchive"]
+	path = XArchive
+	url = https://github.com/horsicq/XArchive.git
