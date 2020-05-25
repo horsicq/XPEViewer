@@ -39,6 +39,7 @@ cd ..
 
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\base
+mkdir %SOURCE_PATH%\release\%BUILD_NAME%\base\lang
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\base\platforms
 
 copy %SOURCE_PATH%\build\loader\%GUIEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
@@ -53,6 +54,16 @@ copy %QT_PATH%\plugins\platforms\qwindows.dll %SOURCE_PATH%\release\%BUILD_NAME%
 copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_de.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_de.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_en.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_en.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_es.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_es.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ja.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_ja.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pl.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_pl.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pt_BR.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_pt_BR.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ru.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_ru.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_vi.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_vi.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh_CN.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_zh_CN.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh_TW.ts %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_zh_TW.qm
 
 cd %SOURCE_PATH%\release
 if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
