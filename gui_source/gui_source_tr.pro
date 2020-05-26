@@ -7,6 +7,7 @@ TRANSLATIONS = \
         translation/xpeviewer_ru.ts \
         translation/xpeviewer_vi.ts \
         translation/xpeviewer_es.ts \
+        translation/xpeviewer_fr.ts \
         translation/xpeviewer_zh_CN.ts \
         translation/xpeviewer_zh_TW.ts
 
