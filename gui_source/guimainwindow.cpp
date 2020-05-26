@@ -146,7 +146,7 @@ void GuiMainWindow::processFile(QString sFileName, bool bReload)
             }
             else
             {
-                QMessageBox::critical(this,tr("Error"),tr("It is not a valid PE file!"));
+                QMessageBox::critical(this,tr("Error"),tr("It is not a valid file!"));
             }
         }
         else
