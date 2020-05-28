@@ -26,7 +26,12 @@ function makeproject
 
 rm -rf $SOURCE_PATH/build
 
+makeproject build_libs
 makeproject gui_source
+
+cd $SOURCE_PATH/gui_source
+$QT_PATH/bin/lupdate gui_source_tr.pro
+cd $SOURCE_PATH
 
 mkdir -p release
 rm -rf release/$BUILD_NAME
