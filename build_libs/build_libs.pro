@@ -1,3 +1,3 @@
 TEMPLATE      = subdirs
-SUBDIRS       = \
-                ../XArchive
+SUBDIRS       += ../XArchive
+SUBDIRS       += ../XCapstone
