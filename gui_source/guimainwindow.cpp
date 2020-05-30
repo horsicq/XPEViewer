@@ -146,12 +146,12 @@ void GuiMainWindow::processFile(QString sFileName, bool bReload)
             }
             else
             {
-                QMessageBox::critical(this,tr("Error"),tr("It is not a valid file!"));
+                QMessageBox::critical(this,tr("Error"),tr("It is not a valid file"));
             }
         }
         else
         {
-            QMessageBox::critical(this,tr("Error"),tr("Cannot open the file!"));
+            QMessageBox::critical(this,tr("Error"),tr("Cannot open file"));
         }
     }
 }
