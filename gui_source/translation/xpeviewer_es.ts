@@ -520,28 +520,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="98"/>
-        <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../guimainwindow.ui" line="103"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="106"/>
-        <source>Ctrl+W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../guimainwindow.ui" line="111"/>
         <source>Exit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../guimainwindow.ui" line="114"/>
-        <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -572,12 +557,12 @@
     </message>
     <message>
         <location filename="../guimainwindow.cpp" line="149"/>
-        <source>It is not a valid file!</source>
+        <source>It is not a valid file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../guimainwindow.cpp" line="154"/>
-        <source>Cannot open the file!</source>
+        <source>Cannot open file</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1244,7 +1229,8 @@
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="213"/>
-        <source>tool</source>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="221"/>
+        <source>Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1278,11 +1264,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="221"/>
-        <source>Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="731"/>
         <source>Entry point</source>
         <translation type="unfinished"></translation>
@@ -1304,7 +1285,7 @@
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="736"/>
-        <source>string</source>
+        <source>String</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1399,7 +1380,7 @@
     </message>
     <message>
         <location filename="../../XDisasm/xdisasmwidget.ui" line="68"/>
-        <source>Analize</source>
+        <source>Analyze</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
