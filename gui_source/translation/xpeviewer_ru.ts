@@ -453,7 +453,7 @@
     </message>
     <message>
         <location filename="../../StaticScan/formstaticscan.ui" line="44"/>
-        <source>Deep Scan</source>
+        <source>Deep scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
