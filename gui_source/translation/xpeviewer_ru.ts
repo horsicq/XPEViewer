@@ -475,24 +475,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/formatwidget.cpp" line="417"/>
-        <location filename="../../FormatWidgets/formatwidget.cpp" line="486"/>
+        <location filename="../../FormatWidgets/formatwidget.cpp" line="426"/>
+        <location filename="../../FormatWidgets/formatwidget.cpp" line="495"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/formatwidget.cpp" line="418"/>
+        <location filename="../../FormatWidgets/formatwidget.cpp" line="427"/>
         <source>Offset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/formatwidget.cpp" line="419"/>
+        <location filename="../../FormatWidgets/formatwidget.cpp" line="428"/>
         <source>Type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/formatwidget.cpp" line="420"/>
-        <location filename="../../FormatWidgets/formatwidget.cpp" line="487"/>
+        <location filename="../../FormatWidgets/formatwidget.cpp" line="429"/>
+        <location filename="../../FormatWidgets/formatwidget.cpp" line="496"/>
         <source>Value</source>
         <translation type="unfinished"></translation>
     </message>
@@ -515,27 +515,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="95"/>
+        <location filename="../guimainwindow.ui" line="94"/>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="103"/>
+        <location filename="../guimainwindow.ui" line="102"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="111"/>
+        <location filename="../guimainwindow.ui" line="110"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="119"/>
+        <location filename="../guimainwindow.ui" line="118"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="124"/>
+        <location filename="../guimainwindow.ui" line="123"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
@@ -795,7 +795,7 @@
 <context>
     <name>PEProcessData</name>
     <message>
-        <location filename="../../FormatWidgets/PE/peprocessdata.cpp" line="385"/>
+        <location filename="../../FormatWidgets/PE/peprocessdata.cpp" line="465"/>
         <source>Resources</source>
         <translation type="unfinished"></translation>
     </message>
@@ -828,6 +828,7 @@
     <message>
         <location filename="../../FormatWidgets/PE/pewidget.ui" line="88"/>
         <location filename="../../FormatWidgets/PE/pewidget.cpp" line="104"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1621"/>
         <source>Entropy</source>
         <translation type="unfinished"></translation>
     </message>
@@ -853,18 +854,28 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="944"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="949"/>
         <source>Calculate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1603"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1964"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2005"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2038"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2071"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2104"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1612"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1995"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2036"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2069"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2102"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2135"/>
         <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1780"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1781"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1782"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1783"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1784"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1785"/>
+        <source>Header</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -970,6 +981,21 @@
     <message>
         <location filename="../../Formats/xbinary.cpp" line="2551"/>
         <source>Cannot open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../FormatWidgets/PE/pe_defs.cpp" line="258"/>
+        <source>Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../FormatWidgets/PE/pe_defs.cpp" line="259"/>
+        <source>Offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../FormatWidgets/PE/pe_defs.cpp" line="260"/>
+        <source>Size</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1110,20 +1136,20 @@
         <location filename="../../SpecAbstract/specabstract.cpp" line="189"/>
         <location filename="../../SpecAbstract/specabstract.cpp" line="193"/>
         <location filename="../../SpecAbstract/specabstract.cpp" line="229"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="724"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="728"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="726"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="730"/>
         <source>Unknown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="179"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="729"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="731"/>
         <source>Header</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="180"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="730"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="732"/>
         <source>Overlay</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1264,27 +1290,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="731"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="733"/>
         <source>Entry point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="732"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="734"/>
         <source>Section name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="734"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="736"/>
         <source>Code section</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="735"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="737"/>
         <source>Entry point section</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="736"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="738"/>
         <source>String</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1368,13 +1394,13 @@
     </message>
     <message>
         <location filename="../../XDisasm/xdisasmwidget.ui" line="41"/>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="216"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="224"/>
         <source>Go to address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../XDisasm/xdisasmwidget.ui" line="48"/>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="220"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="228"/>
         <source>Go to offset</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1384,27 +1410,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="224"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="232"/>
         <source>Dump to file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="228"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="236"/>
         <source>Disasm</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="232"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="240"/>
         <source>To data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="292"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="244"/>
+        <source>Signature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="305"/>
         <source>Raw data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="294"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="307"/>
         <source>Save dump</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1596,7 +1627,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="4078"/>
+        <location filename="../../Formats/xpe.cpp" line="4070"/>
         <source>Cannot open file</source>
         <translation type="unfinished"></translation>
     </message>

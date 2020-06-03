@@ -4,12 +4,11 @@ TRANSLATIONS = \
         translation/xpeviewer_de.ts \
         translation/xpeviewer_ja.ts \
         translation/xpeviewer_pl.ts \
-        translation/xpeviewer_pt_BR.ts \
         translation/xpeviewer_ru.ts \
         translation/xpeviewer_vi.ts \
         translation/xpeviewer_es.ts \
         translation/xpeviewer_fr.ts \
-        translation/xpeviewer_zh_CN.ts \
+        translation/xpeviewer_zh.ts \
         translation/xpeviewer_zh_TW.ts
 
 FORMS += \

@@ -37,6 +37,7 @@ mkdir -p release
 rm -rf release/$BUILD_NAME
 mkdir -p release/$BUILD_NAME
 mkdir -p release/$BUILD_NAME/base
+mkdir -p release/$BUILD_NAME/base/lang
 mkdir -p release/$BUILD_NAME/base/platforms
 
 cp -R $QT_PATH/plugins/platforms/libqxcb.so                     $SOURCE_PATH/release/$BUILD_NAME/base/platforms/
