@@ -1,5 +1,6 @@
 TRANSLATIONS = \
         translation/xpeviewer_en.ts \
+        translation/xpeviewer_ar.ts \
         translation/xpeviewer_de.ts \
         translation/xpeviewer_ja.ts \
         translation/xpeviewer_pl.ts \
