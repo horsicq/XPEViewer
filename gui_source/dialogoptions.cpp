@@ -34,6 +34,7 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
     pOptions->setCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
     pOptions->setCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
     pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
+    pOptions->setComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
 }
 
 DialogOptions::~DialogOptions()
@@ -49,6 +50,7 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
     pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
     pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
+    pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
 
     if(pOptions->isRestartNeeded())
     {
