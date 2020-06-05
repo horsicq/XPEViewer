@@ -24,6 +24,7 @@
 #include <QString>
 
 #define X_APPLICATIONNAME "XPEViewer"
+#define X_APPLICATIONFILENAME "xpeviewer"
 #define X_APPLICATIONVERSION "0.01"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
