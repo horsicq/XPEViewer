@@ -66,6 +66,8 @@ copy %QT_PATH%\plugins\platforms\qwindows.dll %SOURCE_PATH%\release\%BUILD_NAME%
 copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcp120.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcr120.dll %SOURCE_PATH%\release\%BUILD_NAME%\base\
 
+xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\base\qss /E /I
+
 rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_de.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_de.qm
 rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_es.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_es.qm
 rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ja.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_ja.qm
