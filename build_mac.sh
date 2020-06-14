@@ -97,7 +97,7 @@ copyplugin platforms libqoffscreen
 
 mkdir -p $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang
 
-cp -Rfu $SOURCE_PATH/XStyles/qss $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/qss
+cp -Rfu $SOURCE_PATH/XStyles/qss/ $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/qss/
 
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xpeviewer_vi.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xpeviewer_zh.qm

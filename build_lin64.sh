@@ -64,7 +64,7 @@ mv $SOURCE_PATH/release/$BUILD_NAME/base/libicui18n.so.56.1                 $SOU
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libicuuc.so.56.1                   $SOURCE_PATH/release/$BUILD_NAME/base/libicuuc.so.56
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libicudata.so.56.1                 $SOURCE_PATH/release/$BUILD_NAME/base/libicudata.so.56
 
-cp -Rfu $SOURCE_PATH/XStyles/qss $SOURCE_PATH/release/$BUILD_NAME/base/qss
+cp -Rfu $SOURCE_PATH/XStyles/qss/ $SOURCE_PATH/release/$BUILD_NAME/base/qss/
 
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/xpeviewer_vi.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/xpeviewer_zh.qm
