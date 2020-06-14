@@ -95,13 +95,13 @@ copyplugin platforms libqcocoa
 copyplugin platforms libqminimal
 copyplugin platforms libqoffscreen
 
-mkdir -p $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resource/lang
+mkdir -p $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang
 
-cp -Rfu $SOURCE_PATH/XStyles/qss $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resource/qss
+cp -Rfu $SOURCE_PATH/XStyles/qss $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/qss
 
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resource/lang/xpeviewer_vi.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resource/lang/xpeviewer_zh.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resource/lang/xpeviewer_zh_TW.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xpeviewer_vi.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xpeviewer_zh.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xpeviewer_zh_TW.qm
 
 rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg
 hdiutil create -format UDBZ -quiet -srcfolder $SOURCE_PATH/release/$BUILD_NAME $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg
