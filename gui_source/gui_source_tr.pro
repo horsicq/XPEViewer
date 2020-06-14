@@ -1,13 +1,13 @@
 TRANSLATIONS = \
-        translation/xpeviewer_en.ts \
-        translation/xpeviewer_ar.ts \
-        translation/xpeviewer_de.ts \
-        translation/xpeviewer_ja.ts \
-        translation/xpeviewer_pl.ts \
-        translation/xpeviewer_ru.ts \
+#        translation/xpeviewer_en.ts \
+#        translation/xpeviewer_ar.ts \
+#        translation/xpeviewer_de.ts \
+#        translation/xpeviewer_ja.ts \
+#        translation/xpeviewer_pl.ts \
+#        translation/xpeviewer_ru.ts \
         translation/xpeviewer_vi.ts \
-        translation/xpeviewer_es.ts \
-        translation/xpeviewer_fr.ts \
+#        translation/xpeviewer_es.ts \
+#        translation/xpeviewer_fr.ts \
         translation/xpeviewer_zh.ts \
         translation/xpeviewer_zh_TW.ts
 

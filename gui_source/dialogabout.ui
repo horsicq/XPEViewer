@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>387</width>
-    <height>476</height>
+    <width>485</width>
+    <height>701</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,6 +30,9 @@
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="rsrc.qrc">:/pics/logo.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -98,6 +101,8 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="rsrc.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -73,8 +73,8 @@ rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ja
 rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pl.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_pl.qm
 rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ru.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_ru.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_vi.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_vi.qm
-rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_zh.qm
-rem %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_zh_TW.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_zh.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\base\lang\xpeviewer_zh_TW.qm
 
 cd %SOURCE_PATH%\release
 if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
