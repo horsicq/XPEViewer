@@ -22,7 +22,7 @@
         <translation>Giới thiệu</translation>
     </message>
     <message>
-        <location filename="../dialogabout.ui" line="93"/>
+        <location filename="../dialogabout.ui" line="96"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -121,13 +121,11 @@
     <name>DialogGoToAddress</name>
     <message>
         <location filename="../../FormatDialogs/dialoggotoaddress.ui" line="17"/>
-        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="38"/>
         <source>Go to address</source>
         <translation>Đi tới địa chỉ</translation>
     </message>
     <message>
         <location filename="../../FormatDialogs/dialoggotoaddress.ui" line="26"/>
-        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="39"/>
         <source>Address</source>
         <translation>Địa chỉ</translation>
     </message>
@@ -142,17 +140,29 @@
         <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="43"/>
-        <source>Go to offset</source>
-        <translation>Đi tới độ lệch</translation>
+        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="38"/>
+        <source>Virtual address</source>
+        <translation>Địa chỉ ảo</translation>
     </message>
     <message>
+        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="39"/>
         <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="44"/>
-        <source>Offset</source>
-        <translation>Độ lệch</translation>
+        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="49"/>
+        <source>Value</source>
+        <translation>Giá trị</translation>
     </message>
     <message>
-        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="88"/>
+        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="43"/>
+        <source>File offset</source>
+        <translation>Độ lệch tập tin</translation>
+    </message>
+    <message>
+        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="48"/>
+        <source>Relative virtual address</source>
+        <translation>Địa chỉ ảo tương đối</translation>
+    </message>
+    <message>
+        <location filename="../../FormatDialogs/dialoggotoaddress.cpp" line="97"/>
         <source>Invalid</source>
         <translation>Không hợp lệ</translation>
     </message>
@@ -160,7 +170,7 @@
 <context>
     <name>DialogHex</name>
     <message>
-        <location filename="../../FormatWidgets/dialoghex.ui" line="51"/>
+        <location filename="../../QHexView/dialoghex.ui" line="51"/>
         <source>Close</source>
         <translation>Đóng</translation>
     </message>
@@ -193,27 +203,32 @@
         <translation>Lưu sao lưu</translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="58"/>
+        <location filename="../dialogoptions.ui" line="75"/>
         <source>Style</source>
         <translation>Kiểu</translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="127"/>
+        <location filename="../dialogoptions.ui" line="123"/>
+        <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogoptions.ui" line="179"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../dialogoptions.ui" line="134"/>
+        <location filename="../dialogoptions.ui" line="186"/>
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
     <message>
-        <location filename="../dialogoptions.cpp" line="55"/>
+        <location filename="../dialogoptions.cpp" line="59"/>
         <source>Information</source>
         <translation>Thông tin</translation>
     </message>
     <message>
-        <location filename="../dialogoptions.cpp" line="55"/>
+        <location filename="../dialogoptions.cpp" line="59"/>
         <source>Please restart the application</source>
         <translation>Vui lòng khởi động lại ứng dụng</translation>
     </message>
@@ -500,68 +515,68 @@
 <context>
     <name>GuiMainWindow</name>
     <message>
-        <location filename="../guimainwindow.ui" line="70"/>
+        <location filename="../guimainwindow.ui" line="92"/>
         <source>File</source>
         <translation>Tập tin</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="78"/>
+        <location filename="../guimainwindow.ui" line="100"/>
         <source>Tools</source>
         <translation>Công cụ</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="84"/>
+        <location filename="../guimainwindow.ui" line="106"/>
         <source>Help</source>
         <translation>Trợ giúp</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="94"/>
+        <location filename="../guimainwindow.ui" line="116"/>
         <source>Open</source>
         <translation>Mở</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="102"/>
+        <location filename="../guimainwindow.ui" line="124"/>
         <source>Close</source>
         <translation>Đóng</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="110"/>
+        <location filename="../guimainwindow.ui" line="132"/>
         <source>Exit</source>
         <translation>Thoát</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="118"/>
+        <location filename="../guimainwindow.ui" line="140"/>
         <source>Options</source>
         <translation>Tùy chọn</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.ui" line="123"/>
+        <location filename="../guimainwindow.ui" line="145"/>
         <source>About</source>
         <translation>Giới thiệu</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.cpp" line="72"/>
+        <location filename="../guimainwindow.cpp" line="73"/>
         <source>Open file</source>
         <translation>Mở tập tin</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.cpp" line="72"/>
+        <location filename="../guimainwindow.cpp" line="73"/>
         <source>All files</source>
         <translation>Tất cả tập tin</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.cpp" line="149"/>
-        <location filename="../guimainwindow.cpp" line="154"/>
+        <location filename="../guimainwindow.cpp" line="163"/>
+        <location filename="../guimainwindow.cpp" line="168"/>
         <source>Error</source>
         <translation>Lỗi</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.cpp" line="149"/>
+        <location filename="../guimainwindow.cpp" line="163"/>
         <source>It is not a valid file</source>
         <translation>Không phải tập tin hợp lệ</translation>
     </message>
     <message>
-        <location filename="../guimainwindow.cpp" line="154"/>
+        <location filename="../guimainwindow.cpp" line="168"/>
         <source>Cannot open file</source>
         <translation>Không thể mở tập tin</translation>
     </message>
@@ -795,7 +810,7 @@
 <context>
     <name>PEProcessData</name>
     <message>
-        <location filename="../../FormatWidgets/PE/peprocessdata.cpp" line="465"/>
+        <location filename="../../FormatWidgets/PE/peprocessdata.cpp" line="510"/>
         <source>Resources</source>
         <translation>Tài nguyên</translation>
     </message>
@@ -828,7 +843,7 @@
     <message>
         <location filename="../../FormatWidgets/PE/pewidget.ui" line="88"/>
         <location filename="../../FormatWidgets/PE/pewidget.cpp" line="104"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1621"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1629"/>
         <source>Entropy</source>
         <translation>Nhiễu loạn</translation>
     </message>
@@ -849,32 +864,34 @@
         <translation>Mục</translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="210"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="206"/>
         <source>Overlay</source>
         <translation>Che phủ</translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="949"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="947"/>
         <source>Calculate</source>
         <translation>Tính toán</translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1612"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1995"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2036"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2069"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2102"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2135"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1620"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2009"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2050"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2083"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2116"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2149"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="2182"/>
         <source>Edit</source>
         <translation>Sửa</translation>
     </message>
     <message>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1780"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1781"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1782"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1783"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1784"/>
-        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1785"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1788"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1789"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1790"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1791"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1792"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1793"/>
+        <location filename="../../FormatWidgets/PE/pewidget.cpp" line="1794"/>
         <source>Header</source>
         <translation>Tiêu đề</translation>
     </message>
@@ -882,7 +899,7 @@
 <context>
     <name>QHexView</name>
     <message>
-        <location filename="../../QHexView/qhexview.cpp" line="1098"/>
+        <location filename="../../QHexView/qhexview.cpp" line="1118"/>
         <source>Cannot save file</source>
         <translation>Không thể lưu tập tin</translation>
     </message>
@@ -891,7 +908,7 @@
     <name>QHexViewWidget</name>
     <message>
         <location filename="../../QHexView/qhexviewwidget.ui" line="50"/>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="268"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="280"/>
         <source>Go to address</source>
         <translation>Đi tới địa chỉ</translation>
     </message>
@@ -916,73 +933,63 @@
         <translation>Chỉ đọc</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="196"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="198"/>
         <source>Raw data</source>
         <translation>Dữ lieu thô</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="198"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="200"/>
         <source>Save dump</source>
         <translation>Lưu kết xuất</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="273"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="285"/>
         <source>Dump to file</source>
         <translation>Kết xuất ra tập tin</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="283"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="290"/>
+        <source>Signature</source>
+        <translation>Chữ ký</translation>
+    </message>
+    <message>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="301"/>
         <source>Find</source>
         <translation>Tìm kiếm</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="288"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="306"/>
         <source>Find next</source>
         <translation>Tìm kiếm tiếp theo</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="293"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="311"/>
         <source>Select</source>
         <translation>Chọn</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="295"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="313"/>
         <source>Select all</source>
         <translation>Chọn tất cả</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="302"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="320"/>
         <source>Copy</source>
         <translation>Sao chép</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="304"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="322"/>
         <source>Copy as hex</source>
         <translation>Sao chép dưới dạng hex</translation>
     </message>
     <message>
-        <location filename="../../QHexView/qhexviewwidget.cpp" line="318"/>
+        <location filename="../../QHexView/qhexviewwidget.cpp" line="336"/>
         <source>Error</source>
         <translation>Lỗi</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
-    <message>
-        <location filename="../../Formats/xbinary.cpp" line="2519"/>
-        <source>Read error</source>
-        <translation>Đọc lỗi</translation>
-    </message>
-    <message>
-        <location filename="../../Formats/xbinary.cpp" line="2526"/>
-        <source>Write error</source>
-        <translation>Ghi lỗi</translation>
-    </message>
-    <message>
-        <location filename="../../Formats/xbinary.cpp" line="2551"/>
-        <source>Cannot open file</source>
-        <translation>Không thể mở tập tin</translation>
-    </message>
     <message>
         <location filename="../../FormatWidgets/PE/pe_defs.cpp" line="258"/>
         <source>Address</source>
@@ -997,6 +1004,21 @@
         <location filename="../../FormatWidgets/PE/pe_defs.cpp" line="260"/>
         <source>Size</source>
         <translation>Kích thước</translation>
+    </message>
+    <message>
+        <location filename="../../Formats/xbinary.cpp" line="2568"/>
+        <source>Read error</source>
+        <translation>Đọc lỗi</translation>
+    </message>
+    <message>
+        <location filename="../../Formats/xbinary.cpp" line="2575"/>
+        <source>Write error</source>
+        <translation>Ghi lỗi</translation>
+    </message>
+    <message>
+        <location filename="../../Formats/xbinary.cpp" line="2600"/>
+        <source>Cannot open file</source>
+        <translation>Không thể mở tập tin</translation>
     </message>
 </context>
 <context>
@@ -1136,20 +1158,20 @@
         <location filename="../../SpecAbstract/specabstract.cpp" line="189"/>
         <location filename="../../SpecAbstract/specabstract.cpp" line="193"/>
         <location filename="../../SpecAbstract/specabstract.cpp" line="229"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="726"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="730"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="733"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="737"/>
         <source>Unknown</source>
         <translation>Không rõ</translation>
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="179"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="731"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="738"/>
         <source>Header</source>
         <translation>Tiêu đề</translation>
     </message>
     <message>
         <location filename="../../SpecAbstract/specabstract.cpp" line="180"/>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="732"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="739"/>
         <source>Overlay</source>
         <translation>Che phủ</translation>
     </message>
@@ -1290,27 +1312,27 @@
         <translation>Nhánh cụt</translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="733"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="740"/>
         <source>Entry point</source>
         <translation>Điểm nhập</translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="734"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="741"/>
         <source>Section name</source>
         <translation>Tên mục</translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="736"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="743"/>
         <source>Code section</source>
         <translation>Mục mã</translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="737"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="744"/>
         <source>Entry point section</source>
         <translation>Mục điểm nhập</translation>
     </message>
     <message>
-        <location filename="../../SpecAbstract/specabstract.cpp" line="738"/>
+        <location filename="../../SpecAbstract/specabstract.cpp" line="745"/>
         <source>String</source>
         <translation>Chuỗi</translation>
     </message>
@@ -1388,54 +1410,91 @@
 <context>
     <name>XDisasmWidget</name>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.ui" line="34"/>
+        <location filename="../../XDisasm/xdisasmwidget.ui" line="40"/>
         <source>Labels</source>
         <translation>Nhãn</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.ui" line="41"/>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="224"/>
-        <source>Go to address</source>
-        <translation>Đi tới địa chỉ</translation>
+        <location filename="../../XDisasm/xdisasmwidget.ui" line="53"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="351"/>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.ui" line="48"/>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="228"/>
-        <source>Go to offset</source>
-        <translation>Đi tới độ lệch</translation>
+        <location filename="../../XDisasm/xdisasmwidget.ui" line="66"/>
+        <source>Overlay</source>
+        <translation>Che phủ</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.ui" line="68"/>
+        <location filename="../../XDisasm/xdisasmwidget.ui" line="92"/>
+        <source>Type</source>
+        <translation>Loại</translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.ui" line="122"/>
         <source>Analyze</source>
         <translation>Phân tích</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="232"/>
-        <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="306"/>
+        <source>Go to</source>
+        <translation>Đi tới</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="236"/>
-        <source>Disasm</source>
-        <translation>Rối loạn</translation>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="308"/>
+        <source>Entry point</source>
+        <translation>Điểm nhập</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="240"/>
-        <source>To data</source>
-        <translation>Tới dữ liệu</translation>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="312"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="333"/>
+        <source>Virtual address</source>
+        <translation>Địa chỉ ảo</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="244"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="316"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="337"/>
+        <source>Relative virtual address</source>
+        <translation>Địa chỉ ảo tương đối</translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="320"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="341"/>
+        <source>File offset</source>
+        <translation>Độ lệch tập tin</translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="331"/>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="355"/>
         <source>Signature</source>
         <translation>Chữ ký</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="305"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="359"/>
+        <source>Dump to file</source>
+        <translation>Kết xuất ra tập tin</translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="363"/>
+        <source>Disasm</source>
+        <translation>Rối loạn</translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="367"/>
+        <source>To data</source>
+        <translation>Tới dữ liệu</translation>
+    </message>
+    <message>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="483"/>
         <source>Raw data</source>
         <translation>Dữ lieu thô</translation>
     </message>
     <message>
-        <location filename="../../XDisasm/xdisasmwidget.cpp" line="307"/>
+        <location filename="../../XDisasm/xdisasmwidget.cpp" line="485"/>
         <source>Save dump</source>
         <translation>Lưu kết xuất</translation>
     </message>
@@ -1443,7 +1502,7 @@
 <context>
     <name>XELF</name>
     <message>
-        <location filename="../../Formats/xelf.cpp" line="3645"/>
+        <location filename="../../Formats/xelf.cpp" line="3616"/>
         <source>Segment</source>
         <translation>Đoạn</translation>
     </message>
@@ -1533,7 +1592,7 @@
 <context>
     <name>XMACH</name>
     <message>
-        <location filename="../../Formats/xmach.cpp" line="744"/>
+        <location filename="../../Formats/xmach.cpp" line="725"/>
         <source>Segment</source>
         <translation>Đoạn</translation>
     </message>
@@ -1612,22 +1671,22 @@
 <context>
     <name>XPE</name>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="1633"/>
+        <location filename="../../Formats/xpe.cpp" line="1596"/>
         <source>Header</source>
         <translation>Tiêu đề</translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="1712"/>
+        <location filename="../../Formats/xpe.cpp" line="1675"/>
         <source>Section</source>
         <translation>Mục</translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="1778"/>
+        <location filename="../../Formats/xpe.cpp" line="1741"/>
         <source>Overlay</source>
         <translation>Che phủ</translation>
     </message>
     <message>
-        <location filename="../../Formats/xpe.cpp" line="4070"/>
+        <location filename="../../Formats/xpe.cpp" line="4033"/>
         <source>Cannot open file</source>
         <translation>Không thể mở tập tin</translation>
     </message>

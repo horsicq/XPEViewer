@@ -39,11 +39,11 @@ FORMS += \
     ../FormatWidgets/PE/sectionheaderwidget.ui \
     ../FormatWidgets/SearchStrings/searchstringswidget.ui \
     ../FormatWidgets/dialogentropy.ui \
-    ../FormatWidgets/dialoghex.ui \
     ../FormatWidgets/dialogprocessdata.ui \
     ../FormatWidgets/dialogsectionheader.ui \
     ../FormatWidgets/toolswidget.ui \
     ../QHexView/qhexviewwidget.ui \
+    ../QHexView/dialoghex.ui \
     ../StaticScan/dialogstaticscan.ui \
     ../StaticScan/formresult.ui \
     ../StaticScan/formstaticscan.ui \
@@ -105,7 +105,6 @@ HEADERS += \
     ../FormatWidgets/PE/sectionheaderwidget.h \
     ../FormatWidgets/SearchStrings/searchstringswidget.h \
     ../FormatWidgets/dialogentropy.h \
-    ../FormatWidgets/dialoghex.h \
     ../FormatWidgets/dialogprocessdata.h \
     ../FormatWidgets/dialogsectionheader.h \
     ../FormatWidgets/formatwidget.h \
@@ -130,6 +129,7 @@ HEADERS += \
     ../Formats/xpe_def.h \
     ../QHexView/qhexview.h \
     ../QHexView/qhexviewwidget.h \
+    ../QHexView/dialoghex.h \
     ../SpecAbstract/specabstract.h \
     ../StaticScan/dialogstaticscan.h \
     ../StaticScan/formresult.h \
@@ -314,7 +314,6 @@ SOURCES += \
     ../FormatWidgets/PE/sectionheaderwidget.cpp \
     ../FormatWidgets/SearchStrings/searchstringswidget.cpp \
     ../FormatWidgets/dialogentropy.cpp \
-    ../FormatWidgets/dialoghex.cpp \
     ../FormatWidgets/dialogprocessdata.cpp \
     ../FormatWidgets/dialogsectionheader.cpp \
     ../FormatWidgets/formatwidget.cpp \
@@ -332,6 +331,7 @@ SOURCES += \
     ../Formats/xpe.cpp \
     ../QHexView/qhexview.cpp \
     ../QHexView/qhexviewwidget.cpp \
+    ../QHexView/dialoghex.cpp \
     ../SpecAbstract/signatures.cpp \
     ../SpecAbstract/specabstract.cpp \
     ../StaticScan/dialogstaticscan.cpp \
