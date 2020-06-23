@@ -4,6 +4,11 @@
 
 PE file viewer/editor for Windows, Linux and MacOS.
 
+* Hex
+* Disassembler
+* Entropy
+* Signature scan
+
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/mascots/xpeviewer.png "Mascot")
 
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/docs/1.png "1")
