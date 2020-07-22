@@ -24,6 +24,7 @@ FORMS += \
 include(../build.pri)
 
 XCONFIG += use_disasm
+XCONFIG += use_extrabuttons
 
 !contains(XCONFIG, pewidget) {
     XCONFIG += pewidget
