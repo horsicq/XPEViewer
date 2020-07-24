@@ -826,7 +826,7 @@
         <location filename="../../FormatWidgets/PE/pewidget.ui" line="67"/>
         <location filename="../../FormatWidgets/PE/pewidget.cpp" line="100"/>
         <source>Disasm</source>
-        <translation>灾难</translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <location filename="../../FormatWidgets/PE/pewidget.ui" line="74"/>
@@ -1475,7 +1475,7 @@
     <message>
         <location filename="../../XDisasm/xdisasmwidget.cpp" line="373"/>
         <source>Disasm</source>
-        <translation>灾难</translation>
+        <translation>反汇编</translation>
     </message>
     <message>
         <location filename="../../XDisasm/xdisasmwidget.cpp" line="377"/>
