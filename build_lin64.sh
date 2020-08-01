@@ -72,7 +72,7 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh_TW.ts -q
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/xpeviewer.sh
 echo "export LD_LIBRARY_PATH=\"./base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/xpeviewer.sh
-echo "./base/xpeviewer $*" >> release/$BUILD_NAME/xpeviewer.sh
+echo "./base/xpeviewer \$*" >> release/$BUILD_NAME/xpeviewer.sh
 
 chmod +x release/$BUILD_NAME/xpeviewer.sh
 
