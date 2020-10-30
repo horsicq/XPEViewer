@@ -48,6 +48,7 @@ cp -R $QT_PATH/lib/libQt5Core.so.5.12.8                         $SOURCE_PATH/rel
 cp -R $QT_PATH/lib/libQt5Svg.so.5.12.8                          $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5Gui.so.5.12.8                          $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5Widgets.so.5.12.8                      $SOURCE_PATH/release/$BUILD_NAME/base/
+cp -R $QT_PATH/lib/libQt5OpenGL.so.5.12.8                       $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5DBus.so.5.12.8                         $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libQt5XcbQpa.so.5.12.8                       $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $QT_PATH/lib/libicui18n.so.56.1                           $SOURCE_PATH/release/$BUILD_NAME/base/
@@ -58,6 +59,7 @@ mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Core.so.5.12.8               $SOU
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5.12.8               	$SOURCE_PATH/release/$BUILD_NAME/base/libQt5Svg.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5.12.8                $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Gui.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5.12.8            $SOURCE_PATH/release/$BUILD_NAME/base/libQt5Widgets.so.5
+mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5.12.8             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5OpenGL.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5.12.8               $SOURCE_PATH/release/$BUILD_NAME/base/libQt5DBus.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5.12.8             $SOURCE_PATH/release/$BUILD_NAME/base/libQt5XcbQpa.so.5
 mv $SOURCE_PATH/release/$BUILD_NAME/base/libicui18n.so.56.1                 $SOURCE_PATH/release/$BUILD_NAME/base/libicui18n.so.56
@@ -71,8 +73,9 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh.ts -qm  
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xpeviewer_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/base/lang/xpeviewer_zh_TW.qm
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/xpeviewer.sh
-echo "export LD_LIBRARY_PATH=\"./base:$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/xpeviewer.sh
-echo "./base/xpeviewer \$*" >> release/$BUILD_NAME/xpeviewer.sh
+echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/xpeviewer.sh
+echo "export LD_LIBRARY_PATH=\"\$CWD/base:\$LD_LIBRARY_PATH\"" >> release/$BUILD_NAME/xpeviewer.sh
+echo "\$CWD/base/xpeviewer \$*" >> release/$BUILD_NAME/xpeviewer.sh
 
 chmod +x release/$BUILD_NAME/xpeviewer.sh
 
