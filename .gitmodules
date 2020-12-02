@@ -52,3 +52,6 @@
 [submodule "XHashWidget"]
 	path = XHashWidget
 	url = https://github.com/horsicq/XHashWidget.git
+[submodule "XHexView"]
+	path = XHexView
+	url = https://github.com/horsicq/XHexView.git
