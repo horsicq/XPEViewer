@@ -148,6 +148,7 @@ void GuiMainWindow::processFile(QString sFileName, bool bReload)
                 ui->stackedWidgetMain->setCurrentIndex(1);
                 formatOptions.bIsImage=false;
                 formatOptions.nImageBase=-1;
+                formatOptions.nStartType=SPE::TYPE_HEURISTICSCAN;
                 ui->widgetViewer->setData(pFile,&formatOptions,0,0,0);
 
                 if(bReload)
