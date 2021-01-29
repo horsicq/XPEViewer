@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 hors<horsicq@gmail.com>
+// Copyright (c) 2020-2021 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -25,9 +25,10 @@
 
 #define X_APPLICATIONNAME "XPEViewer"
 #define X_APPLICATIONFILENAME "xpeviewer"
-#define X_APPLICATIONVERSION "0.01"
+#define X_APPLICATIONVERSION "0.02"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "xpeviewer.ini"
+#define X_SHORTCUTSFILE "shortcuts.ini"
 
 #endif // _GLOBAL_H

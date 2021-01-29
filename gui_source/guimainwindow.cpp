@@ -1,4 +1,4 @@
-// copyright (c) 2019-2020 hors<horsicq@gmail.com>
+// copyright (c) 2020-2021 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -49,6 +49,30 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
     xOptions.setValueIDs(listIDs);
     xOptions.load();
 
+    xShortcuts.setName(X_SHORTCUTSFILE);
+
+    QList<XShortcuts::ID> listShortcutsIDs;
+
+//    listShortcutsIDs.append(XShortcuts::ID_ACTION_COPY);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_DUMPTOFILE);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_GOTOADDRESS);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_SIGNATURE);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_FIND);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_FINDNEXT);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_SELECTALL);
+    listShortcutsIDs.append(XShortcuts::ID_HEX_COPYASHEX);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_DUMPTOFILE);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_GOTOADDRESS);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_HEXSIGNATURE);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_SIGNATURE);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_FIND);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_FINDNEXT);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_SELECTALL);
+    listShortcutsIDs.append(XShortcuts::ID_DISASM_COPYASHEX);
+
+    xShortcuts.setShortcutsIDs(listShortcutsIDs);
+    xShortcuts.load();
+
     adjust();
 
     if(QCoreApplication::arguments().count()>1)
@@ -63,6 +87,7 @@ GuiMainWindow::~GuiMainWindow()
 {
     closeCurrentFile();
     xOptions.save();
+    xShortcuts.save();
 
     delete ui;
 }
@@ -118,6 +143,8 @@ void GuiMainWindow::adjust()
             formatOptions.sBackupFileName="";
         }
     }
+
+    ui->widgetViewer->setShortcuts(&xShortcuts);
 }
 
 void GuiMainWindow::processFile(QString sFileName, bool bReload)
@@ -213,4 +240,9 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
             processFile(sFileName,xOptions.getValue(XOptions::ID_SCANAFTEROPEN).toBool());
         }
     }
+}
+
+void GuiMainWindow::on_actionShortcuts_triggered()
+{
+
 }

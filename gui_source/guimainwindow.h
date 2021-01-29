@@ -1,4 +1,4 @@
-// copyright (c) 2019-2020 hors<horsicq@gmail.com>
+// copyright (c) 2020-2021 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -30,6 +30,7 @@
 #include <QMimeData>
 #include "dialogoptions.h"
 #include "dialogabout.h"
+#include "dialogshortcuts.h"
 #include "pewidget.h"
 
 namespace Ui {
@@ -48,6 +49,7 @@ private slots:
     void on_actionOpen_triggered();
     void on_actionClose_triggered();
     void on_actionExit_triggered();
+    void on_actionShortcuts_triggered();
     void on_actionOptions_triggered();
     void on_actionAbout_triggered();
     void adjust();
@@ -62,6 +64,7 @@ protected:
 private:
     Ui::GuiMainWindow *ui;
     XOptions xOptions;
+    XShortcuts xShortcuts;
     FW_DEF::OPTIONS formatOptions;
 
     QFile *pFile;

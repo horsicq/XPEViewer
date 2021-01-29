@@ -99,6 +99,7 @@
     <property name="title">
      <string>Tools</string>
     </property>
+    <addaction name="actionShortcuts"/>
     <addaction name="actionOptions"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
@@ -143,6 +144,11 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionShortcuts">
+   <property name="text">
+    <string>Shortcuts</string>
    </property>
   </action>
  </widget>
