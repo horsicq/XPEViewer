@@ -2,7 +2,7 @@ set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community"
 set QT_PATH=C:\Qt\5.15.2\msvc2019_64
 set SEVENZIP_PATH="C:\Program Files\7-Zip"
 
-set BUILD_NAME=xpeviewer_win32_portable
+set BUILD_NAME=xpeviewer_win64_portable
 set SOURCE_PATH=%~dp0
 mkdir %SOURCE_PATH%\build
 mkdir %SOURCE_PATH%\release
