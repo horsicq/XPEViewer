@@ -9,7 +9,7 @@ mkdir %SOURCE_PATH%\release
 set /p RELEASE_VERSION=<%SOURCE_PATH%\release_version.txt
 
 set QT_PATH=%QT_PATH%
-call %VS_PATH%\VC\Auxiliary\Build\vcvars32.bat
+call %VS_PATH%\VC\Auxiliary\Build\vcvars64.bat
 set GUIEXE=xpeviewer.exe
 set ZIP_NAME=%BUILD_NAME%_%RELEASE_VERSION%
 set RES_FILE=rsrc
