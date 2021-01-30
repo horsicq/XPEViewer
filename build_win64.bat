@@ -1,16 +1,15 @@
-set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio 12.0"
+set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community"
+set QT_PATH=C:\Qt\5.15.2\msvc2019_64
 set SEVENZIP_PATH="C:\Program Files\7-Zip"
-set QT_PATH=C:\Qt5.6.3\5.6.3\msvc2013
 
-set BUILD_NAME=xpeviewer_winxp_portable
+set BUILD_NAME=xpeviewer_win32_portable
 set SOURCE_PATH=%~dp0
 mkdir %SOURCE_PATH%\build
 mkdir %SOURCE_PATH%\release
 set /p RELEASE_VERSION=<%SOURCE_PATH%\release_version.txt
 
 set QT_PATH=%QT_PATH%
-set QT_SPEC=win32-msvc2013
-call %VS_PATH%\VC\bin\vcvars32.bat
+call %VS_PATH%\VC\Auxiliary\Build\vcvars32.bat
 set GUIEXE=xpeviewer.exe
 set ZIP_NAME=%BUILD_NAME%_%RELEASE_VERSION%
 set RES_FILE=rsrc
@@ -20,7 +19,7 @@ del %SOURCE_PATH%\build_libs\.qmake.stash
 del %SOURCE_PATH%\gui_source\.qmake.stash
 
 cd build_libs
-%QT_PATH%\bin\qmake.exe build_libs.pro -r -spec %QT_SPEC% "CONFIG+=release"
+%QT_PATH%\bin\qmake.exe build_libs.pro -r -spec win32-msvc "CONFIG+=release"
 
 nmake Makefile.Release clean
 nmake
@@ -31,7 +30,7 @@ del Makefile.Debug
 cd ..
 
 cd gui_source
-%QT_PATH%\bin\qmake.exe gui_source.pro -r -spec %QT_SPEC% "CONFIG+=release"
+%QT_PATH%\bin\qmake.exe gui_source.pro -r -spec win32-msvc "CONFIG+=release"
 %QT_PATH%\bin\lupdate.exe gui_source_tr.pro
 
 nmake Makefile.Release clean
@@ -42,7 +41,7 @@ del Makefile.Debug
 
 cd ..
 
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\
+mkdir %SOURCE_PATH%\release\%BUILD_NAME%
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\lang
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\platforms
 
@@ -54,8 +53,10 @@ copy %QT_PATH%\bin\Qt5OpenGL.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %QT_PATH%\bin\Qt5Svg.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %QT_PATH%\plugins\platforms\qwindows.dll %SOURCE_PATH%\release\%BUILD_NAME%\platforms\
 
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcp120.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcr120.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\msvcp140_1.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\vcruntime140_1.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 
 xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\qss /E /I
 
