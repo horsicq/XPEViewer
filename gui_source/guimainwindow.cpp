@@ -54,6 +54,9 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
     QList<XShortcuts::ID> listShortcutsIDs;
 
 //    listShortcutsIDs.append(XShortcuts::ID_ACTION_COPY);
+    listShortcutsIDs.append(XShortcuts::ID_STRINGS_COPYSTRING);
+    listShortcutsIDs.append(XShortcuts::ID_STRINGS_COPYOFFSET);
+    listShortcutsIDs.append(XShortcuts::ID_STRINGS_COPYSIZE);
     listShortcutsIDs.append(XShortcuts::ID_HEX_DUMPTOFILE);
     listShortcutsIDs.append(XShortcuts::ID_HEX_GOTOADDRESS);
     listShortcutsIDs.append(XShortcuts::ID_HEX_SIGNATURE);
