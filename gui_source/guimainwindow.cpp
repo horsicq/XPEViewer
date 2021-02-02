@@ -51,29 +51,11 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
 
     xShortcuts.setName(X_SHORTCUTSFILE);
 
-    QList<XShortcuts::ID> listShortcutsIDs;
+    xShortcuts.addGroup(XShortcuts::ID_STRINGS);
+    xShortcuts.addGroup(XShortcuts::ID_HEX);
+    xShortcuts.addGroup(XShortcuts::ID_DISASM);
+    xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
 
-//    listShortcutsIDs.append(XShortcuts::ID_ACTION_COPY);
-    listShortcutsIDs.append(XShortcuts::ID_STRINGS_COPYSTRING);
-    listShortcutsIDs.append(XShortcuts::ID_STRINGS_COPYOFFSET);
-    listShortcutsIDs.append(XShortcuts::ID_STRINGS_COPYSIZE);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_DUMPTOFILE);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_GOTOADDRESS);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_SIGNATURE);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_FIND);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_FINDNEXT);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_SELECTALL);
-    listShortcutsIDs.append(XShortcuts::ID_HEX_COPYASHEX);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_DUMPTOFILE);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_GOTOADDRESS);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_HEXSIGNATURE);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_SIGNATURE);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_FIND);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_FINDNEXT);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_SELECTALL);
-    listShortcutsIDs.append(XShortcuts::ID_DISASM_COPYASHEX);
-
-    xShortcuts.setShortcutsIDs(listShortcutsIDs);
     xShortcuts.load();
 
     adjust();
