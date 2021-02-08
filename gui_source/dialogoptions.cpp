@@ -36,6 +36,12 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
     pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->setComboBox(ui->comboBoxQss,XOptions::ID_QSS);
     pOptions->setComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+
+#ifdef WIN32
+    ui->checkBoxContext->setChecked(pOptions->checkContext(X_APPLICATIONNAME,"*"));
+#else
+    ui->checkBoxContext->hide();
+#endif
 }
 
 DialogOptions::~DialogOptions()
@@ -53,6 +59,20 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
     pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+
+#ifdef WIN32
+    if(pOptions->checkContext(X_APPLICATIONNAME,"*")!=ui->checkBoxContext->isChecked())
+    {
+        if(ui->checkBoxContext->isChecked())
+        {
+            pOptions->registerContext(X_APPLICATIONNAME,"*",qApp->applicationFilePath());
+        }
+        else
+        {
+            pOptions->clearContext(X_APPLICATIONNAME,"*");
+        }
+    }
+#endif
 
     if(pOptions->isRestartNeeded())
     {
