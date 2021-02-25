@@ -43,8 +43,8 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
     listIDs.append(XOptions::ID_STAYONTOP);
     listIDs.append(XOptions::ID_SCANAFTEROPEN);
     listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
-    listIDs.append(XOptions::ID_LASTDIRECTORY);
     listIDs.append(XOptions::ID_SAVEBACKUP);
+    listIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
 
     xOptions.setValueIDs(listIDs);
     xOptions.load();
@@ -52,9 +52,9 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
     xShortcuts.setName(X_SHORTCUTSFILE);
 
     xShortcuts.addGroup(XShortcuts::ID_STRINGS);
+    xShortcuts.addGroup(XShortcuts::ID_SIGNATURES);
     xShortcuts.addGroup(XShortcuts::ID_HEX);
     xShortcuts.addGroup(XShortcuts::ID_DISASM);
-    xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
 
     xShortcuts.load();
 
@@ -161,6 +161,7 @@ void GuiMainWindow::processFile(QString sFileName, bool bReload)
                 formatOptions.bIsImage=false;
                 formatOptions.nImageBase=-1;
                 formatOptions.nStartType=SPE::TYPE_HEURISTICSCAN;
+                formatOptions.sSearchSignaturesPath=xOptions.getSearchSignaturesPath();
                 ui->widgetViewer->setData(pFile,formatOptions,0,0,0);
 
                 if(bReload)
@@ -229,5 +230,11 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
 
 void GuiMainWindow::on_actionShortcuts_triggered()
 {
+    DialogShortcuts dialogShortcuts(this);
 
+    dialogShortcuts.setData(&xShortcuts);
+
+    dialogShortcuts.exec();
+
+    adjust();
 }

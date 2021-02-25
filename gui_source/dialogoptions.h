@@ -25,7 +25,9 @@
 #include <QSettings>
 #include <QDir>
 #include <QMessageBox>
+#include <QFileDialog>
 #include "xoptions.h"
+#include "xbinary.h"
 #include "../global.h"
 
 namespace Ui {
@@ -43,6 +45,7 @@ public:
 private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonCancel_clicked();
+    void on_toolButtonSearchSignatures_clicked();
 
 private:
     Ui::DialogOptions *ui;

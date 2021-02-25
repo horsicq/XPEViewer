@@ -36,6 +36,7 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
     pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->setComboBox(ui->comboBoxQss,XOptions::ID_QSS);
     pOptions->setComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+    pOptions->setLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
 #ifdef WIN32
     ui->checkBoxContext->setChecked(pOptions->checkContext(X_APPLICATIONNAME,"*"));
@@ -59,6 +60,7 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
     pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
     pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+    pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
 #ifdef WIN32
     if(pOptions->checkContext(X_APPLICATIONNAME,"*")!=ui->checkBoxContext->isChecked())
@@ -85,4 +87,17 @@ void DialogOptions::on_pushButtonOK_clicked()
 void DialogOptions::on_pushButtonCancel_clicked()
 {
     this->close();
+}
+
+void DialogOptions::on_toolButtonSearchSignatures_clicked()
+{
+    QString sText=ui->lineEditSearchSignatures->text();
+    QString sInitDirectory=XBinary::convertPathName(sText);
+
+    QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
+
+    if(!sDirectoryName.isEmpty())
+    {
+        ui->lineEditSearchSignatures->setText(sDirectoryName);
+    }
 }
