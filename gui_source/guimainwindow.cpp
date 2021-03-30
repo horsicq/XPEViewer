@@ -27,13 +27,13 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    pFile=nullptr;
+    g_pFile=nullptr;
 
     setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONNAME).arg(X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
 
-    xOptions.setName(X_OPTIONSFILE);
+    g_xOptions.setName(X_OPTIONSFILE);
 
     QList<XOptions::ID> listIDs;
 
@@ -46,17 +46,17 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
     listIDs.append(XOptions::ID_SAVEBACKUP);
     listIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
 
-    xOptions.setValueIDs(listIDs);
-    xOptions.load();
+    g_xOptions.setValueIDs(listIDs);
+    g_xOptions.load();
 
-    xShortcuts.setName(X_SHORTCUTSFILE);
+    g_xShortcuts.setName(X_SHORTCUTSFILE);
 
-    xShortcuts.addGroup(XShortcuts::ID_STRINGS);
-    xShortcuts.addGroup(XShortcuts::ID_SIGNATURES);
-    xShortcuts.addGroup(XShortcuts::ID_HEX);
-    xShortcuts.addGroup(XShortcuts::ID_DISASM);
+    g_xShortcuts.addGroup(XShortcuts::ID_STRINGS);
+    g_xShortcuts.addGroup(XShortcuts::ID_SIGNATURES);
+    g_xShortcuts.addGroup(XShortcuts::ID_HEX);
+    g_xShortcuts.addGroup(XShortcuts::ID_DISASM);
 
-    xShortcuts.load();
+    g_xShortcuts.load();
 
     adjust();
 
@@ -71,21 +71,21 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
 GuiMainWindow::~GuiMainWindow()
 {
     closeCurrentFile();
-    xOptions.save();
-    xShortcuts.save();
+    g_xOptions.save();
+    g_xShortcuts.save();
 
     delete ui;
 }
 
 void GuiMainWindow::on_actionOpen_triggered()
 {
-    QString sDirectory=xOptions.getLastDirectory();
+    QString sDirectory=g_xOptions.getLastDirectory();
 
     QString sFileName=QFileDialog::getOpenFileName(this,tr("Open file")+QString("..."),sDirectory,tr("All files")+QString(" (*)"));
 
     if(!sFileName.isEmpty())
     {
-        processFile(sFileName,xOptions.getValue(XOptions::ID_SCANAFTEROPEN).toBool());
+        processFile(sFileName,g_xOptions.getValue(XOptions::ID_SCANAFTEROPEN).toBool());
     }
 }
 
@@ -101,7 +101,7 @@ void GuiMainWindow::on_actionExit_triggered()
 
 void GuiMainWindow::on_actionOptions_triggered()
 {
-    DialogOptions dialogOptions(this,&xOptions);
+    DialogOptions dialogOptions(this,&g_xOptions);
     dialogOptions.exec();
 
     adjust();
@@ -115,44 +115,44 @@ void GuiMainWindow::on_actionAbout_triggered()
 
 void GuiMainWindow::adjust()
 {
-    xOptions.adjustStayOnTop(this);
+    g_xOptions.adjustStayOnTop(this);
 
-    formatOptions.bSaveBackup=xOptions.isSaveBackup();
+    g_formatOptions.bSaveBackup=g_xOptions.isSaveBackup();
 
-    ui->widgetViewer->setShortcuts(&xShortcuts);
+    ui->widgetViewer->setShortcuts(&g_xShortcuts);
 }
 
 void GuiMainWindow::processFile(QString sFileName, bool bReload)
 {
     if((sFileName!="")&&(QFileInfo(sFileName).isFile()))
     {
-        xOptions.setLastDirectory(QFileInfo(sFileName).absolutePath());
+        g_xOptions.setLastDirectory(QFileInfo(sFileName).absolutePath());
 
         closeCurrentFile();
 
-        pFile=new QFile;
+        g_pFile=new QFile;
 
-        pFile->setFileName(sFileName);
+        g_pFile->setFileName(sFileName);
 
-        if(!pFile->open(QIODevice::ReadWrite))
+        if(!g_pFile->open(QIODevice::ReadWrite))
         {
-            if(!pFile->open(QIODevice::ReadOnly))
+            if(!g_pFile->open(QIODevice::ReadOnly))
             {
                 closeCurrentFile();
             }
         }
 
-        if(pFile)
+        if(g_pFile)
         {
-            XPE pe(pFile);
+            XPE pe(g_pFile);
             if(pe.isValid())
             {
                 ui->stackedWidgetMain->setCurrentIndex(1);
-                formatOptions.bIsImage=false;
-                formatOptions.nImageBase=-1;
-                formatOptions.nStartType=SPE::TYPE_HEURISTICSCAN;
-                formatOptions.sSearchSignaturesPath=xOptions.getSearchSignaturesPath();
-                ui->widgetViewer->setData(pFile,formatOptions,0,0,0);
+                g_formatOptions.bIsImage=false;
+                g_formatOptions.nImageBase=-1;
+                g_formatOptions.nStartType=SPE::TYPE_HEURISTICSCAN;
+                g_formatOptions.sSearchSignaturesPath=g_xOptions.getSearchSignaturesPath();
+                ui->widgetViewer->setData(g_pFile,g_formatOptions,0,0,0);
 
                 if(bReload)
                 {
@@ -179,11 +179,11 @@ void GuiMainWindow::closeCurrentFile()
 {
     ui->stackedWidgetMain->setCurrentIndex(0);
 
-    if(pFile)
+    if(g_pFile)
     {
-        pFile->close();
-        delete pFile;
-        pFile=nullptr;
+        g_pFile->close();
+        delete g_pFile;
+        g_pFile=nullptr;
     }
 
     setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONNAME).arg(X_APPLICATIONVERSION));
@@ -213,7 +213,7 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
 
             sFileName=XBinary::convertFileName(sFileName);
 
-            processFile(sFileName,xOptions.getValue(XOptions::ID_SCANAFTEROPEN).toBool());
+            processFile(sFileName,g_xOptions.getValue(XOptions::ID_SCANAFTEROPEN).toBool());
         }
     }
 }
@@ -222,7 +222,7 @@ void GuiMainWindow::on_actionShortcuts_triggered()
 {
     DialogShortcuts dialogShortcuts(this);
 
-    dialogShortcuts.setData(&xShortcuts);
+    dialogShortcuts.setData(&g_xShortcuts);
 
     dialogShortcuts.exec();
 

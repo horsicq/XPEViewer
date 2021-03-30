@@ -49,14 +49,13 @@ private slots:
     void on_actionOpen_triggered();
     void on_actionClose_triggered();
     void on_actionExit_triggered();
+    void on_actionDemangle_triggered();
     void on_actionShortcuts_triggered();
     void on_actionOptions_triggered();
     void on_actionAbout_triggered();
     void adjust();
     void processFile(QString sFileName,bool bReload);
     void closeCurrentFile();
-
-    void on_actionDemangle_triggered();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
@@ -65,11 +64,10 @@ protected:
 
 private:
     Ui::GuiMainWindow *ui;
-    XOptions xOptions;
-    XShortcuts xShortcuts;
-    FW_DEF::OPTIONS formatOptions;
-
-    QFile *pFile;
+    XOptions g_xOptions;
+    XShortcuts g_xShortcuts;
+    FW_DEF::OPTIONS g_formatOptions;
+    QFile *g_pFile;
 };
 
 #endif // GUIMAINWINDOW_H
