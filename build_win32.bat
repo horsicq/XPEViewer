@@ -15,6 +15,7 @@ set ZIP_NAME=%BUILD_NAME%_%RELEASE_VERSION%
 set RES_FILE=rsrc
 
 del %SOURCE_PATH%\XArchive\.qmake.stash
+del %SOURCE_PATH%\XCapstone\.qmake.stash
 del %SOURCE_PATH%\build_libs\.qmake.stash
 del %SOURCE_PATH%\gui_source\.qmake.stash
 
@@ -65,19 +66,20 @@ copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x86\Microsoft.VC142.CRT\msvcp140_1.dll
 
 xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\qss /E /I
 
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_it.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_it.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_fr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_fr.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_he.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_he.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_tr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_tr.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ko.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_ko.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_es.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_es.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pt_PR.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_pt_PR.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_de.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_de.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ja.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_ja.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pl.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_pl.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pt_BR.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_pt_BR.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_fr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_fr.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ru.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_ru.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_vi.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_vi.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_zh.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_zh_TW.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_es.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_es.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_it.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_it.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ko.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_ko.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_tr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_tr.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_he.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_he.qm
 
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\signatures
 xcopy %SOURCE_PATH%\signatures\crypto.db %SOURCE_PATH%\release\%BUILD_NAME%\signatures\
