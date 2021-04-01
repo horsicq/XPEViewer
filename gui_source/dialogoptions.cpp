@@ -27,7 +27,7 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
 {
     ui->setupUi(this);
 
-    this->pOptions=pOptions;
+    this->x_pOptions=pOptions;
 
     pOptions->setCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
     pOptions->setCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
@@ -53,30 +53,30 @@ DialogOptions::~DialogOptions()
 
 void DialogOptions::on_pushButtonOK_clicked()
 {
-    pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
-    pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
-    pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
-    pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
-    pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
-    pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
-    pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
-    pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
+    x_pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
+    x_pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
+    x_pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
+    x_pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
+    x_pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
+    x_pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
+    x_pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+    x_pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
 #ifdef WIN32
-    if(pOptions->checkContext(X_APPLICATIONNAME,"*")!=ui->checkBoxContext->isChecked())
+    if(x_pOptions->checkContext(X_APPLICATIONNAME,"*")!=ui->checkBoxContext->isChecked())
     {
         if(ui->checkBoxContext->isChecked())
         {
-            pOptions->registerContext(X_APPLICATIONNAME,"*",qApp->applicationFilePath());
+            x_pOptions->registerContext(X_APPLICATIONNAME,"*",qApp->applicationFilePath());
         }
         else
         {
-            pOptions->clearContext(X_APPLICATIONNAME,"*");
+            x_pOptions->clearContext(X_APPLICATIONNAME,"*");
         }
     }
 #endif
 
-    if(pOptions->isRestartNeeded())
+    if(x_pOptions->isRestartNeeded())
     {
         QMessageBox::information(this,tr("Information"),tr("Please restart the application"));
     }

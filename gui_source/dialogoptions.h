@@ -49,7 +49,7 @@ private slots:
 
 private:
     Ui::DialogOptions *ui;
-    XOptions *pOptions;
+    XOptions *x_pOptions;
 };
 
 #endif // DIALOGOPTIONS_H
