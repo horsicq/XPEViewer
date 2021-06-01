@@ -24,7 +24,9 @@
 
 int main(int argc, char *argv[])
 {
+#if QT_VERSION >= 0x050600
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#endif
 #ifdef Q_OS_MAC
 #ifndef QT_DEBUG
    QCoreApplication::setLibraryPaths(QStringList(QString(argv[0]).remove("MacOS/xpeviewer")+"PlugIns"));
