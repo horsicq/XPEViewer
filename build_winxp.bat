@@ -1,90 +1,44 @@
-set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio 12.0"
-set SEVENZIP_PATH="C:\Program Files\7-Zip"
-set QT_PATH=C:\Qt5.6.3\5.6.3\msvc2013
+set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\vcvars32.bat"
+set QMAKE_PATH="C:\Qt5.6.3\5.6.3\msvc2013\bin\qmake.exe"
+set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 
-set BUILD_NAME=xpeviewer_winxp_portable
-set SOURCE_PATH=%~dp0
-mkdir %SOURCE_PATH%\build
-mkdir %SOURCE_PATH%\release
-set /p RELEASE_VERSION=<%SOURCE_PATH%\release_version.txt
+set X_SOURCE_PATH=%~dp0
+set X_BUILD_NAME=xpeviewer_winxp_portable
+set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 
-set QT_PATH=%QT_PATH%
-set QT_SPEC=win32-msvc2013
-call %VS_PATH%\VC\bin\vcvars32.bat
-set GUIEXE=xpeviewer.exe
-set ZIP_NAME=%BUILD_NAME%_%RELEASE_VERSION%
-set RES_FILE=rsrc
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %VSVARS_PATH%
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %QMAKE_PATH%
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %SEVENZIP_PATH%
 
-del %SOURCE_PATH%\XArchive\.qmake.stash
-del %SOURCE_PATH%\XCapstone\.qmake.stash
-del %SOURCE_PATH%\build_libs\.qmake.stash
-del %SOURCE_PATH%\gui_source\.qmake.stash
+IF NOT [%X_ERROR%] == [] goto exit
 
-rmdir /s /q %SOURCE_PATH%\XCapstone\3rdparty\Capstone\release
-rmdir /s /q %SOURCE_PATH%\XArchive\3rdparty\lzma\release
-rmdir /s /q %SOURCE_PATH%\XArchive\3rdparty\zlib\release
-rmdir /s /q %SOURCE_PATH%\XArchive\3rdparty\bzip2\release
-rmdir /s /q %SOURCE_PATH%\gui_source\release
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_init
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_build %X_SOURCE_PATH%\xpeviewer_source.pro
 
-cd build_libs
-%QT_PATH%\bin\qmake.exe build_libs.pro -r -spec %QT_SPEC% "CONFIG+=release"
+cd %X_SOURCE_PATH%\gui_source
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
+cd %X_SOURCE_PATH%
 
-nmake Makefile.Release clean
-nmake
-del Makefile
-del Makefile.Release
-del Makefile.Debug
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\xpeviewer.exe
 
-cd ..
+IF NOT [%X_ERROR%] == [] goto exit
 
-cd gui_source
-%QT_PATH%\bin\qmake.exe gui_source.pro -r -spec %QT_SPEC% "CONFIG+=release"
-%QT_PATH%\bin\lupdate.exe gui_source_tr.pro
+mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
 
-nmake Makefile.Release clean
-nmake
-del Makefile
-del Makefile.Release
-del Makefile.Debug
+copy %X_SOURCE_PATH%\build\release\xpeviewer.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
+xcopy %X_SOURCE_PATH%\XStyles\qss %X_SOURCE_PATH%\release\%X_BUILD_NAME%\qss /E /I /Y
+xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\ /Y
 
-cd ..
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Gui
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Core
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5OpenGL
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Svg
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin platforms qwindows
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_vc_redist
 
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\lang
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\platforms
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_release
 
-copy %SOURCE_PATH%\build\release\%GUIEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Widgets.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Gui.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Core.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5OpenGL.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Svg.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\plugins\platforms\qwindows.dll %SOURCE_PATH%\release\%BUILD_NAME%\platforms\
-
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcp120.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\redist\x86\Microsoft.VC120.CRT\msvcr120.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-
-xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\qss /E /I
-
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_it.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_it.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_fr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_fr.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_he.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_he.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_tr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_tr.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ko.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_ko.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_es.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_es.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pt_PR.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_pt_PR.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ja.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_ja.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_pl.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_pl.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_ru.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_ru.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_vi.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_vi.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_zh.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xpeviewer_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xpeviewer_zh_TW.qm
-
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\signatures
-xcopy %SOURCE_PATH%\signatures\crypto.db %SOURCE_PATH%\release\%BUILD_NAME%\signatures\
-
-cd %SOURCE_PATH%\release
-if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
-%SEVENZIP_PATH%\7z.exe a %ZIP_NAME%.zip %BUILD_NAME%\*
-rmdir /s /q %SOURCE_PATH%\release\%BUILD_NAME%
-cd ..
+:exit
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_clear

@@ -30,8 +30,8 @@ DialogAbout::DialogAbout(QWidget *parent) :
     ui->labelLogo->setPixmap(QPixmap(QString::fromUtf8(":/pics/logo.png")));
 
     ui->labelVersion->setText(QString("<span style=\" font-weight:600;\">%1 %2</span>")
-                              .arg(QApplication::applicationName())
-                              .arg(QApplication::applicationVersion()));
+                              .arg(X_APPLICATIONDISPLAYNAME)
+                              .arg(X_APPLICATIONVERSION));
 }
 
 DialogAbout::~DialogAbout()

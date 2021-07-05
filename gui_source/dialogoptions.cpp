@@ -38,7 +38,7 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
     pOptions->setLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
 #ifdef WIN32
-    ui->checkBoxContext->setChecked(pOptions->checkContext(X_APPLICATIONNAME,"*"));
+    ui->checkBoxContext->setChecked(pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*"));
 #else
     ui->checkBoxContext->hide();
 #endif
@@ -48,7 +48,6 @@ DialogOptions::~DialogOptions()
 {
     delete ui;
 }
-
 
 void DialogOptions::on_pushButtonOK_clicked()
 {
@@ -61,15 +60,15 @@ void DialogOptions::on_pushButtonOK_clicked()
     x_pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
 #ifdef WIN32
-    if(x_pOptions->checkContext(X_APPLICATIONNAME,"*")!=ui->checkBoxContext->isChecked())
+    if(x_pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*")!=ui->checkBoxContext->isChecked())
     {
         if(ui->checkBoxContext->isChecked())
         {
-            x_pOptions->registerContext(X_APPLICATIONNAME,"*",qApp->applicationFilePath());
+            x_pOptions->registerContext(X_APPLICATIONDISPLAYNAME,"*",qApp->applicationFilePath());
         }
         else
         {
-            x_pOptions->clearContext(X_APPLICATIONNAME,"*");
+            x_pOptions->clearContext(X_APPLICATIONDISPLAYNAME,"*");
         }
     }
 #endif

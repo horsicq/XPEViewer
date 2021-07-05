@@ -29,9 +29,13 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
 
     g_pFile=nullptr;
 
-    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONNAME).arg(X_APPLICATIONVERSION));
+    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
+
+#ifdef QT_DEBUG
+    ui->labelLogo->hide();
+#endif
 
     g_xOptions.setName(X_OPTIONSFILE);
 
@@ -182,7 +186,7 @@ void GuiMainWindow::closeCurrentFile()
         g_pFile=nullptr;
     }
 
-    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONNAME).arg(X_APPLICATIONVERSION));
+    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
 }
 
 void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
