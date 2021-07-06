@@ -1,3 +1,3 @@
 TEMPLATE      = subdirs
-
-SUBDIRS        += gui_source
+SUBDIRS         += build_libs
+SUBDIRS         += gui_source
