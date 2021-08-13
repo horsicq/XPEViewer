@@ -27,7 +27,7 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
 {
     ui->setupUi(this);
 
-    this->x_pOptions=pOptions;
+    this->g_pOptions=pOptions;
 
     pOptions->setCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
     pOptions->setCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
@@ -51,29 +51,29 @@ DialogOptions::~DialogOptions()
 
 void DialogOptions::on_pushButtonOK_clicked()
 {
-    x_pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
-    x_pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
-    x_pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
-    x_pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
-    x_pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
-    x_pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
-    x_pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
+    g_pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
+    g_pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
+    g_pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
+    g_pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
+    g_pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
+    g_pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
+    g_pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
 
 #ifdef WIN32
-    if(x_pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*")!=ui->checkBoxContext->isChecked())
+    if(g_pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*")!=ui->checkBoxContext->isChecked())
     {
         if(ui->checkBoxContext->isChecked())
         {
-            x_pOptions->registerContext(X_APPLICATIONDISPLAYNAME,"*",qApp->applicationFilePath());
+            g_pOptions->registerContext(X_APPLICATIONDISPLAYNAME,"*",qApp->applicationFilePath());
         }
         else
         {
-            x_pOptions->clearContext(X_APPLICATIONDISPLAYNAME,"*");
+            g_pOptions->clearContext(X_APPLICATIONDISPLAYNAME,"*");
         }
     }
 #endif
 
-    if(x_pOptions->isRestartNeeded())
+    if(g_pOptions->isRestartNeeded())
     {
         QMessageBox::information(this,tr("Information"),tr("Please restart the application"));
     }
