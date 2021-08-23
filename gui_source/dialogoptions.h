@@ -39,7 +39,7 @@ class DialogOptions : public QDialog
     Q_OBJECT
 
 public:
-    explicit DialogOptions(QWidget *parent,XOptions *pOptions);
+    explicit DialogOptions(QWidget *pParent,XOptions *pOptions);
     ~DialogOptions();
 
 private slots:

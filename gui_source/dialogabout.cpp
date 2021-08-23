@@ -21,13 +21,11 @@
 #include "dialogabout.h"
 #include "ui_dialogabout.h"
 
-DialogAbout::DialogAbout(QWidget *parent) :
-    QDialog(parent),
+DialogAbout::DialogAbout(QWidget *pParent) :
+    QDialog(pParent),
     ui(new Ui::DialogAbout)
 {
     ui->setupUi(this);
-
-    ui->labelLogo->setPixmap(QPixmap(QString::fromUtf8(":/pics/logo.png")));
 
     ui->labelVersion->setText(QString("<span style=\" font-weight:600;\">%1 %2</span>")
                               .arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
