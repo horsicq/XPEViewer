@@ -33,10 +33,6 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     setAcceptDrops(true);
 
-#ifdef QT_DEBUG
-    ui->labelLogo->hide();
-#endif
-
     g_xOptions.setName(X_OPTIONSFILE);
 
     QList<XOptions::ID> listIDs;
@@ -48,6 +44,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
     listIDs.append(XOptions::ID_SAVEBACKUP);
     listIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
+    listIDs.append(XOptions::ID_SHOWLOGO);
 
     g_xOptions.setValueIDs(listIDs);
     g_xOptions.load();
@@ -123,6 +120,15 @@ void GuiMainWindow::adjust()
     g_formatOptions.bSaveBackup=g_xOptions.isSaveBackup();
 
     ui->widgetViewer->setShortcuts(&g_xShortcuts);
+
+    if(g_xOptions.isShowLogo())
+    {
+        ui->labelLogo->show();
+    }
+    else
+    {
+        ui->labelLogo->hide();
+    }
 }
 
 void GuiMainWindow::processFile(QString sFileName)
