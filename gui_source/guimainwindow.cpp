@@ -119,6 +119,7 @@ void GuiMainWindow::adjust()
 
     g_formatOptions.bIsSaveBackup=g_xOptions.isSaveBackup();
 
+    ui->widgetViewer->setOptions(g_formatOptions);
     ui->widgetViewer->setShortcuts(&g_xShortcuts);
 
     if(g_xOptions.isShowLogo())
