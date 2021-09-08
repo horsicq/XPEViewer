@@ -117,6 +117,7 @@ void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
 
+    g_formatOptions.sSearchSignaturesPath=g_xOptions.getSearchSignaturesPath();
     g_formatOptions.bIsSaveBackup=g_xOptions.isSaveBackup();
 
     ui->widgetViewer->setOptions(g_formatOptions);
@@ -162,6 +163,7 @@ void GuiMainWindow::processFile(QString sFileName)
                 g_formatOptions.nImageBase=-1;
                 g_formatOptions.nStartType=SPE::TYPE_HEURISTICSCAN;
                 g_formatOptions.sSearchSignaturesPath=g_xOptions.getSearchSignaturesPath();
+                g_formatOptions.bIsSaveBackup=g_xOptions.isSaveBackup();
                 ui->widgetViewer->setData(g_pFile,g_formatOptions,0,0,0);
 
                 ui->widgetViewer->reload();
