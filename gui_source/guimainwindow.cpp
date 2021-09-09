@@ -29,7 +29,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     g_pFile=nullptr;
 
-    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
+   setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
 
