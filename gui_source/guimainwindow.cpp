@@ -42,6 +42,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     listIDs.append(XOptions::ID_LANG);
     listIDs.append(XOptions::ID_STAYONTOP);
     listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
+//    listIDs.append(XOptions::ID_SAVERECENTFILES);
     listIDs.append(XOptions::ID_SAVEBACKUP);
     listIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
     listIDs.append(XOptions::ID_SHOWLOGO);
@@ -137,7 +138,7 @@ void GuiMainWindow::processFile(QString sFileName)
 {
     if((sFileName!="")&&(QFileInfo(sFileName).isFile()))
     {
-        g_xOptions.setLastDirectory(QFileInfo(sFileName).absolutePath());
+        g_xOptions.setLastFile(sFileName);
 
         closeCurrentFile();
 
