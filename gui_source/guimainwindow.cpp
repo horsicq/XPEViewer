@@ -138,7 +138,7 @@ void GuiMainWindow::processFile(QString sFileName)
 {
     if((sFileName!="")&&(QFileInfo(sFileName).isFile()))
     {
-        g_xOptions.setLastFile(sFileName);
+        g_xOptions.setLastFileName(sFileName);
 
         closeCurrentFile();
 
