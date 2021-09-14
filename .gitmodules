@@ -7,9 +7,6 @@
 [submodule "Controls"]
 	path = Controls
 	url = https://github.com/horsicq/Controls.git
-[submodule "QHexView"]
-	path = QHexView
-	url = https://github.com/horsicq/QHexView.git
 [submodule "FormatWidgets"]
 	path = FormatWidgets
 	url = https://github.com/horsicq/FormatWidgets.git
@@ -31,9 +28,6 @@
 [submodule "SpecAbstract"]
 	path = SpecAbstract
 	url = https://github.com/horsicq/SpecAbstract.git
-[submodule "XDisasm"]
-	path = XDisasm
-	url = https://github.com/horsicq/XDisasm.git
 [submodule "XCapstone"]
 	path = XCapstone
 	url = https://github.com/horsicq/XCapstone.git
