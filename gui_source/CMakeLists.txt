@@ -1,0 +1,304 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(XPEViewer VERSION 0.2 LANGUAGES CXX)
+
+set (CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019/")
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(QT NAMES Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt5 COMPONENTS Concurrent REQUIRED)
+find_package(Qt5 COMPONENTS OpenGL REQUIRED)
+
+include_directories(${PROJECT_SOURCE_DIR}/../XShortcuts/)
+include_directories(${PROJECT_SOURCE_DIR}/../Formats/)
+include_directories(${PROJECT_SOURCE_DIR}/../XOptions/)
+include_directories(${PROJECT_SOURCE_DIR}/../Controls/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatDialogs/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/SearchSignatures/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/SearchStrings/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/Binary/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/DEX/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/ELF/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/LE/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MACH/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MACHOFAT/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MSDOS/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/NE/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/PE/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MultiSearch/)
+include_directories(${PROJECT_SOURCE_DIR}/../StaticScan/)
+include_directories(${PROJECT_SOURCE_DIR}/../SpecAbstract/)
+include_directories(${PROJECT_SOURCE_DIR}/../XArchive/)
+include_directories(${PROJECT_SOURCE_DIR}/../XArchive/3rdparty/bzip2/src/)
+include_directories(${PROJECT_SOURCE_DIR}/../XArchive/3rdparty/zlib/src/)
+include_directories(${PROJECT_SOURCE_DIR}/../XArchive/3rdparty/lzma/src/)
+include_directories(${PROJECT_SOURCE_DIR}/../XCapstone/)
+include_directories(${PROJECT_SOURCE_DIR}/../XCapstone/3rdparty/Capstone/src/include/)
+include_directories(${PROJECT_SOURCE_DIR}/../XCppfilt/)
+include_directories(${PROJECT_SOURCE_DIR}/../XCppfilt/3rdparty/cppfilt/src/)
+include_directories(${PROJECT_SOURCE_DIR}/../XDemangleWidget/)
+include_directories(${PROJECT_SOURCE_DIR}/../XDisasmView/)
+include_directories(${PROJECT_SOURCE_DIR}/../XEntropyWidget/)
+include_directories(${PROJECT_SOURCE_DIR}/../XHashWidget/)
+include_directories(${PROJECT_SOURCE_DIR}/../XHexView/)
+include_directories(${PROJECT_SOURCE_DIR}/../XMemoryMapWidget/)
+include_directories(${PROJECT_SOURCE_DIR}/../XDEX/)
+include_directories(${PROJECT_SOURCE_DIR}/../XDemangle/)
+include_directories(${PROJECT_SOURCE_DIR}/../XQwt/3rdparty/qwt/src/)
+
+set(PROJECT_SOURCES
+            ../Controls/hexvalidator.cpp
+            ../Controls/subclassofqstyleditemdelegate.cpp
+            ../Controls/xabstracttableview.cpp
+            ../Controls/xcomboboxex.cpp
+            ../Controls/xdatetimeeditx.cpp
+            ../Controls/xdevicetableview.cpp
+            ../Controls/xlineedithex.cpp
+            ../FormatDialogs/dialogdumpprocess.cpp
+            ../FormatDialogs/dialoggotoaddress.cpp
+            ../FormatDialogs/dialoghexsignature.cpp
+            ../FormatDialogs/dialoginfo.cpp
+            ../FormatDialogs/dialogsearch.cpp
+            ../FormatDialogs/dialogsearchprocess.cpp
+            ../FormatDialogs/dialogtextinfo.cpp
+            ../FormatDialogs/dumpprocess.cpp
+            ../FormatDialogs/searchprocess.cpp
+            ../FormatWidgets/PE/dialogpe.cpp
+            ../FormatWidgets/PE/pe_defs.cpp
+            ../FormatWidgets/PE/peprocessdata.cpp
+            ../FormatWidgets/PE/pesectionheaderwidget.cpp
+            ../FormatWidgets/PE/pewidget.cpp
+            ../FormatWidgets/SearchSignatures/dialogsearchsignatures.cpp
+            ../FormatWidgets/SearchSignatures/searchsignatureswidget.cpp
+            ../FormatWidgets/SearchStrings/dialogsearchstrings.cpp
+            ../FormatWidgets/SearchStrings/searchstringswidget.cpp
+            ../FormatWidgets/dialogmodelinfo.cpp
+            ../FormatWidgets/dialogprocessdata.cpp
+            ../FormatWidgets/dialogsectionheader.cpp
+            ../FormatWidgets/formatwidget.cpp
+            ../FormatWidgets/invwidget.cpp
+            ../FormatWidgets/processdata.cpp
+            ../FormatWidgets/toolswidget.cpp
+            ../Formats/subdevice.cpp
+            ../Formats/xbinary.cpp
+            ../Formats/xcom.cpp
+            ../Formats/xelf.cpp
+            ../Formats/xformats.cpp
+            ../Formats/xle.cpp
+            ../Formats/xmach.cpp
+            ../Formats/xmsdos.cpp
+            ../Formats/xne.cpp
+            ../Formats/xpe.cpp
+            ../SpecAbstract/signatures.cpp
+            ../SpecAbstract/specabstract.cpp
+            ../StaticScan/dialogstaticscan.cpp
+            ../StaticScan/dialogstaticscanprocess.cpp
+            ../StaticScan/formresult.cpp
+            ../StaticScan/formstaticscan.cpp
+            ../StaticScan/heurwidget.cpp
+            ../StaticScan/staticscan.cpp
+            ../StaticScan/staticscanitem.cpp
+            ../StaticScan/staticscanitemmodel.cpp
+            ../XArchive/xarchive.cpp
+            ../XArchive/xarchives.cpp
+            ../XArchive/xcab.cpp
+            ../XArchive/xmachofat.cpp
+            ../XArchive/xrar.cpp
+            ../XArchive/xsevenzip.cpp
+            ../XArchive/xzip.cpp
+            ../XCapstone/xcapstone.cpp
+            ../XCppfilt/xcppfilt.cpp
+            ../XDEX/xandroidbinary.cpp
+            ../XDEX/xdex.cpp
+            ../XDemangle/xdemangle.cpp
+            ../XDemangleWidget/dialogdemangle.cpp
+            ../XDemangleWidget/xdemanglewidget.cpp
+            ../XDisasmView/dialogmultidisasm.cpp
+            ../XDisasmView/dialogmultidisasmsignature.cpp
+            ../XDisasmView/xdisasmview.cpp
+            ../XDisasmView/xmultidisasmwidget.cpp
+            ../XEntropyWidget/dialogentropy.cpp
+            ../XEntropyWidget/dialogentropyprocess.cpp
+            ../XEntropyWidget/entropyprocess.cpp
+            ../XEntropyWidget/xentropywidget.cpp
+            ../XHashWidget/dialoghash.cpp
+            ../XHashWidget/dialoghashprocess.cpp
+            ../XHashWidget/hashprocess.cpp
+            ../XHashWidget/xhashwidget.cpp
+            ../XHexEdit/xhexedit.cpp
+            ../XHexView/dialoghexview.cpp
+            ../XHexView/xhexview.cpp
+            ../XHexView/xhexviewwidget.cpp
+            ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp
+            ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp
+            ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp
+            ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangleNodes.cpp
+            ../XMemoryMapWidget/dialogmemorymap.cpp
+            ../XMemoryMapWidget/xmemorymapwidget.cpp
+            ../XOptions/xoptions.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_abstract_legend.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_abstract_scale.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_abstract_scale_draw.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_abstract_slider.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_analog_clock.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_arrow_button.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_clipper.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_color_map.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_column_symbol.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_compass.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_compass_rose.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_counter.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_curve_fitter.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_date.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_date_scale_draw.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_date_scale_engine.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_dial.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_dial_needle.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_dyngrid_layout.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_event_pattern.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_graphic.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_interval.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_interval_symbol.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_knob.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_legend.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_legend_data.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_legend_label.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_magnifier.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_math.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_matrix_raster_data.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_null_paintdevice.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_painter.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_painter_command.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_panner.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_picker.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_picker_machine.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_pixel_matrix.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_abstract_barchart.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_axis.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_barchart.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_canvas.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_curve.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_dict.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_directpainter.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_glcanvas.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_grid.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_histogram.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_intervalcurve.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_item.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_layout.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_legenditem.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_magnifier.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_marker.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_multi_barchart.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_panner.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_picker.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_rasteritem.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_renderer.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_rescaler.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_scaleitem.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_seriesitem.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_shapeitem.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_spectrocurve.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_spectrogram.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_svgitem.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_textlabel.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_tradingcurve.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_xml.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_zoneitem.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_plot_zoomer.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_point_3d.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_point_data.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_point_mapper.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_point_polar.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_raster_data.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_round_scale_draw.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_sampling_thread.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_scale_div.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_scale_draw.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_scale_engine.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_scale_map.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_scale_widget.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_series_data.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_slider.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_spline.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_symbol.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_system_clock.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_text.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_text_engine.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_text_label.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_thermo.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_transform.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_wheel.cpp
+            ../XQwt/3rdparty/qwt/src/qwt_widget_overlay.cpp
+            ../XShortcuts/dialogshortcuts.cpp
+            ../XShortcuts/xshortcuts.cpp
+            ../XShortcuts/xshortcutsdialog.cpp
+            ../XShortcuts/xshortcutstscrollarea.cpp
+            ../XShortcuts/xshortcutswidget.cpp
+            dialogabout.cpp
+            dialogoptions.cpp
+            guimainwindow.cpp
+            main_gui.cpp
+            ../FormatDialogs/dialogdump.ui
+            ../FormatDialogs/dialogdumpprocess.ui
+            ../FormatDialogs/dialoggotoaddress.ui
+            ../FormatDialogs/dialoghexsignature.ui
+            ../FormatDialogs/dialoginfo.ui
+            ../FormatDialogs/dialogsearch.ui
+            ../FormatDialogs/dialogsearchprocess.ui
+            ../FormatDialogs/dialogtextinfo.ui
+            ../FormatWidgets/PE/dialogpe.ui
+            ../FormatWidgets/PE/pesectionheaderwidget.ui
+            ../FormatWidgets/PE/pewidget.ui
+            ../FormatWidgets/SearchSignatures/dialogsearchsignatures.ui
+            ../FormatWidgets/SearchSignatures/searchsignatureswidget.ui
+            ../FormatWidgets/SearchStrings/dialogsearchstrings.ui
+            ../FormatWidgets/SearchStrings/searchstringswidget.ui
+            ../FormatWidgets/dialogmodelinfo.ui
+            ../FormatWidgets/dialogprocessdata.ui
+            ../FormatWidgets/dialogsectionheader.ui
+            ../FormatWidgets/toolswidget.ui
+            ../StaticScan/dialogstaticscan.ui
+            ../StaticScan/dialogstaticscanprocess.ui
+            ../StaticScan/formresult.ui
+            ../StaticScan/formstaticscan.ui
+            ../StaticScan/heurwidget.ui
+            ../XDemangleWidget/dialogdemangle.ui
+            ../XDemangleWidget/xdemanglewidget.ui
+            ../XDisasmView/dialogmultidisasm.ui
+            ../XDisasmView/dialogmultidisasmsignature.ui
+            ../XDisasmView/xmultidisasmwidget.ui
+            ../XEntropyWidget/dialogentropy.ui
+            ../XEntropyWidget/dialogentropyprocess.ui
+            ../XEntropyWidget/xentropywidget.ui
+            ../XHashWidget/dialoghash.ui
+            ../XHashWidget/dialoghashprocess.ui
+            ../XHashWidget/xhashwidget.ui
+            ../XHexView/dialoghexview.ui
+            ../XHexView/xhexviewwidget.ui
+            ../XMemoryMapWidget/dialogmemorymap.ui
+            ../XMemoryMapWidget/xmemorymapwidget.ui
+            ../XShortcuts/dialogshortcuts.ui
+            dialogabout.ui
+            dialogoptions.ui
+            guimainwindow.ui
+)
+
+add_executable(XPEViewer
+    ${PROJECT_SOURCES}
+)
+
+target_link_libraries(XPEViewer PRIVATE Qt5::Widgets)
+target_link_libraries(XPEViewer PRIVATE Qt5::Concurrent)
+target_link_libraries(XPEViewer PRIVATE Qt5::OpenGL)

@@ -12,9 +12,10 @@ TRANSLATIONS = \
         translation/xpeviewer_ko.ts \
         translation/xpeviewer_zh.ts \
         translation/xpeviewer_zh_TW.ts\
-        translation/xpeviewer_tr.ts\
-        translation/xpeviewer_he.ts
-
+        translation/xpeviewer_tr.ts \
+        translation/xpeviewer_he.ts \
+        translation/xpeviewer_id.ts
+        
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
     ../FormatDialogs/dialogdumpprocess.ui \
@@ -38,17 +39,21 @@ FORMS += \
     ../FormatWidgets/MACH/dialogmach.ui \
     ../FormatWidgets/MACH/machsectionheaderwidget.ui \
     ../FormatWidgets/MACH/machwidget.ui \
+    ../FormatWidgets/MACHOFAT/machofatwidget.ui \
     ../FormatWidgets/MSDOS/dialogmsdos.ui \
     ../FormatWidgets/MSDOS/msdoswidget.ui \
+    ../FormatWidgets/MultiSearch/dialogmultisearchprocess.ui \
     ../FormatWidgets/NE/dialogne.ui \
     ../FormatWidgets/NE/nesectionheaderwidget.ui \
     ../FormatWidgets/NE/newidget.ui \
     ../FormatWidgets/PE/dialogpe.ui \
     ../FormatWidgets/PE/pesectionheaderwidget.ui \
     ../FormatWidgets/PE/pewidget.ui \
+    ../FormatWidgets/SearchSignatures/dialogsearchsignatures.ui \
+    ../FormatWidgets/SearchSignatures/searchsignatureswidget.ui \
     ../FormatWidgets/SearchStrings/dialogsearchstrings.ui \
-    ../FormatWidgets/SearchStrings/dialogsearchstringsprocess.ui \
     ../FormatWidgets/SearchStrings/searchstringswidget.ui \
+    ../FormatWidgets/dialogmodelinfo.ui \
     ../FormatWidgets/dialogprocessdata.ui \
     ../FormatWidgets/dialogsectionheader.ui \
     ../FormatWidgets/formatswidget.ui \
@@ -60,6 +65,8 @@ FORMS += \
     ../StaticScan/formresult.ui \
     ../StaticScan/formstaticscan.ui \
     ../StaticScan/heurwidget.ui \
+    ../XDemangleWidget/dialogdemangle.ui \
+    ../XDemangleWidget/xdemanglewidget.ui \
     ../XDisasm/dialogasmsignature.ui \
     ../XDisasm/dialogdisasm.ui \
     ../XDisasm/dialogdisasmlabels.ui \
@@ -89,6 +96,7 @@ SOURCES += \
     ../Controls/xabstracttableview.cpp \
     ../Controls/xcomboboxex.cpp \
     ../Controls/xdatetimeeditx.cpp \
+    ../Controls/xdevicetableview.cpp \
     ../Controls/xlineedithex.cpp \
     ../FormatDialogs/dialogdumpprocess.cpp \
     ../FormatDialogs/dialoggotoaddress.cpp \
@@ -122,9 +130,12 @@ SOURCES += \
     ../FormatWidgets/MACH/machprocessdata.cpp \
     ../FormatWidgets/MACH/machsectionheaderwidget.cpp \
     ../FormatWidgets/MACH/machwidget.cpp \
+    ../FormatWidgets/MACHOFAT/machofatwidget.cpp \
     ../FormatWidgets/MSDOS/dialogmsdos.cpp \
     ../FormatWidgets/MSDOS/msdos_defs.cpp \
     ../FormatWidgets/MSDOS/msdoswidget.cpp \
+    ../FormatWidgets/MultiSearch/dialogmultisearchprocess.cpp \
+    ../FormatWidgets/MultiSearch/multisearch.cpp \
     ../FormatWidgets/NE/dialogne.cpp \
     ../FormatWidgets/NE/ne_defs.cpp \
     ../FormatWidgets/NE/neprocessdata.cpp \
@@ -135,10 +146,11 @@ SOURCES += \
     ../FormatWidgets/PE/peprocessdata.cpp \
     ../FormatWidgets/PE/pesectionheaderwidget.cpp \
     ../FormatWidgets/PE/pewidget.cpp \
+    ../FormatWidgets/SearchSignatures/dialogsearchsignatures.cpp \
+    ../FormatWidgets/SearchSignatures/searchsignatureswidget.cpp \
     ../FormatWidgets/SearchStrings/dialogsearchstrings.cpp \
-    ../FormatWidgets/SearchStrings/dialogsearchstringsprocess.cpp \
-    ../FormatWidgets/SearchStrings/searchstrings.cpp \
     ../FormatWidgets/SearchStrings/searchstringswidget.cpp \
+    ../FormatWidgets/dialogmodelinfo.cpp \
     ../FormatWidgets/dialogprocessdata.cpp \
     ../FormatWidgets/dialogsectionheader.cpp \
     ../FormatWidgets/formatswidget.cpp \
@@ -177,8 +189,12 @@ SOURCES += \
     ../XArchive/xsevenzip.cpp \
     ../XArchive/xzip.cpp \
     ../XCapstone/xcapstone.cpp \
+    ../XCppfilt/xcppfilt.cpp \
     ../XDEX/xandroidbinary.cpp \
     ../XDEX/xdex.cpp \
+    ../XDemangle/xdemangle.cpp \
+    ../XDemangleWidget/dialogdemangle.cpp \
+    ../XDemangleWidget/xdemanglewidget.cpp \
     ../XDisasm/dialogasmsignature.cpp \
     ../XDisasm/dialogdisasm.cpp \
     ../XDisasm/dialogdisasmlabels.cpp \
@@ -198,9 +214,14 @@ SOURCES += \
     ../XHashWidget/dialoghashprocess.cpp \
     ../XHashWidget/hashprocess.cpp \
     ../XHashWidget/xhashwidget.cpp \
+    ../XHexEdit/xhexedit.cpp \
     ../XHexView/dialoghexview.cpp \
     ../XHexView/xhexview.cpp \
     ../XHexView/xhexviewwidget.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp \
+    ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangleNodes.cpp \
     ../XMemoryMapWidget/dialogmemorymap.cpp \
     ../XMemoryMapWidget/xmemorymapwidget.cpp \
     ../XOptions/xoptions.cpp \
@@ -301,10 +322,11 @@ SOURCES += \
     ../XQwt/3rdparty/qwt/src/qwt_widget_overlay.cpp \
     ../XShortcuts/dialogshortcuts.cpp \
     ../XShortcuts/xshortcuts.cpp \
+    ../XShortcuts/xshortcutsdialog.cpp \
+    ../XShortcuts/xshortcutstscrollarea.cpp \
+    ../XShortcuts/xshortcutswidget.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     guimainwindow.cpp \
-    main_gui.cpp \
-    ../winloader_source/winloader.cpp
-
+    main_gui.cpp
 

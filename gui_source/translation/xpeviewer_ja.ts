@@ -1,379 +1,375 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW">
+<TS version="2.1" language="ja">
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>過濾</translation>
+        <translation>フィルター</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
 </context>
 <context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
-        <translation>關於</translation>
+        <translation>情報</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>空格</translation>
+        <translation>スペース</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>大寫</translation>
+        <translation>大文字</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>任意符號</translation>
+        <translation>ワイルドカード</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>相対仮想ADD</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>バイト</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>Opcode</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation>デマングル</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>標簽</translation>
+        <translation>ラベル</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>移動</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation></translation>
+        <translation>Opcodes</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation></translation>
+        <translation>セル</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>跳數</translation>
+        <translation>ジャンプ</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>提及於</translation>
+        <translation>へ参照</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>從何堤及</translation>
+        <translation>から参照</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
 </context>
 <context>
     <name>DialogDump</name>
     <message>
         <source>Dump</source>
-        <translation>轉存</translation>
+        <translation>ダンプ</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation>轉存</translation>
+        <translation>ダンプ</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation>處理</translation>
+        <translation>プロセス</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>虛擬位址</translation>
+        <translation>仮想アドレス</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>値</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
-    </message>
-    <message>
-        <source>File offset</source>
-        <translation>檔案偏移量</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>相対仮想ADD</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation>無效</translation>
+        <translation>無効</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation>處理</translation>
+        <translation>プロセス</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>DialogHex</name>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>空格</translation>
+        <translation>スペース</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>大寫</translation>
+        <translation>大文字</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>任意符號</translation>
+        <translation>ワイルドカード</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogInfo</name>
     <message>
         <source>Info</source>
-        <translation>資訊</translation>
+        <translation>情報</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
@@ -384,347 +380,315 @@
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>空格</translation>
+        <translation>スペース</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>大寫</translation>
+        <translation>大文字</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>任意符號</translation>
+        <translation>ワイルドカード</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>相対仮想ADD</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>バイト</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>Opcode</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Search strings</source>
-        <translation>搜索字串</translation>
+        <translation>検索文字列</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>搜尋簽名</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation>建立視圖模型</translation>
+        <translation>ビューモデルを作成</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
-        <translation>選項</translation>
-    </message>
-    <message>
-        <source>Scan after open</source>
-        <translation>打開後掃描</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>保存最後一個路徑</translation>
+        <translation>最後に使用したディレクトリを保持</translation>
     </message>
     <message>
         <source>Stay on top</source>
-        <translation>始終在最上層</translation>
+        <translation>常に最前面表示</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>保存備份</translation>
+        <translation>バックアップを保存</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation>選項</translation>
+        <translation>オプションを表示</translation>
     </message>
     <message>
         <source>Context</source>
-        <translation>選單關聯</translation>
+        <translation>コンテキスト</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>樣式</translation>
+        <translation>スタイル</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>語言</translation>
+        <translation>言語</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>搜尋簽名</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>資訊</translation>
+        <translation>インフォメーション</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>請重啟應用程式</translation>
+        <translation>プログラムを再起動してください</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>打開目錄</translation>
+        <translation>ディレクトリを開く</translation>
     </message>
 </context>
 <context>
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation>處理</translation>
+        <translation>プロセス</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation>搜尋位置</translation>
+        <translation>検索開始位置</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>區分大小寫</translation>
+        <translation>大文字小文字を区別</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>値</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>エンディアン</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation>開始</translation>
+        <translation>先頭</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>目前位址</translation>
+        <translation>カーソル</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
-        <source>Search strings</source>
-        <translation>搜索字串</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
-        <source>Create view model</source>
-        <translation>建立視圖模型</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>錯誤</translation>
-    </message>
-    <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation>選擇</translation>
+        <translation>セクション</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation>捷徑</translation>
+        <translation>ショートカット</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>過濾</translation>
+        <translation>フィルター</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>清除</translation>
+        <translation>クリア</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
     <message>
         <source>Group</source>
-        <translation>組</translation>
+        <translation>グループ</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation>捷徑</translation>
+        <translation>ショートカット</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>無法設置捷徑</translation>
+        <translation>ショートカットの設定に失敗</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>遞歸掃描</translation>
+        <translation>ファイル スキャン</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>深層掃描</translation>
+        <translation>ディープスキャン</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
-        <source>Text documents</source>
-        <translation>文件檔</translation>
-    </message>
-    <message>
-        <source>Save result</source>
-        <translation>保存結果</translation>
+        <translation>閉じる</translation>
     </message>
     <message>
         <source>Result</source>
@@ -735,41 +699,41 @@
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>文件檔</translation>
+        <translation>テキスト文書</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>保存結果</translation>
+        <translation>結果を保存</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation>資訊</translation>
+        <translation>情報</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Bind</source>
@@ -780,88 +744,84 @@
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>唯讀</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>字串</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <source>Heuristic scan</source>
+        <translation>ヒューリスティック スキャン</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation>デマングル</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>ヘッダ</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation>已打包</translation>
+        <translation>パック済み</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>未打包</translation>
+        <translation>未パック</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation>清除</translation>
+        <translation>クリア</translation>
     </message>
     <message>
         <source>Save</source>
@@ -869,92 +829,92 @@
     </message>
     <message>
         <source>msec</source>
-        <translation>毫秒</translation>
+        <translation>ミリ秒</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation>遞迴</translation>
+        <translation>再帰的</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>深層掃描</translation>
+        <translation>ディープスキャン</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>無法保存檔案</translation>
+        <translation>ファイルを保存できません</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>値</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation>檔案類型</translation>
+        <translation>ファイルの種類</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>入口點</translation>
+        <translation>エントリ ポイント</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation>基底位址</translation>
+        <translation>基準アドレス</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>エクスポート</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>インポート</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>資源</translation>
+        <translation>リソース</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>選擇</translation>
+        <translation>セクション</translation>
     </message>
     <message>
         <source>Time date stamp</source>
@@ -966,11 +926,11 @@
     </message>
     <message>
         <source>Manifest</source>
-        <translation>資訊</translation>
+        <translation>Manifest</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>版本</translation>
+        <translation>バージョン</translation>
     </message>
     <message>
         <source>Programs</source>
@@ -978,297 +938,293 @@
     </message>
     <message>
         <source>Commands</source>
-        <translation>指令</translation>
+        <translation>コマンド</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>區隔</translation>
+        <translation>セグメント</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>函示庫</translation>
+        <translation>ライブラリ</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>エンディアン</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>モード</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>架構</translation>
+        <translation>アーキテクチャ</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
     <message>
         <source>File</source>
-        <translation>檔案</translation>
+        <translation>ファイル名</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>工具</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>幫助</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>開啟</translation>
+        <translation>開く</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>終了</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>選項</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>關於</translation>
+        <translation>情報</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>捷徑</translation>
+        <translation>ショートカット</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation>デマングル</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>打開檔案</translation>
+        <translation>ファイルを開く</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>すべてのファイル</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
     <message>
         <source>It is not a valid file</source>
-        <translation>不是有效檔案</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>無法打開檔案</translation>
+        <translation>ファイルを開けません</translation>
     </message>
 </context>
 <context>
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>インポート</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>遞歸掃描</translation>
+        <translation>ファイル スキャン</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>深層掃描</translation>
+        <translation>ディープスキャン</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>啟發式</translation>
+        <translation>ヒューリスティック</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>値</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>編集</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>表單</translation>
+        <translation>フォーム</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>Opcode</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>値</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>唯讀</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>字串</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <source>Heuristic scan</source>
+        <translation>ヒューリスティック スキャン</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>指令</translation>
+        <translation>コマンド</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>區隔</translation>
+        <translation>セグメント</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>選擇</translation>
+        <translation>セクション</translation>
     </message>
     <message>
         <source>Rebase</source>
@@ -1288,15 +1244,15 @@
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>エクスポート</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation></translation>
+        <translation>文字列テーブル</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation></translation>
+        <translation>シンボル テーブル</translation>
     </message>
     <message>
         <source>Table of contents</source>
@@ -1320,240 +1276,220 @@
     </message>
     <message>
         <source>Functions</source>
-        <translation></translation>
+        <translation>関数</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation></translation>
+        <translation>コードのデータ</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>ヘッダ</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>函示庫</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>類型</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>函示庫</translation>
+        <translation>デマングル</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>サイズ</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>區隔</translation>
+        <translation>セグメント</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>資源</translation>
+        <translation>リソース</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>證書</translation>
+        <translation>証明書</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>顯示有效</translation>
+        <translation>有効を表示</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>表單</translation>
+        <translation>書式</translation>
     </message>
     <message>
         <source>Check</source>
@@ -1561,23 +1497,23 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>選擇</translation>
+        <translation>セクション</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>證書</translation>
+        <translation>証明書</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
     <message>
         <source>Calculate</source>
@@ -1585,136 +1521,84 @@
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>ヘッダ</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation>デマングル</translation>
     </message>
 </context>
 <context>
     <name>QHexView</name>
     <message>
         <source>Cannot save file</source>
-        <translation>無法保存檔案</translation>
+        <translation>ファイルを保存できません</translation>
     </message>
 </context>
 <context>
     <name>QHexViewWidget</name>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>目前位址</translation>
+        <translation>カーソル</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>選擇</translation>
+        <translation>選択</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>サイズ</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>読み取り専用</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>原始資料</translation>
+        <translation>Raw データ</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>保存轉存</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>簽章</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation>搜尋</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation>搜尋下一個</translation>
-    </message>
-    <message>
-        <source>Select</source>
-        <translation>選擇</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>全選</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>グラフを保存</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <source>Address</source>
-        <translation>位址</translation>
-    </message>
-    <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>數量</translation>
+        <translation>個数</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
-    </message>
-    <message>
-        <source>Read error</source>
-        <translation>讀取錯誤</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>寫入錯誤</translation>
-    </message>
-    <message>
-        <source>Cannot open file</source>
-        <translation>無法打開檔案</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation>函示庫</translation>
+        <translation>ライブラリ</translation>
     </message>
     <message>
         <source>Interpreter</source>
@@ -1722,11 +1606,11 @@
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>版本</translation>
+        <translation>バージョン</translation>
     </message>
     <message>
         <source>Length</source>
@@ -1734,41 +1618,57 @@
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>値</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>アドレス</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>読み取りエラー</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>書き込みエラー</translation>
+    </message>
+    <message>
+        <source>Cannot open file</source>
+        <translation>ファイルを開けません</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>檔案</translation>
+        <translation>ドキュメント</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>影像</translation>
+        <translation>イメージ</translation>
     </message>
     <message>
         <source>Export File Name</source>
         <translation></translation>
-    </message>
-    <message>
-        <source>Export file name</source>
-        <translation>複印檔案名</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>エンディアン</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>檔案</translation>
+        <translation>ファイル名</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1776,183 +1676,149 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>保存檔案</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>テキスト ファイル</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>すべてのファイル</translation>
     </message>
     <message>
         <source>Copy name</source>
-        <translation>複印名字</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>複印簽名</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>複製位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>複印偏移</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
-    </message>
-</context>
-<context>
-    <name>SearchStrings</name>
-    <message>
-        <source>Maximum</source>
-        <translation>最大值</translation>
-    </message>
-    <message>
-        <source>Read error</source>
-        <translation>讀取錯誤</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>位址</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>偏移</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>類型</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>字串</translation>
+        <translation>16 進数</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Search</source>
-        <translation>搜尋</translation>
-    </message>
-    <message>
         <source>Filter</source>
-        <translation>過濾</translation>
+        <translation>フィルター</translation>
     </message>
     <message>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <source>Save file</source>
-        <translation>保存檔案</translation>
+        <source>Search</source>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>テキスト ファイル</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>すべてのファイル</translation>
     </message>
     <message>
         <source>Copy string</source>
-        <translation>複製字串</translation>
+        <translation>文字列をコピー</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>複製位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>複印偏移</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>複印大小</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
-    </message>
-</context>
-<context>
-    <name>SectionHeaderWidget</name>
-    <message>
-        <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>デマングル</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>ヘッダ</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation>存檔記錄</translation>
+        <translation>アーカイブ レコード</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>存檔記錄</translation>
+        <source>obfuscator</source>
+        <translation>難読化</translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>ツール</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>證書</translation>
+        <translation>証明書</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation></translation>
+        <translation>コンパイラ</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation></translation>
+        <translation>コンバータ</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation></translation>
+        <translation>暗号化</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>資料庫</translation>
+        <translation>データベース</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation></translation>
+        <translation>デバッグ データ</translation>
     </message>
     <message>
         <source>protection</source>
@@ -1960,138 +1826,134 @@
     </message>
     <message>
         <source>extender</source>
-        <translation>擴展器</translation>
+        <translation>エクステンダ</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>表單</translation>
+        <translation>書式</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation>通用</translation>
+        <translation>汎用</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>映像檔</translation>
+        <translation>イメージ</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation></translation>
+        <translation>インストーラ</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation></translation>
+        <translation>インストーラ データ</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation>合併工具</translation>
+        <translation>ジョイナ</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>語言</translation>
+        <translation>言語</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation>函示庫</translation>
+        <translation>ライブラリ</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation></translation>
+        <translation>リンカ</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation>壓縮軟件</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>資源</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>類型</translation>
-    </message>
-    <message>
-        <source>obfuscator</source>
-        <translation>模糊器</translation>
-    </message>
-    <message>
-        <source>Packer</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation></translation>
+        <translation>コンプレッサ</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation></translation>
+        <translation>オペレーション システム</translation>
+    </message>
+    <message>
+        <source>Packer</source>
+        <translation>パッカー</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation></translation>
+        <translation>プロテクタ</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation></translation>
+        <translation>プロテクタ データ</translation>
     </message>
     <message>
         <source>data</source>
-        <translation>資料</translation>
+        <translation>data</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation>簽章工具</translation>
+        <translation>サインツール</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation>源代碼</translation>
+        <translation>ソース コード</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation>根</translation>
+        <translation>Stub</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation>虛擬位址</translation>
+        <translation>仮想アドレス</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>入口點</translation>
+        <translation>エントリ ポイント</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation>分段名稱</translation>
+        <translation>セクション名</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation>代碼段</translation>
+        <translation>コード セクション</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>入口點段</translation>
+        <translation>エントリ ポイントセクション</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>アーカイブ</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>リソース</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>種類</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>檔案掃描</translation>
-    </message>
-    <message>
-        <source>Memory scan</source>
-        <translation>記憶體區塊</translation>
-    </message>
-    <message>
-        <source>Directory scan</source>
-        <translation>目錄掃描</translation>
+        <translation>ファイル スキャン</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>裝置掃描</translation>
+        <translation>デバイスのスキャン</translation>
+    </message>
+    <message>
+        <source>Memory scan</source>
+        <translation>メモリ マップ</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>ディレクトリのスキャン</translation>
     </message>
 </context>
 <context>
@@ -2105,42 +1967,42 @@
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>文字</translation>
+        <translation>テキスト</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>檔案</translation>
+        <translation>ドキュメント</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>映像檔</translation>
+        <translation>イメージ</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>存檔記錄</translation>
+        <translation>アーカイブ</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>讀取錯誤</translation>
+        <translation>読み取りエラー</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation>最大值</translation>
+        <translation>最大</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>寫入錯誤</translation>
+        <translation>書き込みエラー</translation>
     </message>
     <message>
         <source>Default</source>
@@ -2148,7 +2010,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>バイト</translation>
     </message>
     <message>
         <source>kB</source>
@@ -2167,36 +2029,36 @@
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation>標記</translation>
+        <translation>フラグ</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>ヘッダ</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Automatic</source>
@@ -2207,151 +2069,151 @@
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>モード</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Raw data</source>
-        <translation>原始資料</translation>
+        <translation>Raw データ</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>轉存</translation>
+        <translation>ダンプ</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>保存轉存</translation>
+        <translation>グラフを保存</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation>沒有找到</translation>
+        <translation>見つかりません</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>標簽</translation>
+        <translation>ラベル</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>バイト</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>Opcode</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>バイト</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>Opcode</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>註解</translation>
+        <translation>コメント</translation>
     </message>
     <message>
         <source>Invalid opcode</source>
-        <translation>無效</translation>
+        <translation>無効な Opcode</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>轉到偏移</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Go to entry point</source>
-        <translation>轉到入口點</translation>
+        <translation>エントリ ポイントに移動</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>ファイルにダンプ</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>十六進制簽名</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>搜尋</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>搜尋下一個</translation>
+        <translation>次を検索</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>全選</translation>
+        <translation>すべて選択</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>16 進数値でコピー</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>複印光標偏移</translation>
+        <translation>カーソルオフセットのコピー</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>複印光標進制</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>移動</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>選擇</translation>
+        <translation>選択</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>相對位址</translation>
+        <translation>相対アドレス</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Analyze</source>
@@ -2359,164 +2221,156 @@
     </message>
     <message>
         <source>Labels</source>
-        <translation>標簽</translation>
+        <translation>ラベル</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>移動</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>入口點</translation>
+        <translation>エントリ ポイント</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>虛擬位址</translation>
+        <translation>仮想アドレス</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>相対仮想ADD</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>檔案偏移量</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>ファイルにダンプ</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation>到資料</translation>
+        <translation>データへ</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>原始資料</translation>
+        <translation>Raw データ</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>保存轉存</translation>
+        <translation>グラフを保存</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Segment</source>
-        <translation>段</translation>
+        <translation>セグメント</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
-        <source>Reload</source>
-        <translation>重新載入</translation>
+        <source>Type</source>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation>總計</translation>
+        <translation>合計</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>狀態</translation>
+        <translation>ステータス</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>サイズ</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>類型</translation>
-    </message>
-    <message>
-        <source>Save diagram</source>
-        <translation>保存圖表</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>熵值</translation>
-    </message>
-    <message>
-        <source>Regions</source>
-        <translation>區域</translation>
+        <source>Reload</source>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
+        <source>Save diagram</source>
+        <translation>グラフを保存</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>エントロピー</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>地域</translation>
+    </message>
+    <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>バイト</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation>位元組</translation>
+        <translation>バイト</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>數量</translation>
+        <translation>個数</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>テキスト ファイル</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>すべてのファイル</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>影像</translation>
+        <translation>イメージ</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation>檔案</translation>
-    </message>
-    <message>
-        <source>packed</source>
-        <translation>已打包</translation>
-    </message>
-    <message>
-        <source>not packed</source>
-        <translation>未打包</translation>
+        <translation>ドキュメント</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Method</source>
@@ -2524,11 +2378,11 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>サイズ</translation>
     </message>
     <message>
         <source>Save</source>
@@ -2536,241 +2390,241 @@
     </message>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>再読み込み</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>名前</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>テキスト ファイル</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>すべてのファイル</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation></translation>
+        <translation>シンボル</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>轉到偏移</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>ファイルにダンプ</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>搜尋</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>搜尋下一個</translation>
+        <translation>次を検索</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>全選</translation>
+        <translation>すべて選択</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>16 進数値でコピー</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>複印光標偏移</translation>
+        <translation>カーソルオフセットのコピー</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>複印光標進制</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>移動</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>選擇</translation>
+        <translation>選択</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>表單</translation>
+        <translation>フォーム</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation>段</translation>
+        <translation>セグメント</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>ヘッダ</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>檔案偏移量</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>虛擬位址</translation>
+        <translation>仮想アドレス</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>相対仮想ADD</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>モード</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>エンディアン</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>架構</translation>
+        <translation>アーキテクチャ</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>名稱</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>サイズ</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>名前</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>表單</translation>
+        <translation>フォーム</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>種類</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>モード</translation>
     </message>
     <message>
         <source>Syntax</source>
@@ -2778,37 +2632,37 @@
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>ヘッダ</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation>選擇</translation>
+        <translation>セクション</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>オーバーレイ</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>無法打開檔案</translation>
+        <translation>ファイルを開けません</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
@@ -2828,29 +2682,29 @@
     </message>
     <message>
         <source>The signature error</source>
-        <translation>十六進制簽名</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>不明</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>開啟</translation>
+        <translation>開く</translation>
     </message>
     <message>
         <source>Save</source>
@@ -2862,103 +2716,103 @@
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>閉じる</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>終了</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>Copy string</source>
-        <translation>複製字串</translation>
+        <translation>文字列をコピー</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>複印偏移</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>複印大小</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation>16 進数</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation>デマングル</translation>
     </message>
     <message>
         <source>Copy name</source>
-        <translation>複印名字</translation>
+        <translation>コピー</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>複印簽名</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>複製位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>ファイルにダンプ</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>轉到偏移</translation>
+        <translation>オフセット値</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>搜尋</translation>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>搜尋下一個</translation>
+        <translation>次を検索</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>全選</translation>
+        <translation>すべて選択</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>16 進数値でコピー</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>複印光標偏移</translation>
+        <translation>カーソルオフセットのコピー</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>複印光標進制</translation>
+        <translation>アドレスに移動</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>Disasm</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <source>Go to entry point</source>
-        <translation>轉到入口點</translation>
+        <translation>エントリ ポイントに移動</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>十六進制簽名</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Attach</source>
@@ -2974,19 +2828,19 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>行動</translation>
+        <translation>動作</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>日誌</translation>
+        <translation>ログ</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation></translation>
+        <translation>ブレークポイントをセット</translation>
     </message>
     <message>
         <source>Call stack</source>
-        <translation></translation>
+        <translation>セル</translation>
     </message>
     <message>
         <source>Threads</source>
@@ -2998,7 +2852,7 @@
     </message>
     <message>
         <source>Run</source>
-        <translation>執行</translation>
+        <translation>実行</translation>
     </message>
     <message>
         <source>Pause</source>
@@ -3006,11 +2860,11 @@
     </message>
     <message>
         <source>Step into</source>
-        <translation>步進</translation>
+        <translation>ステップ イン</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>步出</translation>
+        <translation>ステップ オーバー</translation>
     </message>
     <message>
         <source>Stop</source>
@@ -3026,31 +2880,31 @@
     </message>
     <message>
         <source>Copy filename</source>
-        <translation>複印檔案名</translation>
+        <translation>ファイル名をコピー</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>エントロピー</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>ハッシュ</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation>行動</translation>
+        <translation>動作</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>檔案</translation>
+        <translation>ファイル名</translation>
     </message>
     <message>
         <source>View</source>
@@ -3058,23 +2912,23 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>署名</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>除錯</translation>
+        <translation>デバッグ</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>除錯器</translation>
+        <translation>デバッガ</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>存檔記錄</translation>
+        <translation>アーカイブ</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>表格</translation>
+        <translation>テーブル</translation>
     </message>
 </context>
 </TS>

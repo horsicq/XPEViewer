@@ -1,775 +1,739 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-TW">
+<TS version="2.1" language="he">
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>過濾</translation>
+        <translation>סינון</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>סריקה היוריסטית</translation>
     </message>
 </context>
 <context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
-        <translation>關於</translation>
+        <translation>אודות</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>空格</translation>
+        <translation>רווחים</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>大寫</translation>
+        <translation>עליון</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>任意符號</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>כתובת יחסית</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>בתים</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>מזהה פקודה</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation></translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>標簽</translation>
+        <translation>תוויות</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>מעבר אל</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation></translation>
+        <translation>מזהי פקודות</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation></translation>
+        <translation>קריאות</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>跳數</translation>
+        <translation>קפיצות</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>提及於</translation>
+        <translation>קישור אל</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>從何堤及</translation>
+        <translation>קישור מ</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
 </context>
 <context>
     <name>DialogDump</name>
     <message>
         <source>Dump</source>
-        <translation>轉存</translation>
+        <translation>יצא כקובץ הרצה</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation>轉存</translation>
+        <translation>יצא כקובץ הרצה</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation>處理</translation>
+        <translation>תהליך</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>מעבר לכתובת</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>虛擬位址</translation>
+        <translation>כתובת וירטואלית</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>ערך</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
-    </message>
-    <message>
-        <source>File offset</source>
-        <translation>檔案偏移量</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>כתובת יחסית</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation>無效</translation>
+        <translation>לא תקין</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation>處理</translation>
+        <translation>תהליך</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>DialogHex</name>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>空格</translation>
+        <translation>רווחים</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>大寫</translation>
+        <translation>עליון</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>任意符號</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogInfo</name>
     <message>
         <source>Info</source>
-        <translation>資訊</translation>
+        <translation>מידע</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>空格</translation>
+        <translation>רווחים</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>大寫</translation>
+        <translation>עליון</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>任意符號</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>כתובת יחסית</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>בתים</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>מזהה פקודה</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Search strings</source>
-        <translation>搜索字串</translation>
+        <translation>חפש מחרוזת</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>搜尋簽名</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation>建立視圖模型</translation>
+        <translation>צור מודל תצוגה</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
-        <translation>選項</translation>
-    </message>
-    <message>
-        <source>Scan after open</source>
-        <translation>打開後掃描</translation>
+        <translation>אפשרויות</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>保存最後一個路徑</translation>
+        <translation>שמור תיקייה אחרונה</translation>
     </message>
     <message>
         <source>Stay on top</source>
-        <translation>始終在最上層</translation>
+        <translation>השאר בקידמה</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>保存備份</translation>
+        <translation>שמור גיבוי</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation>選項</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Context</source>
-        <translation>選單關聯</translation>
+        <translation>הקשר</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>樣式</translation>
+        <translation>סגנון</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>語言</translation>
+        <translation>שפה</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>搜尋簽名</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>資訊</translation>
+        <translation>מידע</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>請重啟應用程式</translation>
+        <translation>אנא הפעל את התוכנית מחדש</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>打開目錄</translation>
+        <translation>פתח תיקייה</translation>
     </message>
 </context>
 <context>
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation>處理</translation>
+        <translation>תהליך</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation>搜尋位置</translation>
+        <translation>חפש מתוך</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
+        <translation>מחרוזת</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>區分大小寫</translation>
+        <translation>התאם אותיות גדולות/קטנות</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>ערך</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>סוג סיומת</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>確定</translation>
+        <translation>אישור</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation>開始</translation>
+        <translation>התחלה</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>目前位址</translation>
+        <translation>סמן</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
-        <source>Search strings</source>
-        <translation>搜索字串</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
-        <source>Create view model</source>
-        <translation>建立視圖模型</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>錯誤</translation>
-    </message>
-    <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation>選擇</translation>
+        <translation>אזור</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation>捷徑</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>過濾</translation>
+        <translation>סינון</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>清除</translation>
+        <translation>נקה</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
     <message>
         <source>Group</source>
-        <translation>組</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation>捷徑</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>無法設置捷徑</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>遞歸掃描</translation>
+        <translation>סריקה רקורסיבית</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>深層掃描</translation>
+        <translation>סריקה מתקדמת</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>סריקה היוריסטית</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
-        <source>Text documents</source>
-        <translation>文件檔</translation>
-    </message>
-    <message>
-        <source>Save result</source>
-        <translation>保存結果</translation>
+        <translation>סגור</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>結果</translation>
+        <translation>תוצאה</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>取消</translation>
+        <translation>בטל</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>文件檔</translation>
+        <translation>מסמכי טקסט</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>保存結果</translation>
+        <translation>שמור תוצאה</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation>資訊</translation>
+        <translation>מידע</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Bind</source>
@@ -780,181 +744,177 @@
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>唯讀</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>字串</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <source>Heuristic scan</source>
+        <translation>סריקה היוריסטית</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>עריכה</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>כותרת</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation>已打包</translation>
+        <translation>דחוס</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>未打包</translation>
+        <translation>לא דחוס</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation>清除</translation>
+        <translation>נקה</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>毫秒</translation>
+        <translation>msec</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation>遞迴</translation>
+        <translation>רקורסיבי</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>深層掃描</translation>
+        <translation>סריקה מתקדמת</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>無法保存檔案</translation>
+        <translation>לא ניתן לשמור את הקובץ</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>ערך</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation>檔案類型</translation>
+        <translation>סוג קובץ</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>入口點</translation>
+        <translation>כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation>基底位址</translation>
+        <translation>כתובת בסיס</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>יצא</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>פונקציות מיובאות</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>資源</translation>
+        <translation>משאבי קובץ</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>選擇</translation>
+        <translation>אזורים</translation>
     </message>
     <message>
         <source>Time date stamp</source>
@@ -966,11 +926,11 @@
     </message>
     <message>
         <source>Manifest</source>
-        <translation>資訊</translation>
+        <translation>פרטי מדיניות</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>版本</translation>
+        <translation>גרסה</translation>
     </message>
     <message>
         <source>Programs</source>
@@ -978,297 +938,293 @@
     </message>
     <message>
         <source>Commands</source>
-        <translation>指令</translation>
+        <translation>פקודות</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>區隔</translation>
+        <translation>חלקים</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>函示庫</translation>
+        <translation>ספריות</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>סוג סיומת</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>מצב</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>架構</translation>
+        <translation>ארכיטקטורה</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
     <message>
         <source>File</source>
-        <translation>檔案</translation>
+        <translation>קובץ</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>工具</translation>
+        <translation>כלים</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>幫助</translation>
+        <translation>עזרה</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>開啟</translation>
+        <translation>פתח</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>יציאה</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>選項</translation>
+        <translation>אפשרויות</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>關於</translation>
+        <translation>אודות</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>捷徑</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>打開檔案</translation>
+        <translation>פתח קובץ</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>כל הקבצים</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <source>It is not a valid file</source>
-        <translation>不是有效檔案</translation>
+        <translation>הקובץ אינו תקין</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>無法打開檔案</translation>
+        <translation>לא ניתן לפתוח את הקובץ</translation>
     </message>
 </context>
 <context>
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation></translation>
+        <translation>פונקציות מיובאות</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>遞歸掃描</translation>
+        <translation>סריקה רקורסיבית</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>深層掃描</translation>
+        <translation>סריקה מתקדמת</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>סריקה היוריסטית</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>啟發式</translation>
+        <translation>היוריסטי</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>ערך</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>סריקה היוריסטית</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>עריכה</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>表單</translation>
+        <translation>פורמט</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>מזהה פקודה</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>ערך</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
-    </message>
-    <message>
-        <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Readonly</source>
-        <translation>唯讀</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>字串</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <source>Heuristic scan</source>
+        <translation>סריקה היוריסטית</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>指令</translation>
+        <translation>פקודות</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>區隔</translation>
+        <translation>חלקים</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>選擇</translation>
+        <translation>אזורים</translation>
     </message>
     <message>
         <source>Rebase</source>
@@ -1288,11 +1244,11 @@
     </message>
     <message>
         <source>Export</source>
-        <translation></translation>
+        <translation>יצא</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation></translation>
+        <translation>מחרוזת</translation>
     </message>
     <message>
         <source>Symbol table</source>
@@ -1320,7 +1276,7 @@
     </message>
     <message>
         <source>Functions</source>
-        <translation></translation>
+        <translation>אזורים</translation>
     </message>
     <message>
         <source>Data in code</source>
@@ -1328,232 +1284,212 @@
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>כותרת</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>עריכה</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
-    </message>
-    <message>
-        <source>Libraries</source>
-        <translation>函示庫</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>類型</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>函示庫</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <translation>סריקה היוריסטית</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>גודל</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
+        <translation>מחרוזת</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
-    </message>
-    <message>
-        <source>Detect</source>
-        <translation>檢測</translation>
+        <translation>סריקה היוריסטית</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>區隔</translation>
+        <translation>חלקים</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>資源</translation>
+        <translation>משאבי קובץ</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>證書</translation>
+        <translation>תעודה</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>啟發式掃描</translation>
+        <translation>סריקה היוריסטית</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>顯示有效</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>表單</translation>
+        <translation>פורמט</translation>
     </message>
     <message>
         <source>Check</source>
@@ -1561,160 +1497,108 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>選擇</translation>
+        <translation>אזורים</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>證書</translation>
+        <translation>תעודה</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation>計算</translation>
+        <translation>חשב</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編輯</translation>
+        <translation>עריכה</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>כותרת</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>QHexView</name>
     <message>
         <source>Cannot save file</source>
-        <translation>無法保存檔案</translation>
+        <translation>לא ניתן לשמור את הקובץ</translation>
     </message>
 </context>
 <context>
     <name>QHexViewWidget</name>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>מעבר לכתובת</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>目前位址</translation>
+        <translation>סמן</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>選擇</translation>
+        <translation>בחירה</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>גודל</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation>לקריאה בלבד</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>原始資料</translation>
+        <translation>מידע גולמי</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>保存轉存</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation>簽章</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation>搜尋</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation>搜尋下一個</translation>
-    </message>
-    <message>
-        <source>Select</source>
-        <translation>選擇</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>全選</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation>複製</translation>
-    </message>
-    <message>
-        <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>שמור מצב</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <source>Address</source>
-        <translation>位址</translation>
-    </message>
-    <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>數量</translation>
+        <translation>ספירה</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
-    </message>
-    <message>
-        <source>Read error</source>
-        <translation>讀取錯誤</translation>
-    </message>
-    <message>
-        <source>Write error</source>
-        <translation>寫入錯誤</translation>
-    </message>
-    <message>
-        <source>Cannot open file</source>
-        <translation>無法打開檔案</translation>
+        <translation>מחרוזת</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation>函示庫</translation>
+        <translation>ספריה</translation>
     </message>
     <message>
         <source>Interpreter</source>
@@ -1722,11 +1606,11 @@
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>版本</translation>
+        <translation>גרסה</translation>
     </message>
     <message>
         <source>Length</source>
@@ -1734,413 +1618,391 @@
     </message>
     <message>
         <source>Value</source>
-        <translation>值</translation>
+        <translation>ערך</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>כתובת</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>גודל</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation>שגיאת קריאה</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation>שגיאת כתיבה</translation>
+    </message>
+    <message>
+        <source>Cannot open file</source>
+        <translation>לא ניתן לפתוח את הקובץ</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>檔案</translation>
+        <translation>מסמכים</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>影像</translation>
+        <translation>תמונות</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Export file name</source>
-        <translation>複印檔案名</translation>
+        <translation>יצא לקובץ</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>סוג סיומת</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>檔案</translation>
+        <translation>קובץ</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>搜尋</translation>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>保存檔案</translation>
+        <translation>שמור קובץ</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>קבצי טקסט</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>כל הקבצים</translation>
     </message>
     <message>
         <source>Copy name</source>
-        <translation>複印名字</translation>
+        <translation>העתק בפורמט הקסה-דצימלי</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>複印簽名</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>複製位址</translation>
+        <translation>העתק כתובת</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>複印偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
-    </message>
-</context>
-<context>
-    <name>SearchStrings</name>
-    <message>
-        <source>Maximum</source>
-        <translation>最大值</translation>
-    </message>
-    <message>
-        <source>Read error</source>
-        <translation>讀取錯誤</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>位址</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation>偏移</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>大小</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>類型</translation>
-    </message>
-    <message>
-        <source>String</source>
-        <translation>字串</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
-        <source>Search</source>
-        <translation>搜尋</translation>
-    </message>
-    <message>
         <source>Filter</source>
-        <translation>過濾</translation>
+        <translation>סינון</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
     </message>
     <message>
-        <source>Save file</source>
-        <translation>保存檔案</translation>
+        <source>Search</source>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation>שמור קובץ</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>קבצי טקסט</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>כל הקבצים</translation>
     </message>
     <message>
         <source>Copy string</source>
-        <translation>複製字串</translation>
+        <translation>העתק מחרוזת</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>複製位址</translation>
+        <translation>העתק כתובת</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>複印偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>複印大小</translation>
+        <translation>העתק גודל</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
-    </message>
-</context>
-<context>
-    <name>SectionHeaderWidget</name>
-    <message>
-        <source>Readonly</source>
-        <translation>唯讀</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>כותרת</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation>存檔記錄</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>存檔記錄</translation>
-    </message>
-    <message>
-        <source>Certificate</source>
-        <translation>證書</translation>
-    </message>
-    <message>
-        <source>Compiler</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Converter</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Cryptor</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Database</source>
-        <translation>資料庫</translation>
-    </message>
-    <message>
-        <source>Debug data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>protection</source>
-        <translation>保護</translation>
-    </message>
-    <message>
-        <source>extender</source>
-        <translation>擴展器</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>表單</translation>
-    </message>
-    <message>
-        <source>Generic</source>
-        <translation>通用</translation>
-    </message>
-    <message>
-        <source>Image</source>
-        <translation>映像檔</translation>
-    </message>
-    <message>
-        <source>Installer</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Installer data</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>Joiner</source>
-        <translation>合併工具</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>語言</translation>
-    </message>
-    <message>
-        <source>Library</source>
-        <translation>函示庫</translation>
-    </message>
-    <message>
-        <source>Linker</source>
-        <translation></translation>
-    </message>
-    <message>
-        <source>compressor</source>
-        <translation>壓縮軟件</translation>
-    </message>
-    <message>
-        <source>Resources</source>
-        <translation>資源</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>類型</translation>
+        <translation>רשומה</translation>
     </message>
     <message>
         <source>obfuscator</source>
-        <translation>模糊器</translation>
-    </message>
-    <message>
-        <source>Packer</source>
-        <translation></translation>
+        <translation>מערפל</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation></translation>
+        <translation>כלי</translation>
+    </message>
+    <message>
+        <source>Certificate</source>
+        <translation>תעודה</translation>
+    </message>
+    <message>
+        <source>Compiler</source>
+        <translation>מהדר</translation>
+    </message>
+    <message>
+        <source>Converter</source>
+        <translation>ממיר</translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation>מצפין</translation>
+    </message>
+    <message>
+        <source>Database</source>
+        <translation>מסד נתונים</translation>
+    </message>
+    <message>
+        <source>Debug data</source>
+        <translation>נתוני מנפה שגיאות</translation>
+    </message>
+    <message>
+        <source>protection</source>
+        <translation>הגנה</translation>
+    </message>
+    <message>
+        <source>extender</source>
+        <translation>מרחיב</translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>פורמט</translation>
+    </message>
+    <message>
+        <source>Generic</source>
+        <translation>כללי</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation>תמונה</translation>
+    </message>
+    <message>
+        <source>Installer</source>
+        <translation>קובץ התקנה</translation>
+    </message>
+    <message>
+        <source>Installer data</source>
+        <translation>מידע קובץ התקנה</translation>
+    </message>
+    <message>
+        <source>Joiner</source>
+        <translation>מצמד</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>שפה</translation>
+    </message>
+    <message>
+        <source>Library</source>
+        <translation>ספריה</translation>
+    </message>
+    <message>
+        <source>Linker</source>
+        <translation>לינקר</translation>
+    </message>
+    <message>
+        <source>compressor</source>
+        <translation>דוחס</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation></translation>
+        <translation>אפשרויות</translation>
+    </message>
+    <message>
+        <source>Packer</source>
+        <translation>דוחס</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation></translation>
+        <translation>תוכנת הגנה</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation></translation>
+        <translation>מידע תוכנת הגנה</translation>
     </message>
     <message>
         <source>data</source>
-        <translation>資料</translation>
+        <translation>מידע</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation>簽章工具</translation>
+        <translation>כלי חתימה</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation>源代碼</translation>
+        <translation>קוד מקור</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation>根</translation>
+        <translation>שגרה</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation>虛擬位址</translation>
+        <translation>כתובת וירטואלית</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>入口點</translation>
+        <translation>כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation>分段名稱</translation>
+        <translation>שם אזור</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation>代碼段</translation>
+        <translation>אזור קוד</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>入口點段</translation>
+        <translation>אזור כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>字串</translation>
+        <translation>מחרוזת</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>ארכיון</translation>
+    </message>
+    <message>
+        <source>Resources</source>
+        <translation>משאבי קובץ</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>סוג</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>檔案掃描</translation>
-    </message>
-    <message>
-        <source>Memory scan</source>
-        <translation>記憶體區塊</translation>
-    </message>
-    <message>
-        <source>Directory scan</source>
-        <translation>目錄掃描</translation>
+        <translation>סריקת קובץ</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>裝置掃描</translation>
+        <translation>סריקת התקן</translation>
+    </message>
+    <message>
+        <source>Memory scan</source>
+        <translation>מפת זיכרון</translation>
+    </message>
+    <message>
+        <source>Directory scan</source>
+        <translation>סריקת תיקייה</translation>
     </message>
 </context>
 <context>
     <name>StaticScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation>結果</translation>
+        <translation>תוצאה</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>文字</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>檔案</translation>
+        <translation>מסמכים</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>映像檔</translation>
+        <translation>תמונה</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>存檔記錄</translation>
+        <translation>ארכיון</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>讀取錯誤</translation>
+        <translation>שגיאת קריאה</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation>最大值</translation>
+        <translation>מקסימום</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>寫入錯誤</translation>
+        <translation>שגיאת כתיבה</translation>
     </message>
     <message>
         <source>Default</source>
@@ -2148,7 +2010,7 @@
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>בתים</translation>
     </message>
     <message>
         <source>kB</source>
@@ -2167,414 +2029,406 @@
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation>標記</translation>
+        <translation>דגלים</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>כותרת</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>自動</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>מצב</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Raw data</source>
-        <translation>原始資料</translation>
+        <translation>מידע גולמי</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>轉存</translation>
+        <translation>יצא כקובץ הרצה</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>保存轉存</translation>
+        <translation>שמור מצב</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation>沒有找到</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>標簽</translation>
+        <translation>תווית</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>בתים</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>מזהה פקודה</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>בתים</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>操作碼</translation>
+        <translation>מזהה פקודה</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>註解</translation>
+        <translation>פקודות</translation>
     </message>
     <message>
         <source>Invalid opcode</source>
-        <translation>無效</translation>
+        <translation>לא תקין</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>מעבר לכתובת</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>轉到偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Go to entry point</source>
-        <translation>轉到入口點</translation>
+        <translation>כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>יצא כקובץ הרצה לקובץ</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>十六進制簽名</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>搜尋</translation>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>搜尋下一個</translation>
+        <translation>חפש את הבא</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>全選</translation>
+        <translation>בחר הכל</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>העתק בפורמט הקסה-דצימלי</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>複印光標偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>複印光標進制</translation>
+        <translation>העתק כתובת</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>מעבר אל</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>選擇</translation>
+        <translation>בחר</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>相對位址</translation>
+        <translation>כתובת יחסית</translation>
     </message>
 </context>
 <context>
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation>分析</translation>
+        <translation>אבחן</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation>標簽</translation>
+        <translation>תוויות</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>מעבר אל</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>入口點</translation>
+        <translation>כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>虛擬位址</translation>
+        <translation>כתובת וירטואלית</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>כתובת יחסית</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>檔案偏移量</translation>
+        <translation>היסט קובץ</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>יצא כקובץ הרצה לקובץ</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation>到資料</translation>
+        <translation>לנתונים</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>原始資料</translation>
+        <translation>מידע גולמי</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>保存轉存</translation>
+        <translation>שמור מצב</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Segment</source>
-        <translation>段</translation>
+        <translation>חלק</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
-        <source>Reload</source>
-        <translation>重新載入</translation>
+        <source>Type</source>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation>總計</translation>
+        <translation>סך הכל</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>狀態</translation>
+        <translation>סטטוס</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>גודל</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>類型</translation>
-    </message>
-    <message>
-        <source>Save diagram</source>
-        <translation>保存圖表</translation>
-    </message>
-    <message>
-        <source>Entropy</source>
-        <translation>熵值</translation>
-    </message>
-    <message>
-        <source>Regions</source>
-        <translation>區域</translation>
+        <source>Reload</source>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
+    </message>
+    <message>
+        <source>Save diagram</source>
+        <translation>שמור תרשים</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>אנטרופיה</translation>
+    </message>
+    <message>
+        <source>Regions</source>
+        <translation>אזורים</translation>
     </message>
     <message>
         <source>Bytes</source>
-        <translation>位元組</translation>
+        <translation>בתים</translation>
     </message>
     <message>
         <source>Byte</source>
-        <translation>位元組</translation>
+        <translation>בית</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>數量</translation>
+        <translation>ספירה</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>קבצי טקסט</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>כל הקבצים</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>影像</translation>
+        <translation>תמונות</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation>檔案</translation>
-    </message>
-    <message>
-        <source>packed</source>
-        <translation>已打包</translation>
-    </message>
-    <message>
-        <source>not packed</source>
-        <translation>未打包</translation>
+        <translation>מסמכים</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>方法</translation>
+        <translation>שיטה</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>גודל</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>重新載入</translation>
+        <translation>טען מחדש</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>名稱</translation>
+        <translation>שם</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>文本檔案</translation>
+        <translation>קבצי טקסט</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>所有檔案</translation>
+        <translation>כל הקבצים</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Symbols</source>
@@ -2582,195 +2436,195 @@
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>轉到偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>מעבר לכתובת</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>יצא כקובץ הרצה לקובץ</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>搜尋</translation>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>搜尋下一個</translation>
+        <translation>חפש את הבא</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>全選</translation>
+        <translation>בחר הכל</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>העתק בפורמט הקסה-דצימלי</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>複印光標偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>複印光標進制</translation>
+        <translation>העתק כתובת</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>跳至</translation>
+        <translation>מעבר אל</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>選擇</translation>
+        <translation>בחר</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>表單</translation>
+        <translation>פורמט</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation>段</translation>
+        <translation>חלק</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>כותרת</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>檔案偏移量</translation>
+        <translation>היסט קובץ</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>虛擬位址</translation>
+        <translation>כתובת וירטואלית</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>相對虛擬位址</translation>
+        <translation>כתובת יחסית</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>מצב</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>位元組順序</translation>
+        <translation>סוג סיומת</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>架構</translation>
+        <translation>ארכיטקטורה</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
-    </message>
-    <message>
-        <source>Name</source>
-        <translation>名稱</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>偏移</translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>位址</translation>
+        <translation>כתובת</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>大小</translation>
+        <translation>גודל</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>שם</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>表單</translation>
+        <translation>פורמט</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>類型</translation>
+        <translation>סוג</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>模式</translation>
+        <translation>מצב</translation>
     </message>
     <message>
         <source>Syntax</source>
@@ -2778,37 +2632,37 @@
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>標頭</translation>
+        <translation>כותרת</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation>選擇</translation>
+        <translation>אזור</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>覆蓋</translation>
+        <translation>שכבה</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>無法打開檔案</translation>
+        <translation>לא ניתן לפתוח את הקובץ</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
@@ -2828,137 +2682,137 @@
     </message>
     <message>
         <source>The signature error</source>
-        <translation>十六進制簽名</translation>
+        <translation>שגיאת כתיבה</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>錯誤</translation>
+        <translation>שגיאה</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Unknown</source>
-        <translation>未知</translation>
+        <translation>לא ידוע</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>開啟</translation>
+        <translation>פתח</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
     </message>
     <message>
         <source>Save As</source>
-        <translation>保存</translation>
+        <translation>שמור</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>關閉</translation>
+        <translation>סגור</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>退出</translation>
+        <translation>יציאה</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>複製</translation>
+        <translation>העתק</translation>
     </message>
     <message>
         <source>Copy string</source>
-        <translation>複製字串</translation>
+        <translation>העתק מחרוזת</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>複印偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>複印大小</translation>
+        <translation>העתק גודל</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>十六進制</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>解構</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Copy name</source>
-        <translation>複印名字</translation>
+        <translation>העתק בפורמט הקסה-דצימלי</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>複印簽名</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>複製位址</translation>
+        <translation>העתק כתובת</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>轉存到檔案</translation>
+        <translation>יצא כקובץ הרצה לקובץ</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>跳至位址</translation>
+        <translation>מעבר לכתובת</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>轉到偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>簽章</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>搜尋</translation>
+        <translation>חפש</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>搜尋下一個</translation>
+        <translation>חפש את הבא</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>全選</translation>
+        <translation>בחר הכל</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>複製為十六進制</translation>
+        <translation>העתק בפורמט הקסה-דצימלי</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>複印光標偏移</translation>
+        <translation>העתק היסט כתובת </translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>複印光標進制</translation>
+        <translation>העתק כתובת</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>反組譯</translation>
+        <translation>פירוק לפקודות</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>記憶體區塊</translation>
+        <translation>מפת זיכרון</translation>
     </message>
     <message>
         <source>Go to entry point</source>
-        <translation>轉到入口點</translation>
+        <translation>כתובת תחילת הריצה</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>十六進制簽名</translation>
+        <translation>חתימה</translation>
     </message>
     <message>
         <source>Attach</source>
@@ -2974,11 +2828,11 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>行動</translation>
+        <translation>אזורים</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>日誌</translation>
+        <translation>יומן אירועים</translation>
     </message>
     <message>
         <source>Breakpoints</source>
@@ -2986,7 +2840,7 @@
     </message>
     <message>
         <source>Call stack</source>
-        <translation></translation>
+        <translation>קריאות</translation>
     </message>
     <message>
         <source>Threads</source>
@@ -2998,7 +2852,7 @@
     </message>
     <message>
         <source>Run</source>
-        <translation>執行</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Pause</source>
@@ -3006,15 +2860,15 @@
     </message>
     <message>
         <source>Step into</source>
-        <translation>步進</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>步出</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>停止</translation>
+        <translation>עצור</translation>
     </message>
     <message>
         <source>Restart</source>
@@ -3026,31 +2880,31 @@
     </message>
     <message>
         <source>Copy filename</source>
-        <translation>複印檔案名</translation>
+        <translation>יצא לקובץ</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>熵值</translation>
+        <translation>אנטרופיה</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>雜湊值</translation>
+        <translation>פונקציית גיבוב</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>掃描</translation>
+        <translation>סרוק</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>字串</translation>
+        <translation>מחרוזות</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation>行動</translation>
+        <translation>אזור</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>檔案</translation>
+        <translation>קובץ</translation>
     </message>
     <message>
         <source>View</source>
@@ -3058,23 +2912,23 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>簽章</translation>
+        <translation>חתימות</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>除錯</translation>
+        <translation>מנפה שגיאות</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>除錯器</translation>
+        <translation>מנפה שגיאות</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>存檔記錄</translation>
+        <translation>ארכיון</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>表格</translation>
+        <translation>טבלה</translation>
     </message>
 </context>
 </TS>
