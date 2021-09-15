@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.5)
 
 project(XPEViewer VERSION 0.2 LANGUAGES CXX)
 
-set (CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019/")
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOUIC ON)
@@ -17,15 +15,15 @@ find_package(QT NAMES Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Concurrent REQUIRED)
 find_package(Qt5 COMPONENTS OpenGL REQUIRED)
+find_package(Qt5 COMPONENTS PrintSupport REQUIRED)
+find_package(Qt5 COMPONENTS Svg REQUIRED)
 
-include_directories(${PROJECT_SOURCE_DIR}/../XShortcuts/)
-include_directories(${PROJECT_SOURCE_DIR}/../Formats/)
-include_directories(${PROJECT_SOURCE_DIR}/../XOptions/)
+add_definitions(-DUSE_DEX)
+add_definitions(-DUSE_ARCHIVE)
+
 include_directories(${PROJECT_SOURCE_DIR}/../Controls/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatDialogs/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/)
-include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/SearchSignatures/)
-include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/SearchStrings/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/Binary/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/DEX/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/ELF/)
@@ -33,28 +31,35 @@ include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/LE/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MACH/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MACHOFAT/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MSDOS/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MultiSearch/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/NE/)
 include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/PE/)
-include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/MultiSearch/)
-include_directories(${PROJECT_SOURCE_DIR}/../StaticScan/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/SearchSignatures/)
+include_directories(${PROJECT_SOURCE_DIR}/../FormatWidgets/SearchStrings/)
+include_directories(${PROJECT_SOURCE_DIR}/../Formats/)
 include_directories(${PROJECT_SOURCE_DIR}/../SpecAbstract/)
+include_directories(${PROJECT_SOURCE_DIR}/../StaticScan/)
 include_directories(${PROJECT_SOURCE_DIR}/../XArchive/)
 include_directories(${PROJECT_SOURCE_DIR}/../XArchive/3rdparty/bzip2/src/)
-include_directories(${PROJECT_SOURCE_DIR}/../XArchive/3rdparty/zlib/src/)
 include_directories(${PROJECT_SOURCE_DIR}/../XArchive/3rdparty/lzma/src/)
+include_directories(${PROJECT_SOURCE_DIR}/../XArchive/3rdparty/zlib/src/)
 include_directories(${PROJECT_SOURCE_DIR}/../XCapstone/)
 include_directories(${PROJECT_SOURCE_DIR}/../XCapstone/3rdparty/Capstone/src/include/)
 include_directories(${PROJECT_SOURCE_DIR}/../XCppfilt/)
 include_directories(${PROJECT_SOURCE_DIR}/../XCppfilt/3rdparty/cppfilt/src/)
+include_directories(${PROJECT_SOURCE_DIR}/../XDEX/)
+include_directories(${PROJECT_SOURCE_DIR}/../XDemangle/)
 include_directories(${PROJECT_SOURCE_DIR}/../XDemangleWidget/)
 include_directories(${PROJECT_SOURCE_DIR}/../XDisasmView/)
 include_directories(${PROJECT_SOURCE_DIR}/../XEntropyWidget/)
 include_directories(${PROJECT_SOURCE_DIR}/../XHashWidget/)
 include_directories(${PROJECT_SOURCE_DIR}/../XHexView/)
+include_directories(${PROJECT_SOURCE_DIR}/../XLLVMDemangler/3rdparty/)
+include_directories(${PROJECT_SOURCE_DIR}/../XLLVMDemangler/3rdparty/llvm/Demangle/)
 include_directories(${PROJECT_SOURCE_DIR}/../XMemoryMapWidget/)
-include_directories(${PROJECT_SOURCE_DIR}/../XDEX/)
-include_directories(${PROJECT_SOURCE_DIR}/../XDemangle/)
+include_directories(${PROJECT_SOURCE_DIR}/../XOptions/)
 include_directories(${PROJECT_SOURCE_DIR}/../XQwt/3rdparty/qwt/src/)
+include_directories(${PROJECT_SOURCE_DIR}/../XShortcuts/)
 
 set(PROJECT_SOURCES
             ../Controls/hexvalidator.cpp
@@ -64,31 +69,53 @@ set(PROJECT_SOURCES
             ../Controls/xdatetimeeditx.cpp
             ../Controls/xdevicetableview.cpp
             ../Controls/xlineedithex.cpp
+            ../FormatDialogs/dialogdump.ui
             ../FormatDialogs/dialogdumpprocess.cpp
+            ../FormatDialogs/dialogdumpprocess.ui
             ../FormatDialogs/dialoggotoaddress.cpp
+            ../FormatDialogs/dialoggotoaddress.ui
             ../FormatDialogs/dialoghexsignature.cpp
+            ../FormatDialogs/dialoghexsignature.ui
             ../FormatDialogs/dialoginfo.cpp
+            ../FormatDialogs/dialoginfo.ui
             ../FormatDialogs/dialogsearch.cpp
+            ../FormatDialogs/dialogsearch.ui
             ../FormatDialogs/dialogsearchprocess.cpp
+            ../FormatDialogs/dialogsearchprocess.ui
             ../FormatDialogs/dialogtextinfo.cpp
+            ../FormatDialogs/dialogtextinfo.ui
             ../FormatDialogs/dumpprocess.cpp
             ../FormatDialogs/searchprocess.cpp
+            ../FormatWidgets/MultiSearch/dialogmultisearchprocess.cpp
+            ../FormatWidgets/MultiSearch/dialogmultisearchprocess.ui
+            ../FormatWidgets/MultiSearch/multisearch.cpp
             ../FormatWidgets/PE/dialogpe.cpp
+            ../FormatWidgets/PE/dialogpe.ui
             ../FormatWidgets/PE/pe_defs.cpp
             ../FormatWidgets/PE/peprocessdata.cpp
             ../FormatWidgets/PE/pesectionheaderwidget.cpp
+            ../FormatWidgets/PE/pesectionheaderwidget.ui
             ../FormatWidgets/PE/pewidget.cpp
+            ../FormatWidgets/PE/pewidget.ui
             ../FormatWidgets/SearchSignatures/dialogsearchsignatures.cpp
+            ../FormatWidgets/SearchSignatures/dialogsearchsignatures.ui
             ../FormatWidgets/SearchSignatures/searchsignatureswidget.cpp
+            ../FormatWidgets/SearchSignatures/searchsignatureswidget.ui
             ../FormatWidgets/SearchStrings/dialogsearchstrings.cpp
+            ../FormatWidgets/SearchStrings/dialogsearchstrings.ui
             ../FormatWidgets/SearchStrings/searchstringswidget.cpp
+            ../FormatWidgets/SearchStrings/searchstringswidget.ui
             ../FormatWidgets/dialogmodelinfo.cpp
+            ../FormatWidgets/dialogmodelinfo.ui
             ../FormatWidgets/dialogprocessdata.cpp
+            ../FormatWidgets/dialogprocessdata.ui
             ../FormatWidgets/dialogsectionheader.cpp
+            ../FormatWidgets/dialogsectionheader.ui
             ../FormatWidgets/formatwidget.cpp
             ../FormatWidgets/invwidget.cpp
             ../FormatWidgets/processdata.cpp
             ../FormatWidgets/toolswidget.cpp
+            ../FormatWidgets/toolswidget.ui
             ../Formats/subdevice.cpp
             ../Formats/xbinary.cpp
             ../Formats/xcom.cpp
@@ -99,13 +126,15 @@ set(PROJECT_SOURCES
             ../Formats/xmsdos.cpp
             ../Formats/xne.cpp
             ../Formats/xpe.cpp
-            ../SpecAbstract/signatures.cpp
             ../SpecAbstract/specabstract.cpp
             ../StaticScan/dialogstaticscan.cpp
+            ../StaticScan/dialogstaticscan.ui
             ../StaticScan/dialogstaticscanprocess.cpp
+            ../StaticScan/dialogstaticscanprocess.ui
             ../StaticScan/formresult.cpp
-            ../StaticScan/formstaticscan.cpp
+            ../StaticScan/formresult.ui
             ../StaticScan/heurwidget.cpp
+            ../StaticScan/heurwidget.ui
             ../StaticScan/staticscan.cpp
             ../StaticScan/staticscanitem.cpp
             ../StaticScan/staticscanitemmodel.cpp
@@ -122,29 +151,43 @@ set(PROJECT_SOURCES
             ../XDEX/xdex.cpp
             ../XDemangle/xdemangle.cpp
             ../XDemangleWidget/dialogdemangle.cpp
+            ../XDemangleWidget/dialogdemangle.ui
             ../XDemangleWidget/xdemanglewidget.cpp
+            ../XDemangleWidget/xdemanglewidget.ui
             ../XDisasmView/dialogmultidisasm.cpp
+            ../XDisasmView/dialogmultidisasm.ui
             ../XDisasmView/dialogmultidisasmsignature.cpp
+            ../XDisasmView/dialogmultidisasmsignature.ui
             ../XDisasmView/xdisasmview.cpp
             ../XDisasmView/xmultidisasmwidget.cpp
+            ../XDisasmView/xmultidisasmwidget.ui
             ../XEntropyWidget/dialogentropy.cpp
+            ../XEntropyWidget/dialogentropy.ui
             ../XEntropyWidget/dialogentropyprocess.cpp
+            ../XEntropyWidget/dialogentropyprocess.ui
             ../XEntropyWidget/entropyprocess.cpp
             ../XEntropyWidget/xentropywidget.cpp
+            ../XEntropyWidget/xentropywidget.ui
             ../XHashWidget/dialoghash.cpp
+            ../XHashWidget/dialoghash.ui
             ../XHashWidget/dialoghashprocess.cpp
+            ../XHashWidget/dialoghashprocess.ui
             ../XHashWidget/hashprocess.cpp
             ../XHashWidget/xhashwidget.cpp
-            ../XHexEdit/xhexedit.cpp
+            ../XHashWidget/xhashwidget.ui
             ../XHexView/dialoghexview.cpp
+            ../XHexView/dialoghexview.ui
             ../XHexView/xhexview.cpp
             ../XHexView/xhexviewwidget.cpp
+            ../XHexView/xhexviewwidget.ui
             ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp
             ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp
             ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp
             ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangleNodes.cpp
             ../XMemoryMapWidget/dialogmemorymap.cpp
+            ../XMemoryMapWidget/dialogmemorymap.ui
             ../XMemoryMapWidget/xmemorymapwidget.cpp
+            ../XMemoryMapWidget/xmemorymapwidget.ui
             ../XOptions/xoptions.cpp
             ../XQwt/3rdparty/qwt/src/qwt_abstract_legend.cpp
             ../XQwt/3rdparty/qwt/src/qwt_abstract_scale.cpp
@@ -242,57 +285,18 @@ set(PROJECT_SOURCES
             ../XQwt/3rdparty/qwt/src/qwt_wheel.cpp
             ../XQwt/3rdparty/qwt/src/qwt_widget_overlay.cpp
             ../XShortcuts/dialogshortcuts.cpp
+            ../XShortcuts/dialogshortcuts.ui
             ../XShortcuts/xshortcuts.cpp
             ../XShortcuts/xshortcutsdialog.cpp
             ../XShortcuts/xshortcutstscrollarea.cpp
             ../XShortcuts/xshortcutswidget.cpp
             dialogabout.cpp
-            dialogoptions.cpp
-            guimainwindow.cpp
-            main_gui.cpp
-            ../FormatDialogs/dialogdump.ui
-            ../FormatDialogs/dialogdumpprocess.ui
-            ../FormatDialogs/dialoggotoaddress.ui
-            ../FormatDialogs/dialoghexsignature.ui
-            ../FormatDialogs/dialoginfo.ui
-            ../FormatDialogs/dialogsearch.ui
-            ../FormatDialogs/dialogsearchprocess.ui
-            ../FormatDialogs/dialogtextinfo.ui
-            ../FormatWidgets/PE/dialogpe.ui
-            ../FormatWidgets/PE/pesectionheaderwidget.ui
-            ../FormatWidgets/PE/pewidget.ui
-            ../FormatWidgets/SearchSignatures/dialogsearchsignatures.ui
-            ../FormatWidgets/SearchSignatures/searchsignatureswidget.ui
-            ../FormatWidgets/SearchStrings/dialogsearchstrings.ui
-            ../FormatWidgets/SearchStrings/searchstringswidget.ui
-            ../FormatWidgets/dialogmodelinfo.ui
-            ../FormatWidgets/dialogprocessdata.ui
-            ../FormatWidgets/dialogsectionheader.ui
-            ../FormatWidgets/toolswidget.ui
-            ../StaticScan/dialogstaticscan.ui
-            ../StaticScan/dialogstaticscanprocess.ui
-            ../StaticScan/formresult.ui
-            ../StaticScan/formstaticscan.ui
-            ../StaticScan/heurwidget.ui
-            ../XDemangleWidget/dialogdemangle.ui
-            ../XDemangleWidget/xdemanglewidget.ui
-            ../XDisasmView/dialogmultidisasm.ui
-            ../XDisasmView/dialogmultidisasmsignature.ui
-            ../XDisasmView/xmultidisasmwidget.ui
-            ../XEntropyWidget/dialogentropy.ui
-            ../XEntropyWidget/dialogentropyprocess.ui
-            ../XEntropyWidget/xentropywidget.ui
-            ../XHashWidget/dialoghash.ui
-            ../XHashWidget/dialoghashprocess.ui
-            ../XHashWidget/xhashwidget.ui
-            ../XHexView/dialoghexview.ui
-            ../XHexView/xhexviewwidget.ui
-            ../XMemoryMapWidget/dialogmemorymap.ui
-            ../XMemoryMapWidget/xmemorymapwidget.ui
-            ../XShortcuts/dialogshortcuts.ui
             dialogabout.ui
+            dialogoptions.cpp
             dialogoptions.ui
+            guimainwindow.cpp
             guimainwindow.ui
+            main_gui.cpp
 )
 
 add_executable(XPEViewer
@@ -302,3 +306,5 @@ add_executable(XPEViewer
 target_link_libraries(XPEViewer PRIVATE Qt5::Widgets)
 target_link_libraries(XPEViewer PRIVATE Qt5::Concurrent)
 target_link_libraries(XPEViewer PRIVATE Qt5::OpenGL)
+target_link_libraries(XPEViewer PRIVATE Qt5::PrintSupport)
+target_link_libraries(XPEViewer PRIVATE Qt5::Svg)
