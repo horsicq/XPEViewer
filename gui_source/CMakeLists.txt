@@ -299,12 +299,21 @@ set(PROJECT_SOURCES
             main_gui.cpp
 )
 
-add_executable(XPEViewer
+add_executable(${PROJECT_NAME}
     ${PROJECT_SOURCES}
 )
 
-target_link_libraries(XPEViewer PRIVATE Qt5::Widgets)
-target_link_libraries(XPEViewer PRIVATE Qt5::Concurrent)
-target_link_libraries(XPEViewer PRIVATE Qt5::OpenGL)
-target_link_libraries(XPEViewer PRIVATE Qt5::PrintSupport)
-target_link_libraries(XPEViewer PRIVATE Qt5::Svg)
+target_link_libraries(${PROJECT_NAME} ../XArchive)
+target_link_libraries(${PROJECT_NAME} ../XCapstone)
+target_link_libraries(${PROJECT_NAME} ../XCppfilt)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Widgets)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Concurrent)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::OpenGL)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::PrintSupport)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Svg)
+
+if(WIN32)
+    target_link_libraries(${PROJECT_NAME} Wintrust)
+    target_link_libraries(${PROJECT_NAME} Crypt32)
+endif()
