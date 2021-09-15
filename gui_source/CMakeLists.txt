@@ -303,9 +303,11 @@ add_executable(${PROJECT_NAME}
     ${PROJECT_SOURCES}
 )
 
-target_link_libraries(${PROJECT_NAME} ../XArchive)
-target_link_libraries(${PROJECT_NAME} ../XCapstone)
-target_link_libraries(${PROJECT_NAME} ../XCppfilt)
+target_link_libraries(${PROJECT_NAME} bzip2)
+target_link_libraries(${PROJECT_NAME} lzma)
+target_link_libraries(${PROJECT_NAME} zlib)
+target_link_libraries(${PROJECT_NAME} capstone)
+target_link_libraries(${PROJECT_NAME} cppfilt)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
