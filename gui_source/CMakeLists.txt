@@ -11,6 +11,9 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+file(MAKE_DIRECTORY ../release)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../release) 
+
 find_package(QT NAMES Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Concurrent REQUIRED)
@@ -297,6 +300,7 @@ set(PROJECT_SOURCES
             guimainwindow.cpp
             guimainwindow.ui
             main_gui.cpp
+            rsrc.qrc
 )
 
 add_executable(${PROJECT_NAME}
@@ -319,3 +323,5 @@ if(WIN32)
     target_link_libraries(${PROJECT_NAME} Wintrust)
     target_link_libraries(${PROJECT_NAME} Crypt32)
 endif()
+
+set(MACOSX_BUNDLE_ICON_FILE ../icons/main.icns)
