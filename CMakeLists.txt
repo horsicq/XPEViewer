@@ -8,6 +8,7 @@ endif()
 
 if(APPLE)
     set (CMAKE_PREFIX_PATH $ENV{HOME}/Qt/5.15.2/clang_64/)
+    add_compile_options(-arch x86_64)
 endif()
 
 add_subdirectory(XCppfilt)
