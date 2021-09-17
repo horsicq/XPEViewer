@@ -183,10 +183,6 @@ set(PROJECT_SOURCES
             ../XHexView/xhexview.cpp
             ../XHexView/xhexviewwidget.cpp
             ../XHexView/xhexviewwidget.ui
-            ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp
-            ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp
-            ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp
-            ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangleNodes.cpp
             ../XMemoryMapWidget/dialogmemorymap.cpp
             ../XMemoryMapWidget/dialogmemorymap.ui
             ../XMemoryMapWidget/xmemorymapwidget.cpp
