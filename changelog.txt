@@ -1,4 +1,10 @@
 0.02
 -----------------------------------------------------------------------
 [+] Multidisasm
+[+] Linux AppImage
+[+] Autotools build system
+[+] CMAKE build system
+[+] PKG installer for OSX
+[+] New structs
+[+] Many bugs have been fixed.
 #######################################################################
