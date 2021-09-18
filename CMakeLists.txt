@@ -8,10 +8,9 @@ endif()
 
 if(APPLE)
     set (CMAKE_PREFIX_PATH $ENV{HOME}/Qt/5.15.2/clang_64/)
-    add_compile_options(-arch x86_64)
+    set (CMAKE_OSX_ARCHITECTURES x86_64)
     add_compile_options(-Wno-deprecated-declarations)
     add_compile_options(-Wno-switch)
-    add_link_options(-arch x86_64)
 endif()
 
 add_subdirectory(XCppfilt)
