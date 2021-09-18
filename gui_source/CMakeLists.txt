@@ -299,10 +299,6 @@ set(PROJECT_SOURCES
             rsrc.qrc
 )
 
-add_executable(${PROJECT_NAME}
-    ${PROJECT_SOURCES}
-)
-
 target_link_libraries(${PROJECT_NAME} bzip2)
 target_link_libraries(${PROJECT_NAME} lzma)
 target_link_libraries(${PROJECT_NAME} zlib)
@@ -320,10 +316,21 @@ if(WIN32)
     target_link_libraries(${PROJECT_NAME} Crypt32)
 endif()
 
-set_target_properties(${PROJECT_NAME} PROPERTIES
-    MACOSX_BUNDLE_GUI_IDENTIFIER ntinfo.xpeviewer
-    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-)
+if(WIN32)
+    add_executable(${PROJECT_NAME}
+        ${PROJECT_SOURCES}
+    )
+endif()
 
-set(MACOSX_BUNDLE_ICON_FILE ../icons/main.icns)
+if(APPLE)
+    set_target_properties(${PROJECT_NAME} PROPERTIES
+            MACOSX_BUNDLE_GUI_IDENTIFIER ntinfo.xpeviewer
+            MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+            MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    set(MACOSX_BUNDLE_ICON_FILE ../icons/main.icns)
+    add_library(${PROJECT_NAME} MODULE ${PROJECT_SOURCES})
+    set_target_properties(${PROJECT_NAME} PROPERTIES BUNDLE TRUE)
+)
+endif()
+
+
