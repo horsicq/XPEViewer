@@ -313,7 +313,7 @@ if(APPLE)
     set(MACOSX_BUNDLE_ICON_FILE ../icons/main.icns)
     add_library(${PROJECT_NAME} MODULE ${PROJECT_SOURCES})
     set_target_properties(${PROJECT_NAME} PROPERTIES BUNDLE TRUE)
-)
+endif()
 
 target_link_libraries(${PROJECT_NAME} bzip2)
 target_link_libraries(${PROJECT_NAME} lzma)
