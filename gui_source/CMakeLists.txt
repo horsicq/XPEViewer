@@ -301,12 +301,6 @@ set(PROJECT_SOURCES
             rsrc.qrc
 )
 
-if(WIN32)
-    add_executable(${PROJECT_NAME}
-        ${PROJECT_SOURCES}
-    )
-endif()
-
 if(APPLE)
     add_library(${PROJECT_NAME} MODULE ${PROJECT_SOURCES})
     set_target_properties(${PROJECT_NAME} PROPERTIES
@@ -315,6 +309,10 @@ if(APPLE)
             MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
             BUNDLE TRUE)
     set(MACOSX_BUNDLE_ICON_FILE ../icons/main.icns)
+else()
+    add_executable(${PROJECT_NAME}
+        ${PROJECT_SOURCES}
+    )
 endif()
 
 target_link_libraries(${PROJECT_NAME} bzip2)
