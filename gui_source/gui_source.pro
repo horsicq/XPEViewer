@@ -1,6 +1,11 @@
 QT       += core gui widgets
 
 TARGET = xpeviewer
+
+macx {
+    TARGET = XPEViewer
+}
+
 TEMPLATE = app
 
 CONFIG += c++11
