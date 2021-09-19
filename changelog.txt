@@ -6,5 +6,6 @@
 [+] CMAKE build system
 [+] PKG installer for OSX
 [+] New structs
+[+] New translations
 [+] Many bugs have been fixed.
 #######################################################################
