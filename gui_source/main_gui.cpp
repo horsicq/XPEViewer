@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 #endif
 #ifdef Q_OS_MAC
 #ifndef QT_DEBUG
-   QCoreApplication::setLibraryPaths(QStringList(QString(argv[0]).remove("MacOS/xpeviewer")+"PlugIns"));
+   QCoreApplication::setLibraryPaths(QStringList(QString(argv[0]).remove("MacOS/XPEViewer")+"PlugIns"));
 #endif
 #endif
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
