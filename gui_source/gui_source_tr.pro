@@ -1,20 +1,20 @@
 TRANSLATIONS = \
-        translation/xpeviewer_it.ts \
         translation/xpeviewer_ar.ts \
         translation/xpeviewer_de.ts \
-        translation/xpeviewer_ja.ts \
-        translation/xpeviewer_pl.ts \
-        translation/xpeviewer_ru.ts \
-        translation/xpeviewer_vi.ts \
         translation/xpeviewer_es.ts \
         translation/xpeviewer_fr.ts \
-        translation/xpeviewer_pt_BR.ts \
-        translation/xpeviewer_ko.ts \
-        translation/xpeviewer_zh.ts \
-        translation/xpeviewer_zh_TW.ts\
-        translation/xpeviewer_tr.ts \
         translation/xpeviewer_he.ts \
-        translation/xpeviewer_id.ts
+        translation/xpeviewer_id.ts \
+        translation/xpeviewer_it.ts \
+        translation/xpeviewer_ja.ts \
+        translation/xpeviewer_ko.ts \
+        translation/xpeviewer_pl.ts \
+        translation/xpeviewer_pt_BR.ts \
+        translation/xpeviewer_ru.ts \
+        translation/xpeviewer_tr.ts \
+        translation/xpeviewer_vi.ts \
+        translation/xpeviewer_zh.ts \
+        translation/xpeviewer_zh_TW.ts
         
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
@@ -58,8 +58,6 @@ FORMS += \
     ../FormatWidgets/dialogsectionheader.ui \
     ../FormatWidgets/formatswidget.ui \
     ../FormatWidgets/toolswidget.ui \
-    ../QHexView/dialoghex.ui \
-    ../QHexView/qhexviewwidget.ui \
     ../StaticScan/dialogstaticscan.ui \
     ../StaticScan/dialogstaticscanprocess.ui \
     ../StaticScan/formresult.ui \
@@ -67,11 +65,6 @@ FORMS += \
     ../StaticScan/heurwidget.ui \
     ../XDemangleWidget/dialogdemangle.ui \
     ../XDemangleWidget/xdemanglewidget.ui \
-    ../XDisasm/dialogasmsignature.ui \
-    ../XDisasm/dialogdisasm.ui \
-    ../XDisasm/dialogdisasmlabels.ui \
-    ../XDisasm/dialogdisasmprocess.ui \
-    ../XDisasm/xdisasmwidget.ui \
     ../XDisasmView/dialogmultidisasm.ui \
     ../XDisasmView/dialogmultidisasmsignature.ui \
     ../XDisasmView/xmultidisasmwidget.ui \
@@ -168,9 +161,6 @@ SOURCES += \
     ../Formats/xmsdos.cpp \
     ../Formats/xne.cpp \
     ../Formats/xpe.cpp \
-    ../QHexView/dialoghex.cpp \
-    ../QHexView/qhexview.cpp \
-    ../QHexView/qhexviewwidget.cpp \
     ../SpecAbstract/signatures.cpp \
     ../SpecAbstract/specabstract.cpp \
     ../StaticScan/dialogstaticscan.cpp \
@@ -195,13 +185,6 @@ SOURCES += \
     ../XDemangle/xdemangle.cpp \
     ../XDemangleWidget/dialogdemangle.cpp \
     ../XDemangleWidget/xdemanglewidget.cpp \
-    ../XDisasm/dialogasmsignature.cpp \
-    ../XDisasm/dialogdisasm.cpp \
-    ../XDisasm/dialogdisasmlabels.cpp \
-    ../XDisasm/dialogdisasmprocess.cpp \
-    ../XDisasm/xdisasm.cpp \
-    ../XDisasm/xdisasmmodel.cpp \
-    ../XDisasm/xdisasmwidget.cpp \
     ../XDisasmView/dialogmultidisasm.cpp \
     ../XDisasmView/dialogmultidisasmsignature.cpp \
     ../XDisasmView/xdisasmview.cpp \
@@ -329,4 +312,5 @@ SOURCES += \
     dialogoptions.cpp \
     guimainwindow.cpp \
     main_gui.cpp
+
 
