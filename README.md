@@ -16,5 +16,6 @@ PE file viewer/editor for Windows, Linux and MacOS.
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/docs/2.png "2")
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/docs/3.png "3")
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/docs/4.png "4")
+![alt text](https://github.com/horsicq/XPEViewer/blob/master/docs/5.png "5")
 
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/mascots/xpeviewer_full.png "Mascot")
