@@ -187,26 +187,26 @@ void GuiMainWindow::closeCurrentFile()
         g_pFile=nullptr;
     }
 
-    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
+    setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
 }
 
-void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
+void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent)
 {
-    event->acceptProposedAction();
+    pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event)
+void GuiMainWindow::dragMoveEvent(QDragMoveEvent *pEvent)
 {
-    event->acceptProposedAction();
+    pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dropEvent(QDropEvent *event)
+void GuiMainWindow::dropEvent(QDropEvent *pEvent)
 {
-    const QMimeData* mimeData=event->mimeData();
+    const QMimeData *pMimeData=pEvent->mimeData();
 
-    if(mimeData->hasUrls())
+    if(pMimeData->hasUrls())
     {
-        QList<QUrl> urlList=mimeData->urls();
+        QList<QUrl> urlList=pMimeData->urls();
 
         if(urlList.count())
         {
