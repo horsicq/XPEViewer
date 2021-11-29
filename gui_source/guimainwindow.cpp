@@ -55,6 +55,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     g_xShortcuts.load();
 
+    ui->widgetViewer->setGlobal(&g_xShortcuts,&g_xOptions);
+
     adjust();
 
     if(QCoreApplication::arguments().count()>1)
@@ -115,7 +117,6 @@ void GuiMainWindow::adjust()
     g_xOptions.adjustStayOnTop(this);
 
     ui->widgetViewer->setOptions(g_formatOptions);
-    ui->widgetViewer->setGlobal(&g_xShortcuts,&g_xOptions);
 
     if(g_xOptions.isShowLogo())
     {
