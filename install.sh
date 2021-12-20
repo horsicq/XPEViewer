@@ -2,8 +2,8 @@
 export X_SOURCE_PATH=$PWD
 
 cp -f $X_SOURCE_PATH/build/release/xpeviewer                        /usr/bin/
-cp -f $X_SOURCE_PATH/DEBIAN/xpeviewer.desktop                       /usr/share/applications/
-cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               /usr/share/icons/
+cp -f $X_SOURCE_PATH/LINUX/xpeviewer.desktop                       /usr/share/applications/
+cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                               /usr/share/icons/
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  /usr/lib/xpeviewer/
 mkdir -p  /usr/lib/translation/lang
 cp -f $X_SOURCE_PATH/gui_source/translation/*.qm                    /usr/lib/xpeviewer/lang/
