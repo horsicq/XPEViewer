@@ -28,6 +28,10 @@
 #include <QFileDialog>
 #include "xoptions.h"
 #include "xbinary.h"
+#include "staticscanoptionswidget.h"
+#include "searchsignaturesoptionswidget.h"
+#include "xhexviewoptionswidget.h"
+#include "xdisasmviewoptionswidget.h"
 #include "../global.h"
 
 namespace Ui {
@@ -45,10 +49,13 @@ public:
 private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonCancel_clicked();
-    void on_toolButtonSearchSignatures_clicked();
 
 private:
     Ui::DialogOptions *ui;
+    StaticScanOptionsWidget *g_pStaticScanOptionsWidget;
+    SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
+    XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
+    XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
     XOptions *g_pOptions;
 };
 

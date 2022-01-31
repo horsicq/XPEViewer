@@ -21,28 +21,34 @@
 #include "dialogoptions.h"
 #include "ui_dialogoptions.h"
 
-DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions) :
-    QDialog(pParent),
+DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
+    QDialog(parent),
     ui(new Ui::DialogOptions)
 {
     ui->setupUi(this);
 
     this->g_pOptions=pOptions;
 
-    pOptions->setCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
-    pOptions->setCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
-    pOptions->setCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
-    pOptions->setCheckBox(ui->checkBoxShowLogo,XOptions::ID_SHOWLOGO);
-    pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
-    pOptions->setComboBox(ui->comboBoxQss,XOptions::ID_QSS);
-    pOptions->setComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
-    pOptions->setLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
+    g_pStaticScanOptionsWidget=new StaticScanOptionsWidget(this);
+    g_pSearchSignaturesOptionsWidget=new SearchSignaturesOptionsWidget(this);
+    g_pXHexViewOptionsWidget=new XHexViewOptionsWidget(this);
+    g_pXDisasmViewOptionsWidget=new XDisasmViewOptionsWidget(this);
 
-#ifdef WIN32
-    ui->checkBoxContext->setChecked(pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*"));
-#else
-    ui->checkBoxContext->hide();
-#endif
+    ui->widgetOptions->setOptions(pOptions,X_APPLICATIONDISPLAYNAME);
+
+    ui->widgetOptions->addPage(g_pStaticScanOptionsWidget,tr("Scan"));
+    g_pStaticScanOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->addPage(g_pSearchSignaturesOptionsWidget,tr("Signatures"));
+    g_pSearchSignaturesOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->addPage(g_pXHexViewOptionsWidget,tr("Hex"));
+    g_pXHexViewOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->addPage(g_pXDisasmViewOptionsWidget,tr("Disasm"));
+    g_pXDisasmViewOptionsWidget->setOptions(pOptions);
+
+    ui->widgetOptions->setCurrentPage(1);
 }
 
 DialogOptions::~DialogOptions()
@@ -52,28 +58,11 @@ DialogOptions::~DialogOptions()
 
 void DialogOptions::on_pushButtonOK_clicked()
 {
-    g_pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
-    g_pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
-    g_pOptions->getCheckBox(ui->checkBoxSaveBackup,XOptions::ID_SAVEBACKUP);
-    g_pOptions->getCheckBox(ui->checkBoxShowLogo,XOptions::ID_SHOWLOGO);
-    g_pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
-    g_pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
-    g_pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
-    g_pOptions->getLineEdit(ui->lineEditSearchSignatures,XOptions::ID_SEARCHSIGNATURESPATH);
-
-#ifdef WIN32
-    if(g_pOptions->checkContext(X_APPLICATIONDISPLAYNAME,"*")!=ui->checkBoxContext->isChecked())
-    {
-        if(ui->checkBoxContext->isChecked())
-        {
-            g_pOptions->registerContext(X_APPLICATIONDISPLAYNAME,"*",qApp->applicationFilePath());
-        }
-        else
-        {
-            g_pOptions->clearContext(X_APPLICATIONDISPLAYNAME,"*");
-        }
-    }
-#endif
+    ui->widgetOptions->save();
+    g_pStaticScanOptionsWidget->save();
+    g_pSearchSignaturesOptionsWidget->save();
+    g_pXHexViewOptionsWidget->save();
+    g_pXDisasmViewOptionsWidget->save();
 
     if(g_pOptions->isRestartNeeded())
     {
@@ -86,17 +75,4 @@ void DialogOptions::on_pushButtonOK_clicked()
 void DialogOptions::on_pushButtonCancel_clicked()
 {
     this->close();
-}
-
-void DialogOptions::on_toolButtonSearchSignatures_clicked()
-{
-    QString sText=ui->lineEditSearchSignatures->text();
-    QString sInitDirectory=XBinary::convertPathName(sText);
-
-    QString sDirectoryName=QFileDialog::getExistingDirectory(this,tr("Open directory")+QString("..."),sInitDirectory,QFileDialog::ShowDirsOnly);
-
-    if(!sDirectoryName.isEmpty())
-    {
-        ui->lineEditSearchSignatures->setText(sDirectoryName);
-    }
 }

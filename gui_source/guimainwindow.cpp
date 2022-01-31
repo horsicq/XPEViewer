@@ -1,4 +1,4 @@
-/* Copyright (c) 2020-2021 hors<horsicq@gmail.com>
+/* Copyright (c) 2020-2022 hors<horsicq@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -35,15 +35,23 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     g_xOptions.setName(X_OPTIONSFILE);
 
-//    listIDs.append(XOptions::ID_SAVERECENTFILES);
-    g_xOptions.addID(XOptions::ID_STYLE);
-    g_xOptions.addID(XOptions::ID_QSS);
-    g_xOptions.addID(XOptions::ID_LANG);
-    g_xOptions.addID(XOptions::ID_STAYONTOP);
-    g_xOptions.addID(XOptions::ID_SAVELASTDIRECTORY);
-    g_xOptions.addID(XOptions::ID_SAVEBACKUP);
-    g_xOptions.addID(XOptions::ID_SEARCHSIGNATURESPATH);
-    g_xOptions.addID(XOptions::ID_SHOWLOGO);
+    g_xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
+    g_xOptions.addID(XOptions::ID_VIEW_QSS,"");
+    g_xOptions.addID(XOptions::ID_VIEW_LANG,"System");
+    g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP,false);
+    g_xOptions.addID(XOptions::ID_VIEW_SHOWLOGO,true);
+    g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY,true);
+    g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP,true);
+
+#ifdef Q_OS_WIN
+    g_xOptions.addID(XOptions::ID_FILE_CONTEXT,"*");
+#endif
+
+    StaticScanOptionsWidget::setDefaultValues(&g_xOptions);
+    SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
+    XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
+    XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
+
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
@@ -57,7 +65,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     ui->widgetViewer->setGlobal(&g_xShortcuts,&g_xOptions);
 
-    adjust();
+    adjustWindow();
 
     if(QCoreApplication::arguments().count()>1)
     {
@@ -103,7 +111,7 @@ void GuiMainWindow::on_actionOptions_triggered()
     DialogOptions dialogOptions(this,&g_xOptions);
     dialogOptions.exec();
 
-    adjust();
+    adjustWindow();
 }
 
 void GuiMainWindow::on_actionAbout_triggered()
@@ -112,11 +120,11 @@ void GuiMainWindow::on_actionAbout_triggered()
     dialogAbout.exec();
 }
 
-void GuiMainWindow::adjust()
+void GuiMainWindow::adjustWindow()
 {
-    g_xOptions.adjustStayOnTop(this);
+    ui->widgetViewer->adjustView();
 
-    ui->widgetViewer->setOptions(g_formatOptions);
+    g_xOptions.adjustStayOnTop(this);
 
     if(g_xOptions.isShowLogo())
     {
@@ -161,7 +169,7 @@ void GuiMainWindow::processFile(QString sFileName)
 
                 ui->widgetViewer->reload();
 
-                adjust();
+                adjustWindow();
 
                 setWindowTitle(sFileName);
             }
@@ -228,7 +236,7 @@ void GuiMainWindow::on_actionShortcuts_triggered()
 
     dialogShortcuts.exec();
 
-    adjust();
+    adjustWindow();
 }
 
 void GuiMainWindow::on_actionDemangle_triggered()
