@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(MainProject)
+project(XPEViewer)
 
 if(WIN32)
     set (CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019/")
@@ -17,3 +17,11 @@ add_subdirectory(XCppfilt)
 add_subdirectory(XCapstone)
 add_subdirectory(XArchive)
 add_subdirectory(gui_source)
+
+include(GNUInstallDirs)
+
+install (TARGETS xpeviewer)
+install (FILES LINUX/xpeviewer.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications/)
+install (DIRECTORY LINUX/hicolor DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons)
+install (DIRECTORY XStyles/qss DESTINATION ${CMAKE_INSTALL_LIBDIR}/xpeviewer)
+install (FILES signatures/crypto.db DESTINATION ${CMAKE_INSTALL_LIBDIR}/xpeviewer/signatures)
