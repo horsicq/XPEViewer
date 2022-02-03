@@ -18,22 +18,26 @@ if [ -z "$X_ERROR" ]; then
 
     check_file "$X_SOURCE_PATH/build/release/xpeviewer"
     if [ -z "$X_ERROR" ]; then
-        create_deb_app_dir xpeviewer
+        create_deb_app_dir xelfviewer
         
-        X_CONTROL_FILE=$X_SOURCE_PATH/LINUX/control_${X_OS_VERSION}_${X_ARCHITECTURE};
+        export X_PACKAGENAME='xpeviewer'
+        export X_MAINTAINER='hors <horsicq@gmail.com>'
         
-        if test -f "$X_CONTROL_FILE"; then
-            cp -f X_CONTROL_FILE                                                $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+        export X_HOMEPAGE='http://ntinfo.biz'
+        export X_DESCRIPTION='XPEViewer is a PE file viewer/editor.'
+        
+        if [ "$X_DEBIAN_VERSION" -ge "11" ]; then
+            export X_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5'
         else
-            cp -f $X_SOURCE_PATH/LINUX/control                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
-        fi        
+            export X_DEPENDS='qt5-default, libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5'
+        fi
         
-        sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
-        sed -i "s/#ARCH#/$X_ARCHITECTURE/"                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+        create_deb_control $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+
         cp -f $X_SOURCE_PATH/build/release/xpeviewer                        $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
-        cp -f $X_SOURCE_PATH/DEBIAN/xpeviewer.desktop                       $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
+        cp -f $X_SOURCE_PATH/LINUX/xpeviewer.desktop                       $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
         sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/xpeviewer.desktop
-        cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
+        cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                               $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
         cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/lang/
         cp -f $X_SOURCE_PATH/gui_source/translation/*.qm                    $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/lang/

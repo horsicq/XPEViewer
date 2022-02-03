@@ -8,9 +8,9 @@ source build_tools/linux.sh
 create_image_app_dir xpeviewer
 
 cp -f $X_SOURCE_PATH/build/release/xpeviewer                        $X_SOURCE_PATH/release/appDir/usr/bin/
-cp -f $X_SOURCE_PATH/DEBIAN/xpeviewer.desktop                       $X_SOURCE_PATH/release/appDir/usr/share/applications/
+cp -f $X_SOURCE_PATH/LINUX/xpeviewer.desktop                       $X_SOURCE_PATH/release/appDir/usr/share/applications/
 sed -i "s/#VERSION#/1.0/"                                           $X_SOURCE_PATH/release/appDir/usr/share/applications/xpeviewer.desktop
-cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PATH/release/appDir/usr/share/icons/
+cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                               $X_SOURCE_PATH/release/appDir/usr/share/icons/
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/signatures
 cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/signatures/
