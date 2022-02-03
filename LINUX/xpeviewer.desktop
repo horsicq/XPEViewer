@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=#VERSION#
+Type=Application
+Name=XPEViewer
+Comment=PE file viewer/editor
+TryExec=xpeviewer
+Exec=xpeviewer %F
+Icon=xpeviewer
+Terminal=false
+Categories=Development;
+MimeType=application/octet-stream;
