@@ -22,17 +22,17 @@
 #define DIALOGOPTIONS_H
 
 #include <QDialog>
-#include <QSettings>
 #include <QDir>
-#include <QMessageBox>
 #include <QFileDialog>
-#include "xoptions.h"
-#include "xbinary.h"
-#include "staticscanoptionswidget.h"
-#include "searchsignaturesoptionswidget.h"
-#include "xhexviewoptionswidget.h"
-#include "xdisasmviewoptionswidget.h"
+#include <QMessageBox>
+#include <QSettings>
 #include "../global.h"
+#include "searchsignaturesoptionswidget.h"
+#include "staticscanoptionswidget.h"
+#include "xbinary.h"
+#include "xdisasmviewoptionswidget.h"
+#include "xhexviewoptionswidget.h"
+#include "xoptions.h"
 
 namespace Ui {
 class DialogOptions;

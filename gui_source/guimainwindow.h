@@ -21,15 +21,13 @@
 #ifndef GUIMAINWINDOW_H
 #define GUIMAINWINDOW_H
 
-#include <QMainWindow>
-
-#include "../global.h"
-#include <QMainWindow>
-#include <QFileDialog>
 #include <QDragEnterEvent>
+#include <QFileDialog>
+#include <QMainWindow>
 #include <QMimeData>
-#include "dialogoptions.h"
+#include "../global.h"
 #include "dialogabout.h"
+#include "dialogoptions.h"
 #include "dialogshortcuts.h"
 #include "pewidget.h"
 
