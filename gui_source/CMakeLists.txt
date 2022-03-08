@@ -24,6 +24,7 @@ find_package(Qt5 COMPONENTS PrintSupport REQUIRED)
 find_package(Qt5 COMPONENTS Svg REQUIRED)
 
 add_definitions(-DUSE_DEX)
+add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
 
 include(${PROJECT_SOURCE_DIR}/../FormatWidgets/PE/pewidget.cmake)
