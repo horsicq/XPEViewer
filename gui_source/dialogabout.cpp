@@ -57,7 +57,8 @@ DialogAbout::DialogAbout(QWidget *pParent) :
                                          "</p>"
                                          "<p align=\"center\">"
                                             "<a href=\"https://github.com/leandrofroes\"><span style=\" text-decoration: underline; color:#ff0000;\">Leandro Fróes</span></a>, "
-                                            "<a href=\"https://www.leavesongs.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">phithon</span></a>"
+                                            "<a href=\"https://www.leavesongs.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">phithon</span></a>,"
+                                            "<a href=\"https://github.com/clayne/\"><span style=\" text-decoration: underline; color:#ff0000;\">Christopher Layne</span></a>"
                                          "</p>"
                                      "</body></html>")
                                 .arg(tr("Thanks")));
