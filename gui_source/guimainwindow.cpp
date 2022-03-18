@@ -42,6 +42,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     g_xOptions.addID(XOptions::ID_VIEW_SHOWLOGO,true);
     g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY,true);
     g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP,true);
+    g_xOptions.addID(XOptions::ID_FILE_SAVERECENTFILES,true);
 
 #ifdef Q_OS_WIN
     g_xOptions.addID(XOptions::ID_FILE_CONTEXT,"*");
@@ -64,6 +65,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     g_xShortcuts.load();
 
     ui->widgetViewer->setGlobal(&g_xShortcuts,&g_xOptions);
+
+    connect(&g_xOptions,SIGNAL(openFile(QString)),this,SLOT(processFile(QString)));
 
     createMenus();
 
