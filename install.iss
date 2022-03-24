@@ -1,11 +1,11 @@
 #define MyAppName "XPEViewer"
-#define MyAppVersion "0.02"
+#define MyAppVersion "0.03"
 #define MyAppPublisher "NTInfo"
 #define MyAppURL "ntinfo.biz"
 #define MyAppExeName "xpeviewer.exe"
 
 [Setup]
-AppId={{9A3C42B9-7B30-4D1C-BC09-D4F938B62D13}
+AppId={{6A3C42B9-7B30-4D1C-BC09-D4F938B62D13}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 AppPublisher={#MyAppPublisher}
