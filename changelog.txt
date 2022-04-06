@@ -1,6 +1,10 @@
 0.03
 -----------------------------------------------------------------------
 [+] Source code qt6 compatibility
+[+] Bundle for Apple M1 processor
+[+] New info file widget
+[+] Resources string table
+[+] Editable HexView widget
 [+] New structs
 [+] New translations
 [+] Many bugs have been fixed.

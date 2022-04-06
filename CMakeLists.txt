@@ -20,7 +20,11 @@ add_subdirectory(gui_source)
 
 include(GNUInstallDirs)
 
-install (TARGETS xpeviewer)
+if(WIN32)
+    install (TARGETS xpeviewer)
+else()
+    install (TARGETS xpeviewer LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+endif()
 install (FILES LINUX/xpeviewer.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications/)
 install (DIRECTORY LINUX/hicolor DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons)
 install (DIRECTORY XStyles/qss DESTINATION ${CMAKE_INSTALL_LIBDIR}/xpeviewer)
