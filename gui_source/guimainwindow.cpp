@@ -38,6 +38,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     g_xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
     g_xOptions.addID(XOptions::ID_VIEW_QSS,"");
     g_xOptions.addID(XOptions::ID_VIEW_LANG,"System");
+    g_xOptions.addID(XOptions::ID_VIEW_FONT,"");
     g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP,false);
     g_xOptions.addID(XOptions::ID_VIEW_SHOWLOGO,true);
     g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY,true);
@@ -165,7 +166,7 @@ void GuiMainWindow::adjustWindow()
 {
     ui->widgetViewer->adjustView();
 
-    g_xOptions.adjustStayOnTop(this);
+    g_xOptions.adjustWindow(this);
 
     if(g_xOptions.isShowLogo())
     {
