@@ -229,14 +229,15 @@ void GuiMainWindow::processFile(QString sFileName)
 
 void GuiMainWindow::closeCurrentFile()
 {
-    ui->stackedWidgetMain->setCurrentIndex(0);
-
     if(g_pFile)
     {
         g_pFile->close();
         delete g_pFile;
         g_pFile=nullptr;
     }
+
+    ui->stackedWidgetMain->setCurrentIndex(0);
+    ui->widgetViewer->cleanup();
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
 }
