@@ -45,6 +45,11 @@ win32 {
     RC_ICONS = ../icons/main.ico
     CONFIG -= embed_manifest_exe
     QMAKE_MANIFEST = windows.manifest.xml
+    VERSION = 0.03.0.0
+    QMAKE_TARGET_COMPANY = NTInfo
+    QMAKE_TARGET_PRODUCT = XPEViewer
+    QMAKE_TARGET_DESCRIPTION = XPEViewer is a PE file viewer/editor.
+    QMAKE_TARGET_COPYRIGHT = horsicq@gmail.com
 }
 macx {
     ICON = ../icons/main.icns
