@@ -28,6 +28,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     ui->setupUi(this);
 
     g_pFile=nullptr;
+    g_pXInfo=nullptr;
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
 
@@ -187,6 +188,7 @@ void GuiMainWindow::processFile(QString sFileName)
         closeCurrentFile();
 
         g_pFile=new QFile;
+        g_pXInfo=new XInfoDB;
 
         g_pFile->setFileName(sFileName);
 
@@ -203,11 +205,14 @@ void GuiMainWindow::processFile(QString sFileName)
             XPE pe(g_pFile);
             if(pe.isValid())
             {
+                g_pXInfo->setDevice(g_pFile,pe.getFileType());
+
                 ui->stackedWidgetMain->setCurrentIndex(1);
                 g_formatOptions.bIsImage=false;
                 g_formatOptions.nImageBase=-1;
                 g_formatOptions.nStartType=SPE::TYPE_INFO;
                 ui->widgetViewer->setData(g_pFile,g_formatOptions,0,0,0);
+                ui->widgetViewer->setXInfoDB(g_pXInfo);
 
                 ui->widgetViewer->reload();
 
@@ -229,6 +234,12 @@ void GuiMainWindow::processFile(QString sFileName)
 
 void GuiMainWindow::closeCurrentFile()
 {
+    if(g_pXInfo)
+    {
+        delete g_pXInfo;
+        g_pXInfo=nullptr;
+    }
+
     if(g_pFile)
     {
         g_pFile->close();
