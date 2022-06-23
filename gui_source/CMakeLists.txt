@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(xpeviewer VERSION 0.3 LANGUAGES CXX)
+project(xpeviewer VERSION 0.4 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -22,6 +22,8 @@ find_package(Qt5 COMPONENTS Concurrent REQUIRED)
 find_package(Qt5 COMPONENTS OpenGL REQUIRED)
 find_package(Qt5 COMPONENTS PrintSupport REQUIRED)
 find_package(Qt5 COMPONENTS Svg REQUIRED)
+find_package(Qt5 COMPONENTS Sql REQUIRED)
+find_package(Qt5 COMPONENTS Network REQUIRED)
 
 add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
@@ -66,6 +68,8 @@ target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
 target_link_libraries(${PROJECT_NAME} Qt5::OpenGL)
 target_link_libraries(${PROJECT_NAME} Qt5::PrintSupport)
 target_link_libraries(${PROJECT_NAME} Qt5::Svg)
+target_link_libraries(${PROJECT_NAME} Qt5::Sql)
+target_link_libraries(${PROJECT_NAME} Qt5::Network)
 
 if(WIN32)
     target_link_libraries(${PROJECT_NAME} Wintrust)

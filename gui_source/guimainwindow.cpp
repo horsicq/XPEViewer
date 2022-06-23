@@ -54,6 +54,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
     XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
     XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
+    XOnlineToolsOptionsWidget::setDefaultValues(&g_xOptions);
 
     g_xOptions.load();
 
@@ -151,7 +152,7 @@ void GuiMainWindow::actionExitSlot()
 
 void GuiMainWindow::actionOptionsSlot()
 {
-    DialogOptions dialogOptions(this,&g_xOptions);
+    DialogOptions dialogOptions(this,&g_xOptions,XOptions::GROUPID_FILE);
     dialogOptions.exec();
 
     adjustWindow();

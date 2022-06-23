@@ -58,7 +58,12 @@ DialogAbout::DialogAbout(QWidget *pParent) :
                                          "<p align=\"center\">"
                                             "<a href=\"https://github.com/leandrofroes\"><span style=\" text-decoration: underline; color:#ff0000;\">Leandro Fróes</span></a>, "
                                             "<a href=\"https://www.leavesongs.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">phithon</span></a>, "
-                                            "<a href=\"https://github.com/clayne/\"><span style=\" text-decoration: underline; color:#ff0000;\">Christopher Layne</span></a>"
+                                            "<a href=\"https://github.com/clayne/\"><span style=\" text-decoration: underline; color:#ff0000;\">Christopher Layne</span></a>, "
+                                         "</p>"
+                                         "<p align=\"center\">"
+                                            "<a href=\"http://dfirnotes.net/\"><span style=\" text-decoration: underline; color:#ff0000;\">Adric Net</span></a>, "
+                                            "<a href=\"https://greich.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">Gilad Reich</span></a>, "
+                                            "<a href=\"http://joaovitor.gq/\"><span style=\" text-decoration: underline; color:#ff0000;\">João Vitor</span></a>"
                                          "</p>"
                                      "</body></html>")
                                 .arg(tr("Thanks")));

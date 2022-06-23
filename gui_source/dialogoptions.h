@@ -32,6 +32,7 @@
 #include "xbinary.h"
 #include "xdisasmviewoptionswidget.h"
 #include "xhexviewoptionswidget.h"
+#include "xonlinetoolsoptionswidget.h"
 #include "xoptions.h"
 
 namespace Ui {
@@ -43,7 +44,7 @@ class DialogOptions : public QDialog
     Q_OBJECT
 
 public:
-    explicit DialogOptions(QWidget *pParent,XOptions *pOptions);
+    explicit DialogOptions(QWidget *pParent,XOptions *pOptions,XOptions::GROUPID groupId);
     ~DialogOptions();
 
 private:
@@ -52,6 +53,7 @@ private:
     SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
     XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
     XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
+    XOnlineToolsOptionsWidget *g_pXOnlineToolsOptionsWidget;
 };
 
 #endif // DIALOGOPTIONS_H
