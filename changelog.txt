@@ -1,5 +1,6 @@
 0.04
 -----------------------------------------------------------------------
+[+] VirusTotal analysis
 [+] Bundle for Ubuntu 22.04
 [+] New translations
 [+] Many bugs have been fixed.
