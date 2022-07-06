@@ -27,13 +27,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 {
     ui->setupUi(this);
 
-//    ui->labelVersion->setText(QString("<span style=\" font-weight:600;\">%1</span>")
-//                              .arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION)));
 
-//    ui->labelBugreports->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1</span>: <a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; color:#ff0000;\">horsicq@gmail.com</span></a></p></body></html>")
-//                                .arg(tr("Bugreports")));
-//    ui->labelWebsite->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1</span>: <a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; color:#ff0000;\">http://ntinfo.biz</span></a></p></body></html>")
-//                                .arg(tr("Website")));
 //    ui->labelDonate->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"mailto:ntinfo.re@gmail.com\"><span style=\" text-decoration: underline; color:#ff0000;\">ntinfo.re@gmail.com</span></a></p></body></html>")
 //                                .arg(tr("Donate")));
 //    ui->labelSourceCode->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/XPEViewer\"><span style=\" text-decoration: underline; color:#ff0000;\">https://github.com/horsicq/XPEViewer</span></a></p></body></html>")
@@ -72,10 +66,28 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
     _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>")
             .arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
-    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span>: <a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; color:#ff0000;\">horsicq@gmail.com</span></a></p>")
+    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; color:#ff0000;\">horsicq@gmail.com</span></a></p>")
             .arg(tr("Bugreports"));
-    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span>: <a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; color:#ff0000;\">http://ntinfo.biz</span></a></p>")
+    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; color:#ff0000;\">http://ntinfo.biz</span></a></p>")
             .arg(tr("Website"));
+    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"ntinfo.re@gmail.com\"><span style=\" text-decoration: underline; color:#ff0000;\">ntinfo.re@gmail.com</span></a></p>")
+            .arg(tr("Donate"));
+    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1(BTC): </span><a href=\"3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo\"><span style=\" text-decoration: underline; color:#ff0000;\">3DqddVBX9PKqMvNPXZ3gPHBNNRtD9CnmJo</span></a></p>")
+            .arg(tr("Donate"));
+    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/XPEViewer\"><span style=\" text-decoration: underline; color:#ff0000;\">https://github.com/horsicq/XPEViewer</span></a></p>")
+            .arg(tr("Source code"));
+
+    _data.sLibraries+=QString("<p align=\"center\"><span style=\" font-weight:600;\">QT Library %1 </span><a href=\"http://qt-project.org\"><span style=\" text-decoration: underline; color:#ff0000;\">http://qt-project.org</span></a></p>")
+            .arg(QT_VERSION_STR);
+    _data.sLibraries+=QString("<p align=\"center\"><span style=\" font-weight:600;\">QWT Library %1 </span><a href=\"http://qwt.sourceforge.net\"><span style=\" text-decoration: underline; color:#ff0000;\">http://qwt.sourceforge.net</span></a></p>")
+            .arg(QWT_VERSION_STR);
+    _data.sLibraries+=QString("<p align=\"center\"><span style=\" font-weight:600;\">Capstone %1.%2.%3 </span><a href=\"http://www.capstone-engine.org\"><span style=\" text-decoration: underline; color:#ff0000;\">http://www.capstone-engine.org</span></a></p>")
+            .arg(QString::number(CS_VERSION_MAJOR),QString::number(CS_VERSION_MINOR),QString::number(CS_VERSION_EXTRA));
+
+//    _data.sLogoPath=":/pics/logo.png";
+    _data.sUpdatesLink="https://github.com/horsicq/XPEViewer/releases";
+
+//    _data.sThanksPath=
 
     ui->widgetAbout->setData(_data);
 }

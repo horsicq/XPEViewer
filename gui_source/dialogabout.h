@@ -25,6 +25,8 @@
 #include <QMessageBox>
 #include "../global.h"
 #include "xoptions.h"
+#include "qwt_global.h"
+#include "capstone/capstone.h"
 
 namespace Ui {
 class DialogAbout;
