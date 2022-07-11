@@ -87,7 +87,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 //    _data.sLogoPath=":/pics/logo.png";
     _data.sUpdatesLink="https://github.com/horsicq/XPEViewer/releases";
 
-//    _data.sThanksPath=
+//    _data.sThanksPath="";
 
     ui->widgetAbout->setData(_data);
 }
