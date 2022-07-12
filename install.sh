@@ -18,3 +18,4 @@ cp -f $X_SOURCE_PATH/LINUX/xpeviewer.desktop                        $X_PREFIX/sh
 cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                                $X_PREFIX/share/icons/
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_PREFIX/lib/xpeviewer/
 cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_PREFIX/lib/xpeviewer/signatures/
+cp -Rf $X_SOURCE_PATH/images/                                       $X_PREFIX/lib/xpeviewer/

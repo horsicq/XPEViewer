@@ -29,3 +29,4 @@ install (FILES LINUX/xpeviewer.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/
 install (DIRECTORY LINUX/hicolor DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons)
 install (DIRECTORY XStyles/qss DESTINATION ${CMAKE_INSTALL_LIBDIR}/xpeviewer)
 install (FILES signatures/crypto.db DESTINATION ${CMAKE_INSTALL_LIBDIR}/xpeviewer/signatures)
+install (DIRECTORY images DESTINATION ${CMAKE_INSTALL_LIBDIR}/xpeviewer)

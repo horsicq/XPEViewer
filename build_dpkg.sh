@@ -27,18 +27,19 @@ if [ -z "$X_ERROR" ]; then
         export X_DESCRIPTION='XPEViewer is a PE file viewer/editor.'
         
         if [ "$X_DEBIAN_VERSION" -ge "11" ]; then
-            export X_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5'
+            export X_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5network5, libqt5sql5'
         else
-            export X_DEPENDS='qt5-default, libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5'
+            export X_DEPENDS='qt5-default, libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5network5, libqt5sql5'
         fi
         
         create_deb_control $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
 
         cp -f $X_SOURCE_PATH/build/release/xpeviewer                        $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
-        cp -f $X_SOURCE_PATH/LINUX/xpeviewer.desktop                       $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
+        cp -f $X_SOURCE_PATH/LINUX/xpeviewer.desktop                        $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
         sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/xpeviewer.desktop
-        cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                               $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
+        cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                                $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
         cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/
+        cp -Rf $X_SOURCE_PATH/images/                                       $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/lang/
         cp -f $X_SOURCE_PATH/gui_source/translation/*.qm                    $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/lang/
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xpeviewer/signatures
