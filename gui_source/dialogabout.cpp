@@ -31,6 +31,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
 
     _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1</span></p>")
             .arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
+    _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">Copyright (C) 2020-2022 Hors</span></p>");
     _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: underline; color:#ff0000;\">horsicq@gmail.com</span></a></p>")
             .arg(tr("Bugreports"));
     _data.sInfo+=QString("<p align=\"center\"><span style=\" font-weight:600;\">%1: </span><a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; color:#ff0000;\">http://ntinfo.biz</span></a></p>")
@@ -53,7 +54,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
     _data.sUpdatesLink="https://github.com/horsicq/XPEViewer/releases";
 
 #ifndef QT_DEBUG
-    _data.sThanksPath=XOptions::getApplicationDataPath()+QDir::separator()+"lang"+QDir::separator()+"images"+QDir::separator()+"thanks";
+    _data.sThanksPath=XOptions::getApplicationDataPath()+QDir::separator()+"images"+QDir::separator()+"thanks";
 #else
     QDir dir(XOptions::getApplicationDataPath());
 
