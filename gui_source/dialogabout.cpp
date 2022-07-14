@@ -54,9 +54,9 @@ DialogAbout::DialogAbout(QWidget *pParent) :
     _data.sUpdatesLink="https://github.com/horsicq/XPEViewer/releases";
 
 #ifndef QT_DEBUG
-    _data.sThanksPath=XOptions::getApplicationDataPath()+QDir::separator()+"images"+QDir::separator()+"thanks";
+    _data.sThanksPath=XOptions().getApplicationDataPath()+QDir::separator()+"images"+QDir::separator()+"thanks";
 #else
-    QDir dir(XOptions::getApplicationDataPath());
+    QDir dir(XOptions().getApplicationDataPath());
 
     dir.cdUp();
     dir.cdUp();
