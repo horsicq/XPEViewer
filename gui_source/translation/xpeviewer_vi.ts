@@ -92,10 +92,6 @@
         <source>Source code</source>
         <translation>Mã nguồn</translation>
     </message>
-    <message>
-        <source>Thanks</source>
-        <translation>Cảm ơn</translation>
-    </message>
 </context>
 <context>
     <name>DialogDemangle</name>
@@ -129,10 +125,6 @@
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -146,7 +138,7 @@
     </message>
     <message>
         <source>C Strings</source>
-        <translation></translation>
+        <translation>Chuỗi</translation>
     </message>
     <message>
         <source>OK</source>
@@ -181,10 +173,6 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
     </message>
 </context>
 <context>
@@ -250,10 +238,6 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
     </message>
 </context>
 <context>
@@ -419,24 +403,12 @@
         <source>Create view model</source>
         <translation>Tạo mẫu  xem</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
         <translation>Tùy chọn</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Hủy</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -455,12 +427,8 @@
         <translation>Rối loạn</translation>
     </message>
     <message>
-        <source>Information</source>
-        <translation>Thông tin</translation>
-    </message>
-    <message>
-        <source>Please restart the application</source>
-        <translation>Vui lòng khởi động lại ứng dụng</translation>
+        <source>Online tools</source>
+        <translation>Công cụ ký</translation>
     </message>
 </context>
 <context>
@@ -472,10 +440,6 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
     </message>
 </context>
 <context>
@@ -535,10 +499,6 @@
         <source>Cancel</source>
         <translation>Hủy</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
-    </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
@@ -584,12 +544,12 @@
         <translation>Xóa</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Đóng</translation>
+        <source>Default</source>
+        <translation>Vỡ nợ</translation>
     </message>
     <message>
-        <source>Group</source>
-        <translation>Tập đoàn</translation>
+        <source>Close</source>
+        <translation>Đóng</translation>
     </message>
     <message>
         <source>Name</source>
@@ -621,6 +581,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -660,6 +624,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -724,8 +692,24 @@
         <translation>Thông tin</translation>
     </message>
     <message>
+        <source>Save</source>
+        <translation>Lưu</translation>
+    </message>
+    <message>
         <source>Close</source>
         <translation>Đóng</translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation>Tài liệu văn bản</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>Lưu kết quả</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Kết quả</translation>
     </message>
 </context>
 <context>
@@ -778,6 +762,39 @@
     <message>
         <source>Cancel</source>
         <translation>Hủy</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXInfoDBTransferProcess</name>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>Nhập</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>Trích xuất</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXSymbols</name>
+    <message>
+        <source>Symbols</source>
+        <translation>Ký hiệu</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Đóng</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
+    <message>
+        <source>Close</source>
+        <translation>Đóng</translation>
     </message>
 </context>
 <context>
@@ -1143,6 +1160,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>Quét phỏng đoán</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -2004,6 +2025,10 @@
         <translation>Sao chép</translation>
     </message>
     <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Name</source>
         <translation>Tên</translation>
     </message>
@@ -2031,6 +2056,10 @@
         <translation>Bộ lọc</translation>
     </message>
     <message>
+        <source>C Strings</source>
+        <translation>Chuỗi</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Lưu</translation>
     </message>
@@ -2045,6 +2074,14 @@
     <message>
         <source>Copy</source>
         <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Chỉnh sửa</translation>
     </message>
     <message>
         <source>String</source>
@@ -2069,10 +2106,6 @@
     <message>
         <source>Demangle</source>
         <translation>Gỡ rối</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2295,6 +2328,10 @@
         <translation>Quét phỏng đoán</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>Các loại</translation>
     </message>
@@ -2304,6 +2341,29 @@
     <message>
         <source>Strings</source>
         <translation>Chuỗi</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>Thông tin</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>Kiểm tra cập nhật</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>Cảm ơn</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Trang mạng</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>Thư viện</translation>
     </message>
 </context>
 <context>
@@ -2383,6 +2443,10 @@
     <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -2468,6 +2532,21 @@
     </message>
 </context>
 <context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>Xử lý</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Lỗi</translation>
+    </message>
+</context>
+<context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
@@ -2482,6 +2561,10 @@
         <translation>Mã vận hành</translation>
     </message>
     <message>
+        <source>Symbol</source>
+        <translation>Biểu tượng</translation>
+    </message>
+    <message>
         <source>Comment</source>
         <translation>Bình luận</translation>
     </message>
@@ -2490,16 +2573,12 @@
         <translation>Opcode không hợp lệ</translation>
     </message>
     <message>
-        <source>Go to address</source>
-        <translation>Đi tới địa chỉ</translation>
+        <source>Offset</source>
+        <translation>Khoảng cách</translation>
     </message>
     <message>
-        <source>Go to offset</source>
-        <translation>Đi đến bù đắp</translation>
-    </message>
-    <message>
-        <source>Go to entry point</source>
-        <translation>Đi đến điểm nhập cảnh</translation>
+        <source>Entry point</source>
+        <translation>Điểm nhập</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -2514,8 +2593,12 @@
         <translation>Chữ ký</translation>
     </message>
     <message>
-        <source>Find</source>
-        <translation>Tìm kiếm</translation>
+        <source>String</source>
+        <translation>Chuỗi</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Giá trị</translation>
     </message>
     <message>
         <source>Find next</source>
@@ -2526,24 +2609,16 @@
         <translation>Chọn tất cả</translation>
     </message>
     <message>
-        <source>Copy as hex</source>
-        <translation>Sao chép dưới dạng hex</translation>
-    </message>
-    <message>
-        <source>Copy cursor offset</source>
-        <translation>Sao chép bù đắp con trỏ</translation>
-    </message>
-    <message>
-        <source>Copy cursor address</source>
-        <translation>Sao chép địa chỉ con trỏ</translation>
-    </message>
-    <message>
         <source>Hex</source>
         <translation>Hex</translation>
     </message>
     <message>
         <source>Go to</source>
         <translation>Đi tới</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>Tìm kiếm</translation>
     </message>
     <message>
         <source>Select</source>
@@ -2554,8 +2629,12 @@
         <translation>Sao chép</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Khoảng cách</translation>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Chỉnh sửa</translation>
     </message>
     <message>
         <source>Relative address</source>
@@ -2567,6 +2646,22 @@
     <message>
         <source>Font</source>
         <translation>Nét chữ</translation>
+    </message>
+    <message>
+        <source>Syntax</source>
+        <translation>Cú pháp</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address colon</source>
+        <translation>Địa chỉ</translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation></translation>
     </message>
     <message>
         <source>Colors</source>
@@ -2739,6 +2834,38 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>Thông tin</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>Băm</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>Entropy</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Điểm nhập</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>Tiêu đề</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Phiên bản</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Tên tệp</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Kích thước</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>Hệ điêu hanh</translation>
     </message>
@@ -2759,14 +2886,6 @@
         <translation>Endianness</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Tên tệp</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Kích thước</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>nén</translation>
     </message>
@@ -2775,16 +2894,8 @@
         <translation>không nén</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>Entropy</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>Loại tập tin</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>Điểm nhập</translation>
     </message>
     <message>
         <source>Address</source>
@@ -2806,10 +2917,6 @@
         <source>Signature</source>
         <translation>Chữ ký</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>Phiên bản</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -2822,24 +2929,24 @@
         <translation>Loại</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>Khoảng cách</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>Kích thước</translation>
+        <source>Method</source>
+        <translation>phương pháp</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>Bình luận</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>Tải lại</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>Lưu</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>Tải lại</translation>
+        <source>Text</source>
+        <translation>Chữ</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2923,14 +3030,6 @@
         <translation>Khoảng cách</translation>
     </message>
     <message>
-        <source>Go to offset</source>
-        <translation>Đi đến bù đắp</translation>
-    </message>
-    <message>
-        <source>Go to address</source>
-        <translation>Đi tới địa chỉ</translation>
-    </message>
-    <message>
         <source>Dump to file</source>
         <translation>Kết xuất ra tập tin</translation>
     </message>
@@ -2939,8 +3038,12 @@
         <translation>Chữ ký</translation>
     </message>
     <message>
-        <source>Find</source>
-        <translation>Tìm kiếm</translation>
+        <source>String</source>
+        <translation>Chuỗi</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Giá trị</translation>
     </message>
     <message>
         <source>Find next</source>
@@ -2949,10 +3052,6 @@
     <message>
         <source>Select all</source>
         <translation>Chọn tất cả</translation>
-    </message>
-    <message>
-        <source>Data as hex</source>
-        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -2967,12 +3066,20 @@
         <translation>Đi tới</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>Tìm kiếm</translation>
+    </message>
+    <message>
         <source>Select</source>
         <translation>Chọn</translation>
     </message>
     <message>
         <source>Copy</source>
         <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
     </message>
     <message>
         <source>Edit</source>
@@ -2985,6 +3092,10 @@
         <source>Font</source>
         <translation>Nét chữ</translation>
     </message>
+    <message>
+        <source>Address colon</source>
+        <translation>Địa chỉ</translation>
+    </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
@@ -2996,9 +3107,48 @@
         <source>Hex</source>
         <translation>Hex</translation>
     </message>
+</context>
+<context>
+    <name>XInfoDB</name>
     <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
+        <source>Unknown</source>
+        <translation>không xác định</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>Tập tin</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Nhãn</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>Điểm nhập</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>Trích xuất</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>Nhập</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>Dữ liệu</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>Sự vật</translation>
+    </message>
+    <message>
+        <source>Function</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3095,6 +3245,10 @@
         <translation>Kiến trúc</translation>
     </message>
     <message>
+        <source>Show all</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Memory map</source>
         <translation>Sơ đồ bộ nhớ</translation>
     </message>
@@ -3122,20 +3276,12 @@
         <translation>Mẫu đơn</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Loại</translation>
-    </message>
-    <message>
         <source>Mode</source>
         <translation>Chế độ</translation>
     </message>
     <message>
-        <source>Syntax</source>
-        <translation>Cú pháp</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Lỗi</translation>
+        <source>Symbols</source>
+        <translation>Ký hiệu</translation>
     </message>
 </context>
 <context>
@@ -3143,6 +3289,21 @@
     <message>
         <source>Unknown</source>
         <translation>không xác định</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Mẫu đơn</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3183,6 +3344,10 @@
         <translation>Hiển thị biểu trưng</translation>
     </message>
     <message>
+        <source>Font</source>
+        <translation>Nét chữ</translation>
+    </message>
+    <message>
         <source>Save last directory</source>
         <translation>Lưu thư mục cuối cùng</translation>
     </message>
@@ -3199,6 +3364,18 @@
         <translation>Thêm vào menu ngữ cảnh</translation>
     </message>
     <message>
+        <source>Default</source>
+        <translation>Vỡ nợ</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Hủy</translation>
+    </message>
+    <message>
         <source>Appearance</source>
         <translation>Giao diện</translation>
     </message>
@@ -3213,6 +3390,14 @@
     <message>
         <source>Please run the program as an administrator</source>
         <translation>Vui lòng chạy chương trình với tư cách quản trị viên</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Thông tin</translation>
+    </message>
+    <message>
+        <source>Please restart the application</source>
+        <translation>Vui lòng khởi động lại ứng dụng</translation>
     </message>
 </context>
 <context>
@@ -3296,8 +3481,132 @@
 <context>
     <name>XShortcuts</name>
     <message>
-        <source>Unknown</source>
-        <translation>không xác định</translation>
+        <source>Action</source>
+        <translation>Hoạt động</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>Tập tin</translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation>Quan điểm</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>Chuỗi</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>Chuỗi</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Chữ ký</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>Chữ ký</translation>
+    </message>
+    <message>
+        <source>Struct</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>Hex</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>Rối loạn</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Gỡ lỗi</translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation>Trình gỡ lỗi</translation>
+    </message>
+    <message>
+        <source>Register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack</source>
+        <translation>Cây rơm</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>Lưu trữ</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>Bàn</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>Xử lý</translation>
+    </message>
+    <message>
+        <source>Memory</source>
+        <translation>Kỉ niệm</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Sao chép</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Chỉnh sửa</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>Tìm kiếm</translation>
+    </message>
+    <message>
+        <source>Go to</source>
+        <translation>Đi tới</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>Công cụ</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Trợ giúp</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation>Chọn</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Breakpoint</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Modules</source>
+        <translation>Mô-đun</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>Sơ đồ bộ nhớ</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>Giá trị</translation>
+    </message>
+    <message>
+        <source>Show</source>
+        <translation>Trình diễn</translation>
     </message>
     <message>
         <source>Open</source>
@@ -3308,8 +3617,8 @@
         <translation>Lưu</translation>
     </message>
     <message>
-        <source>Save As</source>
-        <translation>Lưu thành</translation>
+        <source>Save as</source>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -3324,16 +3633,16 @@
         <translation>Thoát</translation>
     </message>
     <message>
-        <source>Copy</source>
-        <translation>Sao chép</translation>
+        <source>Dump to file</source>
+        <translation>Kết xuất ra tập tin</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>Trình diễn</translation>
+        <source>Address</source>
+        <translation>Địa chỉ</translation>
     </message>
     <message>
-        <source>String</source>
-        <translation>Chuỗi</translation>
+        <source>Entry point</source>
+        <translation>Điểm nhập</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -3352,72 +3661,12 @@
         <translation>Tên</translation>
     </message>
     <message>
-        <source>Signature</source>
-        <translation>Chữ ký</translation>
+        <source>Next</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Địa chỉ</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>Hex</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation>Kết xuất ra tập tin</translation>
-    </message>
-    <message>
-        <source>Go to address</source>
-        <translation>Đi tới địa chỉ</translation>
-    </message>
-    <message>
-        <source>Go to offset</source>
-        <translation>Đi đến bù đắp</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>Chữ ký</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation>Tìm kiếm</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation>Tìm kiếm tiếp theo</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>Chọn tất cả</translation>
-    </message>
-    <message>
-        <source>Copy as hex</source>
-        <translation>Sao chép dưới dạng hex</translation>
-    </message>
-    <message>
-        <source>Copy cursor offset</source>
-        <translation>Sao chép bù đắp con trỏ</translation>
-    </message>
-    <message>
-        <source>Copy cursor address</source>
-        <translation>Sao chép địa chỉ con trỏ</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>Rối loạn</translation>
-    </message>
-    <message>
-        <source>Memory map</source>
-        <translation>Sơ đồ bộ nhớ</translation>
-    </message>
-    <message>
-        <source>Go to entry point</source>
-        <translation>Đi đến điểm nhập cảnh</translation>
-    </message>
-    <message>
-        <source>Hex signature</source>
-        <translation>Chữ ký hex</translation>
+        <source>All</source>
+        <translation>Tất cả các</translation>
     </message>
     <message>
         <source>Attach</source>
@@ -3440,8 +3689,8 @@
         <translation>Điểm ngắt</translation>
     </message>
     <message>
-        <source>Call stack</source>
-        <translation>Ngăn xếp cuộc gọi</translation>
+        <source>Callstack</source>
+        <translation></translation>
     </message>
     <message>
         <source>Threads</source>
@@ -3450,6 +3699,38 @@
     <message>
         <source>Handles</source>
         <translation>Xử lý</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>Ký hiệu</translation>
+    </message>
+    <message>
+        <source>Shortcuts</source>
+        <translation>Các phím tắt</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Tùy chọn</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>Giới thiệu</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Tên tệp</translation>
+    </message>
+    <message>
+        <source>Structs</source>
+        <translation>Cấu trúc</translation>
+    </message>
+    <message>
+        <source>Viewer</source>
+        <translation>Người xem</translation>
+    </message>
+    <message>
+        <source>Folder</source>
+        <translation></translation>
     </message>
     <message>
         <source>Run</source>
@@ -3480,8 +3761,8 @@
         <translation>Chuyển đổi</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>Tên tệp</translation>
+        <source>Scan</source>
+        <translation>Quét</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -3490,82 +3771,6 @@
     <message>
         <source>Hash</source>
         <translation>Băm</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>Quét</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>Chuỗi</translation>
-    </message>
-    <message>
-        <source>Structs</source>
-        <translation>Cấu trúc</translation>
-    </message>
-    <message>
-        <source>Viewer</source>
-        <translation>Người xem</translation>
-    </message>
-    <message>
-        <source>Modules</source>
-        <translation>Mô-đun</translation>
-    </message>
-    <message>
-        <source>Action</source>
-        <translation>Hoạt động</translation>
-    </message>
-    <message>
-        <source>File</source>
-        <translation>Tập tin</translation>
-    </message>
-    <message>
-        <source>View</source>
-        <translation>Quan điểm</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>Gỡ lỗi</translation>
-    </message>
-    <message>
-        <source>Debugger</source>
-        <translation>Trình gỡ lỗi</translation>
-    </message>
-    <message>
-        <source>Registers</source>
-        <translation>Đăng ký</translation>
-    </message>
-    <message>
-        <source>Stack</source>
-        <translation>Cây rơm</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>Lưu trữ</translation>
-    </message>
-    <message>
-        <source>Table</source>
-        <translation>Bàn</translation>
-    </message>
-    <message>
-        <source>Process</source>
-        <translation>Xử lý</translation>
-    </message>
-    <message>
-        <source>Memory</source>
-        <translation>Kỉ niệm</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>Chỉnh sửa</translation>
-    </message>
-    <message>
-        <source>Go to</source>
-        <translation>Đi tới</translation>
-    </message>
-    <message>
-        <source>Tools</source>
-        <translation>Công cụ</translation>
     </message>
 </context>
 <context>
@@ -3589,6 +3794,108 @@
     <message>
         <source>Cannot save file</source>
         <translation>Không thể lưu tập tin</translation>
+    </message>
+</context>
+<context>
+    <name>XSymbolsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Mẫu đơn</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Lưu</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Địa chỉ</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>Kích thước</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Loại</translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation>Biểu tượng</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>Ký hiệu</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Mẫu đơn</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Trang mạng</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>Lưu</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>Tải lại</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Thông tin</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>Quét</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>Phiên bản</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>Kết quả</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Tùy chọn</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>Công cụ ký</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Lỗi</translation>
     </message>
 </context>
 </TS>

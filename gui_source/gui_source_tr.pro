@@ -18,7 +18,6 @@ TRANSLATIONS = \
         translation/xpeviewer_zh.ts \
         translation/xpeviewer_zh_TW.ts
         
-
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
     ../FormatDialogs/dialogdumpprocess.ui \
@@ -28,6 +27,7 @@ FORMS += \
     ../FormatDialogs/dialogsearch.ui \
     ../FormatDialogs/dialogsearchprocess.ui \
     ../FormatDialogs/dialogtextinfo.ui \
+    ../FormatDialogs/xdialogprocess.ui \
     ../FormatWidgets/Binary/binarywidget.ui \
     ../FormatWidgets/Binary/dialogbinary.ui \
     ../FormatWidgets/DEX/dexsectionheaderwidget.ui \
@@ -42,6 +42,7 @@ FORMS += \
     ../FormatWidgets/MACH/dialogmach.ui \
     ../FormatWidgets/MACH/machsectionheaderwidget.ui \
     ../FormatWidgets/MACH/machwidget.ui \
+    ../FormatWidgets/MACHOFAT/dialogmachofat.ui \
     ../FormatWidgets/MACHOFAT/machofatwidget.ui \
     ../FormatWidgets/MSDOS/dialogmsdos.ui \
     ../FormatWidgets/MSDOS/msdoswidget.ui \
@@ -71,6 +72,7 @@ FORMS += \
     ../StaticScan/formstaticscan.ui \
     ../StaticScan/heurwidget.ui \
     ../StaticScan/staticscanoptionswidget.ui \
+    ../XAboutWidget/xaboutwidget.ui \
     ../XDemangleWidget/dialogdemangle.ui \
     ../XDemangleWidget/xdemanglewidget.ui \
     ../XDisasmView/dialogmultidisasm.ui \
@@ -94,10 +96,16 @@ FORMS += \
     ../XHexView/dialoghexview.ui \
     ../XHexView/xhexviewoptionswidget.ui \
     ../XHexView/xhexviewwidget.ui \
+    ../XInfoDB/dialogxinfodbtransferprocess.ui \
     ../XMemoryMapWidget/dialogmemorymap.ui \
     ../XMemoryMapWidget/xmemorymapwidget.ui \
+    ../XOnlineTools/dialogxvirustotal.ui \
+    ../XOnlineTools/xonlinetoolsoptionswidget.ui \
+    ../XOnlineTools/xvirustotalwidget.ui \
     ../XOptions/xoptionswidget.ui \
     ../XShortcuts/dialogshortcuts.ui \
+    ../XSymbolsWidget/dialogxsymbols.ui \
+    ../XSymbolsWidget/xsymbolswidget.ui \
     dialogabout.ui \
     dialogoptions.ui \
     guimainwindow.ui
@@ -108,6 +116,7 @@ SOURCES += \
     ../Controls/xabstracttableview.cpp \
     ../Controls/xcomboboxex.cpp \
     ../Controls/xdatetimeeditx.cpp \
+    ../Controls/xdevicetableeditview.cpp \
     ../Controls/xdevicetableview.cpp \
     ../Controls/xhtml.cpp \
     ../Controls/xlineedithex.cpp \
@@ -120,6 +129,7 @@ SOURCES += \
     ../FormatDialogs/dialogtextinfo.cpp \
     ../FormatDialogs/dumpprocess.cpp \
     ../FormatDialogs/searchprocess.cpp \
+    ../FormatDialogs/xdialogprocess.cpp \
     ../FormatWidgets/Binary/binary_defs.cpp \
     ../FormatWidgets/Binary/binarywidget.cpp \
     ../FormatWidgets/Binary/dialogbinary.cpp \
@@ -143,6 +153,7 @@ SOURCES += \
     ../FormatWidgets/MACH/machprocessdata.cpp \
     ../FormatWidgets/MACH/machsectionheaderwidget.cpp \
     ../FormatWidgets/MACH/machwidget.cpp \
+    ../FormatWidgets/MACHOFAT/dialogmachofat.cpp \
     ../FormatWidgets/MACHOFAT/machofatwidget.cpp \
     ../FormatWidgets/MSDOS/dialogmsdos.cpp \
     ../FormatWidgets/MSDOS/msdos_defs.cpp \
@@ -200,6 +211,7 @@ SOURCES += \
     ../StaticScan/staticscanitem.cpp \
     ../StaticScan/staticscanitemmodel.cpp \
     ../StaticScan/staticscanoptionswidget.cpp \
+    ../XAboutWidget/xaboutwidget.cpp \
     ../XArchive/xarchive.cpp \
     ../XArchive/xarchives.cpp \
     ../XArchive/xcab.cpp \
@@ -244,12 +256,21 @@ SOURCES += \
     ../XHexView/xhexview.cpp \
     ../XHexView/xhexviewoptionswidget.cpp \
     ../XHexView/xhexviewwidget.cpp \
+    ../XInfoDB/dialogxinfodbtransferprocess.cpp \
+    ../XInfoDB/xinfodb.cpp \
+    ../XInfoDB/xinfodbtransfer.cpp \
     ../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp \
     ../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp \
     ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp \
     ../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangleNodes.cpp \
     ../XMemoryMapWidget/dialogmemorymap.cpp \
     ../XMemoryMapWidget/xmemorymapwidget.cpp \
+    ../XOnlineTools/dialogxvirustotal.cpp \
+    ../XOnlineTools/xonlinetools.cpp \
+    ../XOnlineTools/xonlinetoolsdialogprocess.cpp \
+    ../XOnlineTools/xonlinetoolsoptionswidget.cpp \
+    ../XOnlineTools/xvirustotal.cpp \
+    ../XOnlineTools/xvirustotalwidget.cpp \
     ../XOptions/xoptions.cpp \
     ../XOptions/xoptionswidget.cpp \
     ../XPDF/xpdf.cpp \
@@ -381,6 +402,8 @@ SOURCES += \
     ../XShortcuts/xshortcutsdialog.cpp \
     ../XShortcuts/xshortcutstscrollarea.cpp \
     ../XShortcuts/xshortcutswidget.cpp \
+    ../XSymbolsWidget/dialogxsymbols.cpp \
+    ../XSymbolsWidget/xsymbolswidget.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     guimainwindow.cpp \

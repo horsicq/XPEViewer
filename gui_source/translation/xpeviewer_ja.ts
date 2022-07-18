@@ -92,10 +92,6 @@
         <source>Source code</source>
         <translation>ソース コード</translation>
     </message>
-    <message>
-        <source>Thanks</source>
-        <translation>Thanks</translation>
-    </message>
 </context>
 <context>
     <name>DialogDemangle</name>
@@ -129,10 +125,6 @@
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
-    </message>
 </context>
 <context>
     <name>DialogEditString</name>
@@ -146,7 +138,7 @@
     </message>
     <message>
         <source>C Strings</source>
-        <translation></translation>
+        <translation>文字列</translation>
     </message>
     <message>
         <source>OK</source>
@@ -181,10 +173,6 @@
     <message>
         <source>Cancel</source>
         <translation>キャンセル</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
     </message>
 </context>
 <context>
@@ -250,10 +238,6 @@
     <message>
         <source>Cancel</source>
         <translation>キャンセル</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
     </message>
 </context>
 <context>
@@ -419,24 +403,12 @@
         <source>Create view model</source>
         <translation>ビューモデルを作成</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
-    </message>
 </context>
 <context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
         <translation>設定</translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -455,12 +427,8 @@
         <translation>Disasm</translation>
     </message>
     <message>
-        <source>Information</source>
-        <translation>インフォメーション</translation>
-    </message>
-    <message>
-        <source>Please restart the application</source>
-        <translation>プログラムを再起動してください</translation>
+        <source>Online tools</source>
+        <translation>サインツール</translation>
     </message>
 </context>
 <context>
@@ -472,10 +440,6 @@
     <message>
         <source>Cancel</source>
         <translation>キャンセル</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
     </message>
 </context>
 <context>
@@ -535,10 +499,6 @@
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
-    </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
@@ -584,12 +544,12 @@
         <translation>クリア</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>閉じる</translation>
+        <source>Default</source>
+        <translation>ディフォルト</translation>
     </message>
     <message>
-        <source>Group</source>
-        <translation>グループ</translation>
+        <source>Close</source>
+        <translation>閉じる</translation>
     </message>
     <message>
         <source>Name</source>
@@ -621,6 +581,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>ヒューリスティック スキャン</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -660,6 +624,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>ヒューリスティック スキャン</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -724,8 +692,24 @@
         <translation>情報</translation>
     </message>
     <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
         <source>Close</source>
         <translation>閉じる</translation>
+    </message>
+    <message>
+        <source>Text documents</source>
+        <translation>テキスト文書</translation>
+    </message>
+    <message>
+        <source>Save result</source>
+        <translation>結果を保存</translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>結果</translation>
     </message>
 </context>
 <context>
@@ -778,6 +762,39 @@
     <message>
         <source>Cancel</source>
         <translation>キャンセル</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXInfoDBTransferProcess</name>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>インポート</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>エクスポート</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXSymbols</name>
+    <message>
+        <source>Symbols</source>
+        <translation>シンボル</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>閉じる</translation>
+    </message>
+</context>
+<context>
+    <name>DialogXVirusTotal</name>
+    <message>
+        <source>Close</source>
+        <translation>閉じる</translation>
     </message>
 </context>
 <context>
@@ -1143,6 +1160,10 @@
     <message>
         <source>Heuristic scan</source>
         <translation>ヒューリスティック スキャン</translation>
+    </message>
+    <message>
+        <source>Verbose</source>
+        <translation></translation>
     </message>
     <message>
         <source>All types</source>
@@ -2004,6 +2025,10 @@
         <translation>コピー</translation>
     </message>
     <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Name</source>
         <translation>名前</translation>
     </message>
@@ -2031,6 +2056,10 @@
         <translation>フィルター</translation>
     </message>
     <message>
+        <source>C Strings</source>
+        <translation>文字列</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>保存</translation>
     </message>
@@ -2045,6 +2074,14 @@
     <message>
         <source>Copy</source>
         <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>編集</translation>
     </message>
     <message>
         <source>String</source>
@@ -2069,10 +2106,6 @@
     <message>
         <source>Demangle</source>
         <translation>デマングル</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>編集</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2295,6 +2328,10 @@
         <translation>ヒューリスティック スキャン</translation>
     </message>
     <message>
+        <source>Verbose</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>All types</source>
         <translation>いろんなタイプ</translation>
     </message>
@@ -2304,6 +2341,29 @@
     <message>
         <source>Strings</source>
         <translation>文字列</translation>
+    </message>
+</context>
+<context>
+    <name>XAboutWidget</name>
+    <message>
+        <source>Info</source>
+        <translation>情報</translation>
+    </message>
+    <message>
+        <source>Check updates</source>
+        <translation>アップデートの確認</translation>
+    </message>
+    <message>
+        <source>Thanks</source>
+        <translation>Thanks</translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Webサイト</translation>
+    </message>
+    <message>
+        <source>Libraries</source>
+        <translation>ライブラリ</translation>
     </message>
 </context>
 <context>
@@ -2383,6 +2443,10 @@
     <message>
         <source>GB</source>
         <translation>GB</translation>
+    </message>
+    <message>
+        <source>TB</source>
+        <translation></translation>
     </message>
     <message>
         <source>Header</source>
@@ -2468,6 +2532,21 @@
     </message>
 </context>
 <context>
+    <name>XDialogProcess</name>
+    <message>
+        <source>Process</source>
+        <translation>プロセス</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>エラー</translation>
+    </message>
+</context>
+<context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
@@ -2482,6 +2561,10 @@
         <translation>Opcode</translation>
     </message>
     <message>
+        <source>Symbol</source>
+        <translation>シンボル</translation>
+    </message>
+    <message>
         <source>Comment</source>
         <translation>コメント</translation>
     </message>
@@ -2490,16 +2573,12 @@
         <translation>無効な Opcode</translation>
     </message>
     <message>
-        <source>Go to address</source>
-        <translation>アドレスに移動</translation>
+        <source>Offset</source>
+        <translation>オフセット</translation>
     </message>
     <message>
-        <source>Go to offset</source>
-        <translation>オフセット値</translation>
-    </message>
-    <message>
-        <source>Go to entry point</source>
-        <translation>エントリ ポイントに移動</translation>
+        <source>Entry point</source>
+        <translation>エントリ ポイント</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -2514,8 +2593,12 @@
         <translation>署名</translation>
     </message>
     <message>
-        <source>Find</source>
-        <translation>検索</translation>
+        <source>String</source>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>値</translation>
     </message>
     <message>
         <source>Find next</source>
@@ -2526,24 +2609,16 @@
         <translation>すべて選択</translation>
     </message>
     <message>
-        <source>Copy as hex</source>
-        <translation>16 進数値でコピー</translation>
-    </message>
-    <message>
-        <source>Copy cursor offset</source>
-        <translation>カーソルオフセットのコピー</translation>
-    </message>
-    <message>
-        <source>Copy cursor address</source>
-        <translation>アドレスに移動</translation>
-    </message>
-    <message>
         <source>Hex</source>
         <translation>16 進数</translation>
     </message>
     <message>
         <source>Go to</source>
         <translation>移動</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>検索</translation>
     </message>
     <message>
         <source>Select</source>
@@ -2554,8 +2629,12 @@
         <translation>コピー</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>オフセット</translation>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Relative address</source>
@@ -2567,6 +2646,22 @@
     <message>
         <source>Font</source>
         <translation>フォント</translation>
+    </message>
+    <message>
+        <source>Syntax</source>
+        <translation>構文</translation>
+    </message>
+    <message>
+        <source>Uppercase</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Address colon</source>
+        <translation>アドレス</translation>
+    </message>
+    <message>
+        <source>Highlight</source>
+        <translation></translation>
     </message>
     <message>
         <source>Colors</source>
@@ -2739,6 +2834,38 @@
 <context>
     <name>XFileInfo</name>
     <message>
+        <source>Info</source>
+        <translation>情報</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation>ハッシュ</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation>エントロピー</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>エントリ ポイント</translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation>ヘッダ</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>バージョン</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>ファイル名</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
+    </message>
+    <message>
         <source>Operation system</source>
         <translation>オペレーション システム</translation>
     </message>
@@ -2759,14 +2886,6 @@
         <translation>エンディアン</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>ファイル名</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>サイズ</translation>
-    </message>
-    <message>
         <source>packed</source>
         <translation>パック済み</translation>
     </message>
@@ -2775,16 +2894,8 @@
         <translation>未パック</translation>
     </message>
     <message>
-        <source>Entropy</source>
-        <translation>エントロピー</translation>
-    </message>
-    <message>
         <source>File type</source>
         <translation>ファイルの種類</translation>
-    </message>
-    <message>
-        <source>Entry point</source>
-        <translation>エントリ ポイント</translation>
     </message>
     <message>
         <source>Address</source>
@@ -2806,10 +2917,6 @@
         <source>Signature</source>
         <translation>署名</translation>
     </message>
-    <message>
-        <source>Version</source>
-        <translation>バージョン</translation>
-    </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
@@ -2822,24 +2929,24 @@
         <translation>種類</translation>
     </message>
     <message>
-        <source>Offset</source>
-        <translation>オフセット</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation>サイズ</translation>
+        <source>Method</source>
+        <translation>方法</translation>
     </message>
     <message>
         <source>Comment</source>
         <translation>コメント</translation>
     </message>
     <message>
+        <source>Reload</source>
+        <translation>再読み込み</translation>
+    </message>
+    <message>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <source>Reload</source>
-        <translation>再読み込み</translation>
+        <source>Text</source>
+        <translation>テキスト</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2923,14 +3030,6 @@
         <translation>オフセット</translation>
     </message>
     <message>
-        <source>Go to offset</source>
-        <translation>オフセット値</translation>
-    </message>
-    <message>
-        <source>Go to address</source>
-        <translation>アドレスに移動</translation>
-    </message>
-    <message>
         <source>Dump to file</source>
         <translation>ファイルにダンプ</translation>
     </message>
@@ -2939,8 +3038,12 @@
         <translation>署名</translation>
     </message>
     <message>
-        <source>Find</source>
-        <translation>検索</translation>
+        <source>String</source>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>値</translation>
     </message>
     <message>
         <source>Find next</source>
@@ -2949,10 +3052,6 @@
     <message>
         <source>Select all</source>
         <translation>すべて選択</translation>
-    </message>
-    <message>
-        <source>Data as hex</source>
-        <translation></translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -2967,12 +3066,20 @@
         <translation>移動</translation>
     </message>
     <message>
+        <source>Find</source>
+        <translation>検索</translation>
+    </message>
+    <message>
         <source>Select</source>
         <translation>選択</translation>
     </message>
     <message>
         <source>Copy</source>
         <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
     </message>
     <message>
         <source>Edit</source>
@@ -2985,6 +3092,10 @@
         <source>Font</source>
         <translation>フォント</translation>
     </message>
+    <message>
+        <source>Address colon</source>
+        <translation>アドレス</translation>
+    </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
@@ -2996,9 +3107,48 @@
         <source>Hex</source>
         <translation>16 進数</translation>
     </message>
+</context>
+<context>
+    <name>XInfoDB</name>
     <message>
-        <source>Error</source>
-        <translation>エラー</translation>
+        <source>Unknown</source>
+        <translation>不明</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>ファイル名</translation>
+    </message>
+    <message>
+        <source>User</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>ラベル</translation>
+    </message>
+    <message>
+        <source>Entry point</source>
+        <translation>エントリ ポイント</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation>エクスポート</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation>インポート</translation>
+    </message>
+    <message>
+        <source>Data</source>
+        <translation>データ</translation>
+    </message>
+    <message>
+        <source>Object</source>
+        <translation>物体</translation>
+    </message>
+    <message>
+        <source>Function</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3095,6 +3245,10 @@
         <translation>アーキテクチャ</translation>
     </message>
     <message>
+        <source>Show all</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Memory map</source>
         <translation>メモリ マップ</translation>
     </message>
@@ -3122,20 +3276,12 @@
         <translation>フォーム</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>種類</translation>
-    </message>
-    <message>
         <source>Mode</source>
         <translation>モード</translation>
     </message>
     <message>
-        <source>Syntax</source>
-        <translation>構文</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>エラー</translation>
+        <source>Symbols</source>
+        <translation>シンボル</translation>
     </message>
 </context>
 <context>
@@ -3143,6 +3289,21 @@
     <message>
         <source>Unknown</source>
         <translation>不明</translation>
+    </message>
+</context>
+<context>
+    <name>XOnlineToolsOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>フォーム</translation>
+    </message>
+    <message>
+        <source>Get</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>API key</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -3183,6 +3344,10 @@
         <translation>ロゴを表示する</translation>
     </message>
     <message>
+        <source>Font</source>
+        <translation>フォント</translation>
+    </message>
+    <message>
         <source>Save last directory</source>
         <translation>最後に使用したディレクトリを保持</translation>
     </message>
@@ -3199,6 +3364,18 @@
         <translation>コンテキストメニューに追加</translation>
     </message>
     <message>
+        <source>Default</source>
+        <translation>ディフォルト</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>キャンセル</translation>
+    </message>
+    <message>
         <source>Appearance</source>
         <translation>外観</translation>
     </message>
@@ -3213,6 +3390,14 @@
     <message>
         <source>Please run the program as an administrator</source>
         <translation>管理者としてプログラムを実行してください</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>インフォメーション</translation>
+    </message>
+    <message>
+        <source>Please restart the application</source>
+        <translation>プログラムを再起動してください</translation>
     </message>
 </context>
 <context>
@@ -3296,8 +3481,132 @@
 <context>
     <name>XShortcuts</name>
     <message>
-        <source>Unknown</source>
-        <translation>不明</translation>
+        <source>Action</source>
+        <translation>動作</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation>ファイル名</translation>
+    </message>
+    <message>
+        <source>View</source>
+        <translation>意見</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation>文字列</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>署名</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation>署名</translation>
+    </message>
+    <message>
+        <source>Struct</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation>16 進数</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation>Disasm</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>デバッグ</translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation>デバッガ</translation>
+    </message>
+    <message>
+        <source>Register</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Stack</source>
+        <translation>スタック</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation>アーカイブ</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation>テーブル</translation>
+    </message>
+    <message>
+        <source>Process</source>
+        <translation>プロセス</translation>
+    </message>
+    <message>
+        <source>Memory</source>
+        <translation>メモリー</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>コピー</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>編集</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation>検索</translation>
+    </message>
+    <message>
+        <source>Go to</source>
+        <translation>移動</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>ツール</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>ヘルプ</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation>選択</translation>
+    </message>
+    <message>
+        <source>Follow in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show in</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Breakpoint</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Modules</source>
+        <translation>モジュール</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation>メモリ マップ</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation>値</translation>
+    </message>
+    <message>
+        <source>Show</source>
+        <translation>見せる</translation>
     </message>
     <message>
         <source>Open</source>
@@ -3308,8 +3617,8 @@
         <translation>保存</translation>
     </message>
     <message>
-        <source>Save As</source>
-        <translation>名前を付けて保存</translation>
+        <source>Save as</source>
+        <translation></translation>
     </message>
     <message>
         <source>Close</source>
@@ -3324,16 +3633,16 @@
         <translation>終了</translation>
     </message>
     <message>
-        <source>Copy</source>
-        <translation>コピー</translation>
+        <source>Dump to file</source>
+        <translation>ファイルにダンプ</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>見せる</translation>
+        <source>Address</source>
+        <translation>アドレス</translation>
     </message>
     <message>
-        <source>String</source>
-        <translation>文字列</translation>
+        <source>Entry point</source>
+        <translation>エントリ ポイント</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -3352,72 +3661,12 @@
         <translation>名前</translation>
     </message>
     <message>
-        <source>Signature</source>
-        <translation>署名</translation>
+        <source>Next</source>
+        <translation></translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>アドレス</translation>
-    </message>
-    <message>
-        <source>Hex</source>
-        <translation>16 進数</translation>
-    </message>
-    <message>
-        <source>Dump to file</source>
-        <translation>ファイルにダンプ</translation>
-    </message>
-    <message>
-        <source>Go to address</source>
-        <translation>アドレスに移動</translation>
-    </message>
-    <message>
-        <source>Go to offset</source>
-        <translation>オフセット値</translation>
-    </message>
-    <message>
-        <source>Signatures</source>
-        <translation>署名</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation>検索</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation>次を検索</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>すべて選択</translation>
-    </message>
-    <message>
-        <source>Copy as hex</source>
-        <translation>16 進数値でコピー</translation>
-    </message>
-    <message>
-        <source>Copy cursor offset</source>
-        <translation>カーソルオフセットのコピー</translation>
-    </message>
-    <message>
-        <source>Copy cursor address</source>
-        <translation>アドレスに移動</translation>
-    </message>
-    <message>
-        <source>Disasm</source>
-        <translation>Disasm</translation>
-    </message>
-    <message>
-        <source>Memory map</source>
-        <translation>メモリ マップ</translation>
-    </message>
-    <message>
-        <source>Go to entry point</source>
-        <translation>エントリ ポイントに移動</translation>
-    </message>
-    <message>
-        <source>Hex signature</source>
-        <translation>署名</translation>
+        <source>All</source>
+        <translation>すべて</translation>
     </message>
     <message>
         <source>Attach</source>
@@ -3440,8 +3689,8 @@
         <translation>ブレークポイント</translation>
     </message>
     <message>
-        <source>Call stack</source>
-        <translation>コールスタック</translation>
+        <source>Callstack</source>
+        <translation></translation>
     </message>
     <message>
         <source>Threads</source>
@@ -3450,6 +3699,38 @@
     <message>
         <source>Handles</source>
         <translation>ハンドル</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>シンボル</translation>
+    </message>
+    <message>
+        <source>Shortcuts</source>
+        <translation>ショートカット</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>設定</translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>情報</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>ファイル名</translation>
+    </message>
+    <message>
+        <source>Structs</source>
+        <translation>構造体</translation>
+    </message>
+    <message>
+        <source>Viewer</source>
+        <translation>ビューア</translation>
+    </message>
+    <message>
+        <source>Folder</source>
+        <translation></translation>
     </message>
     <message>
         <source>Run</source>
@@ -3480,8 +3761,8 @@
         <translation>トグル</translation>
     </message>
     <message>
-        <source>File name</source>
-        <translation>ファイル名</translation>
+        <source>Scan</source>
+        <translation>スキャン</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -3490,82 +3771,6 @@
     <message>
         <source>Hash</source>
         <translation>ハッシュ</translation>
-    </message>
-    <message>
-        <source>Scan</source>
-        <translation>スキャン</translation>
-    </message>
-    <message>
-        <source>Strings</source>
-        <translation>文字列</translation>
-    </message>
-    <message>
-        <source>Structs</source>
-        <translation>構造体</translation>
-    </message>
-    <message>
-        <source>Viewer</source>
-        <translation>ビューア</translation>
-    </message>
-    <message>
-        <source>Modules</source>
-        <translation>モジュール</translation>
-    </message>
-    <message>
-        <source>Action</source>
-        <translation>動作</translation>
-    </message>
-    <message>
-        <source>File</source>
-        <translation>ファイル名</translation>
-    </message>
-    <message>
-        <source>View</source>
-        <translation>意見</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation>デバッグ</translation>
-    </message>
-    <message>
-        <source>Debugger</source>
-        <translation>デバッガ</translation>
-    </message>
-    <message>
-        <source>Registers</source>
-        <translation>レジスター</translation>
-    </message>
-    <message>
-        <source>Stack</source>
-        <translation>スタック</translation>
-    </message>
-    <message>
-        <source>Archive</source>
-        <translation>アーカイブ</translation>
-    </message>
-    <message>
-        <source>Table</source>
-        <translation>テーブル</translation>
-    </message>
-    <message>
-        <source>Process</source>
-        <translation>プロセス</translation>
-    </message>
-    <message>
-        <source>Memory</source>
-        <translation>メモリー</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation>編集</translation>
-    </message>
-    <message>
-        <source>Go to</source>
-        <translation>移動</translation>
-    </message>
-    <message>
-        <source>Tools</source>
-        <translation>ツール</translation>
     </message>
 </context>
 <context>
@@ -3589,6 +3794,108 @@
     <message>
         <source>Cannot save file</source>
         <translation>ファイルを保存できません</translation>
+    </message>
+</context>
+<context>
+    <name>XSymbolsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>フォーム</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>アドレス</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation>サイズ</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>種類</translation>
+    </message>
+    <message>
+        <source>Symbol</source>
+        <translation>シンボル</translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation>シンボル</translation>
+    </message>
+</context>
+<context>
+    <name>XVirusTotalWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>フォーム</translation>
+    </message>
+    <message>
+        <source>Rescan</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Show detects</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Website</source>
+        <translation>Webサイト</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation>保存</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>再読み込み</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>インフォメーション</translation>
+    </message>
+    <message>
+        <source>Upload the file for analyze?</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation>スキャン</translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation>バージョン</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Result</source>
+        <translation>結果</translation>
+    </message>
+    <message>
+        <source>Please use valid API key</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>設定</translation>
+    </message>
+    <message>
+        <source>Online tools</source>
+        <translation>サインツール</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>エラー</translation>
     </message>
 </context>
 </TS>
