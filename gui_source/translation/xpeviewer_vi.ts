@@ -105,17 +105,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Kết xuất</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Hủy</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -2300,13 +2289,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Quét thư mục</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Kết quả</translation>
     </message>
 </context>
 <context>

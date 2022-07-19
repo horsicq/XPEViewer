@@ -105,17 +105,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>Dump</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -378,7 +367,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
 </context>
 <context>
@@ -772,7 +761,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Export</source>
@@ -1006,7 +995,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Resources</source>
@@ -1140,7 +1129,7 @@
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
 </context>
 <context>
@@ -1290,7 +1279,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
     <message>
         <source>Value</source>
@@ -1796,7 +1785,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Resources</source>
@@ -1836,7 +1825,7 @@
     </message>
     <message>
         <source>Load config</source>
-        <translation>Carregar configuração</translation>
+        <translation>Exibir configuração</translation>
     </message>
     <message>
         <source>Bound import</source>
@@ -2256,7 +2245,7 @@
     </message>
     <message>
         <source>Import hash</source>
-        <translation>Importar hash</translation>
+        <translation>Hash Importação</translation>
     </message>
     <message>
         <source>Code section</source>
@@ -2300,13 +2289,6 @@
     <message>
         <source>Directory scan</source>
         <translation>Escanear diretório</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>Resultado</translation>
     </message>
 </context>
 <context>
@@ -2558,7 +2540,7 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Código de operação</translation>
+        <translation>Opcode</translation>
     </message>
     <message>
         <source>Symbol</source>
@@ -3136,7 +3118,7 @@
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation>Importação</translation>
     </message>
     <message>
         <source>Data</source>
@@ -3397,7 +3379,7 @@
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>Por favor reinicie a aplicação</translation>
+        <translation>Por favor, reinicie a aplicação</translation>
     </message>
 </context>
 <context>
@@ -3734,7 +3716,7 @@
     </message>
     <message>
         <source>Run</source>
-        <translation>Corre</translation>
+        <translation>Executar</translation>
     </message>
     <message>
         <source>Pause</source>

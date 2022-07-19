@@ -105,17 +105,6 @@
     </message>
 </context>
 <context>
-    <name>DialogDump</name>
-    <message>
-        <source>Dump</source>
-        <translation>יצא כקובץ הרצה</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>בטל</translation>
-    </message>
-</context>
-<context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
@@ -2300,13 +2289,6 @@
     <message>
         <source>Directory scan</source>
         <translation>סריקת תיקייה</translation>
-    </message>
-</context>
-<context>
-    <name>StaticScanItemModel</name>
-    <message>
-        <source>Result</source>
-        <translation>תוצאה</translation>
     </message>
 </context>
 <context>

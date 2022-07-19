@@ -182,6 +182,7 @@ void GuiMainWindow::adjustWindow()
 
 void GuiMainWindow::processFile(QString sFileName)
 {
+    // TODO if file not exists
     if((sFileName!="")&&(QFileInfo(sFileName).isFile()))
     {
         g_xOptions.setLastFileName(sFileName);
