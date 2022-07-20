@@ -14,6 +14,7 @@ cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                               $X_SOURCE_PAT
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/signatures
 cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/signatures/
+cp -Rf $X_SOURCE_PATH/images/                                       $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
 
 cd $X_SOURCE_PATH/release
 
