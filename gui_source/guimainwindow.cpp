@@ -182,7 +182,6 @@ void GuiMainWindow::adjustWindow()
 
 void GuiMainWindow::processFile(QString sFileName)
 {
-    // TODO if file not exists
     if((sFileName!="")&&(QFileInfo(sFileName).isFile()))
     {
         g_xOptions.setLastFileName(sFileName);
@@ -231,6 +230,10 @@ void GuiMainWindow::processFile(QString sFileName)
         {
             QMessageBox::critical(this,tr("Error"),tr("Cannot open file"));
         }
+    }
+    else
+    {
+        QMessageBox::critical(this,tr("Error"),tr("Cannot open file"));
     }
 }
 
