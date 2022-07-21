@@ -23,23 +23,11 @@ if [ -z "$X_ERROR" ]; then
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/signatures
         cp -R $X_SOURCE_PATH/signatures/crypto.db            $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/signatures
         cp -Rf $X_SOURCE_PATH/XStyles/qss                    $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/
+        cp -Rf $X_SOURCE_PATH/images                    $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/
 
-        fiximport "$X_SOURCE_PATH/build/release/XPEViewer.app/Contents/MacOS/XPEViewer"
+        deploy_qt XPEViewer
 
-        deploy_qt_library QtWidgets XPEViewer
-        deploy_qt_library QtGui XPEViewer
-        deploy_qt_library QtCore XPEViewer
-        deploy_qt_library QtDBus XPEViewer
-        deploy_qt_library QtPrintSupport XPEViewer
-        deploy_qt_library QtSvg XPEViewer
-        deploy_qt_library QtOpenGL XPEViewer
-        deploy_qt_library QtConcurrent XPEViewer
-
-        deploy_qt_plugin platforms libqcocoa XPEViewer
-        deploy_qt_plugin platforms libqminimal XPEViewer
-        deploy_qt_plugin platforms libqoffscreen XPEViewer
-
-        make_release
+        make_release XPEViewer
         make_clear
     fi
 fi
