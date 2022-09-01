@@ -109,3 +109,6 @@
 [submodule "hex_templates"]
 	path = hex_templates
 	url = https://github.com/horsicq/hex_templates
+[submodule "XOpcodeCalc"]
+	path = XOpcodeCalc
+	url = https://github.com/horsicq/XOpcodeCalc
