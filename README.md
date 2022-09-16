@@ -19,3 +19,7 @@ PE file viewer/editor for Windows, Linux and MacOS.
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/docs/5.png "5")
 
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/mascots/xpeviewer_full.png "Mascot")
+
+## Special Thanks
+
+- [PELock Software Protection & Reverse Engineering](https://www.pelock.com)
