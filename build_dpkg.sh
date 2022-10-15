@@ -18,7 +18,7 @@ if [ -z "$X_ERROR" ]; then
 
     check_file "$X_SOURCE_PATH/build/release/xpeviewer"
     if [ -z "$X_ERROR" ]; then
-        create_deb_app_dir xelfviewer
+        create_deb_app_dir xpeviewer
         
         export X_PACKAGENAME='xpeviewer'
         export X_MAINTAINER='hors <horsicq@gmail.com>'
