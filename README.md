@@ -3,7 +3,7 @@
 [![GitHub All Releases](https://img.shields.io/github/downloads/horsicq/XPEViewer/total.svg)](https://github.com/horsicq/XPEViewer/releases)
 [![gitlocalized ](https://gitlocalize.com/repo/4736/whole_project/badge.svg)](https://github.com/horsicq/XTranslation)
 
-PE file viewer/editor for Windows, Linux and MacOS.
+PE file viewer/editor for Windows, Linux and MacOS./
 
 * Download: https://github.com/horsicq/XPEViewer/releases
 * How to run: https://github.com/horsicq/XPEViewer/blob/master/docs/RUN.md
