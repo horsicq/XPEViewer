@@ -7,8 +7,8 @@
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
  *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,41 +19,38 @@
  * SOFTWARE.
  */
 #include "dialogoptions.h"
+
 #include "ui_dialogoptions.h"
 
-DialogOptions::DialogOptions(QWidget *pParent,XOptions *pOptions,XOptions::GROUPID groupId) :
-    QDialog(pParent),
-    ui(new Ui::DialogOptions)
-{
+DialogOptions::DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId) : QDialog(pParent), ui(new Ui::DialogOptions) {
     ui->setupUi(this);
 
-    g_pStaticScanOptionsWidget=new StaticScanOptionsWidget(this);
-    g_pSearchSignaturesOptionsWidget=new SearchSignaturesOptionsWidget(this);
-    g_pXHexViewOptionsWidget=new XHexViewOptionsWidget(this);
-    g_pXDisasmViewOptionsWidget=new XDisasmViewOptionsWidget(this);
-    g_pXOnlineToolsOptionsWidget=new XOnlineToolsOptionsWidget(this);
+    g_pStaticScanOptionsWidget = new StaticScanOptionsWidget(this);
+    g_pSearchSignaturesOptionsWidget = new SearchSignaturesOptionsWidget(this);
+    g_pXHexViewOptionsWidget = new XHexViewOptionsWidget(this);
+    g_pXDisasmViewOptionsWidget = new XDisasmViewOptionsWidget(this);
+    g_pXOnlineToolsOptionsWidget = new XOnlineToolsOptionsWidget(this);
 
-    ui->widgetOptions->setOptions(pOptions,X_APPLICATIONDISPLAYNAME);
+    ui->widgetOptions->setOptions(pOptions, X_APPLICATIONDISPLAYNAME);
 
-    ui->widgetOptions->addPage(g_pStaticScanOptionsWidget,tr("Scan"));
+    ui->widgetOptions->addPage(g_pStaticScanOptionsWidget, tr("Scan"));
     g_pStaticScanOptionsWidget->setOptions(pOptions);
 
-    ui->widgetOptions->addPage(g_pSearchSignaturesOptionsWidget,tr("Signatures"));
+    ui->widgetOptions->addPage(g_pSearchSignaturesOptionsWidget, tr("Signatures"));
     g_pSearchSignaturesOptionsWidget->setOptions(pOptions);
 
-    ui->widgetOptions->addPage(g_pXHexViewOptionsWidget,tr("Hex"));
+    ui->widgetOptions->addPage(g_pXHexViewOptionsWidget, tr("Hex"));
     g_pXHexViewOptionsWidget->setOptions(pOptions);
 
-    ui->widgetOptions->addPage(g_pXDisasmViewOptionsWidget,tr("Disasm"));
+    ui->widgetOptions->addPage(g_pXDisasmViewOptionsWidget, tr("Disasm"));
     g_pXDisasmViewOptionsWidget->setOptions(pOptions);
 
-    ui->widgetOptions->addPage(g_pXOnlineToolsOptionsWidget,tr("Online tools"));
+    ui->widgetOptions->addPage(g_pXOnlineToolsOptionsWidget, tr("Online tools"));
     g_pXOnlineToolsOptionsWidget->setOptions(pOptions);
 
     ui->widgetOptions->setCurrentPage(groupId);
 }
 
-DialogOptions::~DialogOptions()
-{
+DialogOptions::~DialogOptions() {
     delete ui;
 }
