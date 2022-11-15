@@ -22,7 +22,8 @@
 
 #include "ui_guimainwindow.h"
 
-GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow) {
+GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
+{
     ui->setupUi(this);
 
     g_pFile = nullptr;
@@ -80,7 +81,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     }
 }
 
-GuiMainWindow::~GuiMainWindow() {
+GuiMainWindow::~GuiMainWindow()
+{
     closeCurrentFile();
     g_xOptions.save();
     g_xShortcuts.save();
@@ -88,7 +90,8 @@ GuiMainWindow::~GuiMainWindow() {
     delete ui;
 }
 
-void GuiMainWindow::createMenus() {
+void GuiMainWindow::createMenus()
+{
     QMenu *pMenuFile = new QMenu(tr("File"), ui->menubar);
     QMenu *pMenuTools = new QMenu(tr("Tools"), ui->menubar);
     QMenu *pMenuHelp = new QMenu(tr("Help"), ui->menubar);
@@ -123,7 +126,8 @@ void GuiMainWindow::createMenus() {
     connect(pActionDemangle, SIGNAL(triggered()), this, SLOT(actionDemangleSlot()));
 }
 
-void GuiMainWindow::actionOpenSlot() {
+void GuiMainWindow::actionOpenSlot()
+{
     QString sDirectory = g_xOptions.getLastDirectory();
 
     QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
@@ -133,27 +137,32 @@ void GuiMainWindow::actionOpenSlot() {
     }
 }
 
-void GuiMainWindow::actionCloseSlot() {
+void GuiMainWindow::actionCloseSlot()
+{
     closeCurrentFile();
 }
 
-void GuiMainWindow::actionExitSlot() {
+void GuiMainWindow::actionExitSlot()
+{
     this->close();
 }
 
-void GuiMainWindow::actionOptionsSlot() {
+void GuiMainWindow::actionOptionsSlot()
+{
     DialogOptions dialogOptions(this, &g_xOptions, XOptions::GROUPID_FILE);
     dialogOptions.exec();
 
     adjustWindow();
 }
 
-void GuiMainWindow::actionAboutSlot() {
+void GuiMainWindow::actionAboutSlot()
+{
     DialogAbout dialogAbout(this);
     dialogAbout.exec();
 }
 
-void GuiMainWindow::adjustWindow() {
+void GuiMainWindow::adjustWindow()
+{
     ui->widgetViewer->adjustView();
 
     g_xOptions.adjustWindow(this);
@@ -165,7 +174,8 @@ void GuiMainWindow::adjustWindow() {
     }
 }
 
-void GuiMainWindow::processFile(QString sFileName) {
+void GuiMainWindow::processFile(QString sFileName)
+{
     if ((sFileName != "") && (QFileInfo(sFileName).isFile())) {
         g_xOptions.setLastFileName(sFileName);
 
@@ -210,7 +220,8 @@ void GuiMainWindow::processFile(QString sFileName) {
     }
 }
 
-void GuiMainWindow::closeCurrentFile() {
+void GuiMainWindow::closeCurrentFile()
+{
     if (g_pXInfo) {
         delete g_pXInfo;
         g_pXInfo = nullptr;
@@ -228,15 +239,18 @@ void GuiMainWindow::closeCurrentFile() {
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 }
 
-void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent) {
+void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent)
+{
     pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dragMoveEvent(QDragMoveEvent *pEvent) {
+void GuiMainWindow::dragMoveEvent(QDragMoveEvent *pEvent)
+{
     pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dropEvent(QDropEvent *pEvent) {
+void GuiMainWindow::dropEvent(QDropEvent *pEvent)
+{
     const QMimeData *pMimeData = pEvent->mimeData();
 
     if (pMimeData->hasUrls()) {
@@ -252,7 +266,8 @@ void GuiMainWindow::dropEvent(QDropEvent *pEvent) {
     }
 }
 
-void GuiMainWindow::actionShortcutsSlot() {
+void GuiMainWindow::actionShortcutsSlot()
+{
     DialogShortcuts dialogShortcuts(this);
 
     dialogShortcuts.setData(&g_xShortcuts);
@@ -262,7 +277,8 @@ void GuiMainWindow::actionShortcutsSlot() {
     adjustWindow();
 }
 
-void GuiMainWindow::actionDemangleSlot() {
+void GuiMainWindow::actionDemangleSlot()
+{
     DialogDemangle dialogDemangle(this);
 
     dialogDemangle.exec();
