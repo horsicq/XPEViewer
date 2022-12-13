@@ -18,6 +18,7 @@ copy %X_SOURCE_PATH%\build\release\xpeviewer.exe %X_SOURCE_PATH%\release\%X_BUIL
 xcopy %X_SOURCE_PATH%\XStyles\qss %X_SOURCE_PATH%\release\%X_BUILD_NAME%\qss /E /I
 xcopy %X_SOURCE_PATH%\images %X_SOURCE_PATH%\release\%X_BUILD_NAME%\images /E /I
 xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\
+xcopy %X_SOURCE_PATH%\XInfoDB\info %X_SOURCE_PATH%\release\%X_BUILD_NAME%\info /E /I
 
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
 call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Gui

@@ -24,6 +24,7 @@ if [ -z "$X_ERROR" ]; then
         cp -R $X_SOURCE_PATH/signatures/crypto.db            $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/signatures
         cp -Rf $X_SOURCE_PATH/XStyles/qss                    $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/
         cp -Rf $X_SOURCE_PATH/images                    $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/
+        cp -Rf $X_SOURCE_PATH/XInfoDB/info              $X_SOURCE_PATH/release/$X_BUILD_NAME/XPEViewer.app/Contents/Resources/
 
         deploy_qt XPEViewer
 
