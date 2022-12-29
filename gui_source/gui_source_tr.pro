@@ -17,11 +17,12 @@ TRANSLATIONS = \
         translation/xpeviewer_vi.ts \
         translation/xpeviewer_zh.ts \
         translation/xpeviewer_zh_TW.ts
-        
+
 FORMS += \
     $$PWD/../FormatDialogs/dialogdump.ui \
     $$PWD/../FormatDialogs/dialogdumpprocess.ui \
     $$PWD/../FormatDialogs/dialogeditstring.ui \
+    $$PWD/../FormatDialogs/dialogfindtext.ui \
     $$PWD/../FormatDialogs/dialoggotoaddress.ui \
     $$PWD/../FormatDialogs/dialoghexsignature.ui \
     $$PWD/../FormatDialogs/dialogsearch.ui \
@@ -46,7 +47,6 @@ FORMS += \
     $$PWD/../FormatWidgets/MACHOFAT/machofatwidget.ui \
     $$PWD/../FormatWidgets/MSDOS/dialogmsdos.ui \
     $$PWD/../FormatWidgets/MSDOS/msdoswidget.ui \
-    $$PWD/../FormatWidgets/MultiSearch/dialogmultisearchprocess.ui \
     $$PWD/../FormatWidgets/NE/dialogne.ui \
     $$PWD/../FormatWidgets/NE/nesectionheaderwidget.ui \
     $$PWD/../FormatWidgets/NE/newidget.ui \
@@ -54,12 +54,15 @@ FORMS += \
     $$PWD/../FormatWidgets/PDF/pdfwidget.ui \
     $$PWD/../FormatWidgets/PE/dialogpe.ui \
     $$PWD/../FormatWidgets/PE/pesectionheaderwidget.ui \
+    $$PWD/../FormatWidgets/PE/petoolswidget.ui \
     $$PWD/../FormatWidgets/PE/pewidget.ui \
     $$PWD/../FormatWidgets/SearchSignatures/dialogsearchsignatures.ui \
     $$PWD/../FormatWidgets/SearchSignatures/searchsignaturesoptionswidget.ui \
     $$PWD/../FormatWidgets/SearchSignatures/searchsignatureswidget.ui \
     $$PWD/../FormatWidgets/SearchStrings/dialogsearchstrings.ui \
     $$PWD/../FormatWidgets/SearchStrings/searchstringswidget.ui \
+    $$PWD/../FormatWidgets/SearchValues/dialogsearchvalues.ui \
+    $$PWD/../FormatWidgets/SearchValues/searchvalueswidget.ui \
     $$PWD/../FormatWidgets/dialogmodelinfo.ui \
     $$PWD/../FormatWidgets/dialogprocessdata.ui \
     $$PWD/../FormatWidgets/dialogsectionheader.ui \
@@ -67,7 +70,6 @@ FORMS += \
     $$PWD/../FormatWidgets/toolswidget.ui \
     $$PWD/../StaticScan/dialogstaticscan.ui \
     $$PWD/../StaticScan/dialogstaticscandirectory.ui \
-    $$PWD/../StaticScan/dialogstaticscanprocess.ui \
     $$PWD/../StaticScan/formresult.ui \
     $$PWD/../StaticScan/formstaticscan.ui \
     $$PWD/../StaticScan/heurwidget.ui \
@@ -86,6 +88,8 @@ FORMS += \
     $$PWD/../XEntropyWidget/dialogentropy.ui \
     $$PWD/../XEntropyWidget/dialogentropyprocess.ui \
     $$PWD/../XEntropyWidget/xentropywidget.ui \
+    $$PWD/../XExtractorWidget/dialogxextractor.ui \
+    $$PWD/../XExtractorWidget/xextractorwidget.ui \
     $$PWD/../XFileInfo/dialogxfileinfo.ui \
     $$PWD/../XFileInfo/dialogxfileinfoprocess.ui \
     $$PWD/../XFileInfo/xfileinfowidget.ui \
@@ -97,6 +101,7 @@ FORMS += \
     $$PWD/../XHexView/xhexviewoptionswidget.ui \
     $$PWD/../XHexView/xhexviewwidget.ui \
     $$PWD/../XInfoDB/dialogxinfodbtransferprocess.ui \
+    $$PWD/../XInfoDB/xinfodboptionswidget.ui \
     $$PWD/../XMemoryMapWidget/dialogmemorymap.ui \
     $$PWD/../XMemoryMapWidget/xmemorymapwidget.ui \
     $$PWD/../XOnlineTools/dialogxvirustotal.ui \
@@ -106,6 +111,12 @@ FORMS += \
     $$PWD/../XShortcuts/dialogshortcuts.ui \
     $$PWD/../XSymbolsWidget/dialogxsymbols.ui \
     $$PWD/../XSymbolsWidget/xsymbolswidget.ui \
+    $$PWD/../archive_widget/archive_widget.ui \
+    $$PWD/../archive_widget/dialogarchive.ui \
+    $$PWD/../archive_widget/dialogcreateviewmodel.ui \
+    $$PWD/../archive_widget/dialogshowimage.ui \
+    $$PWD/../archive_widget/dialogshowtext.ui \
+    $$PWD/../archive_widget/dialogunpackfile.ui \
     dialogabout.ui \
     dialogoptions.ui \
     guimainwindow.ui
@@ -122,6 +133,7 @@ SOURCES += \
     $$PWD/../Controls/xlineedithex.cpp \
     $$PWD/../FormatDialogs/dialogdumpprocess.cpp \
     $$PWD/../FormatDialogs/dialogeditstring.cpp \
+    $$PWD/../FormatDialogs/dialogfindtext.cpp \
     $$PWD/../FormatDialogs/dialoggotoaddress.cpp \
     $$PWD/../FormatDialogs/dialoghexsignature.cpp \
     $$PWD/../FormatDialogs/dialogsearch.cpp \
@@ -172,12 +184,15 @@ SOURCES += \
     $$PWD/../FormatWidgets/PE/pe_defs.cpp \
     $$PWD/../FormatWidgets/PE/peprocessdata.cpp \
     $$PWD/../FormatWidgets/PE/pesectionheaderwidget.cpp \
+    $$PWD/../FormatWidgets/PE/petoolswidget.cpp \
     $$PWD/../FormatWidgets/PE/pewidget.cpp \
     $$PWD/../FormatWidgets/SearchSignatures/dialogsearchsignatures.cpp \
     $$PWD/../FormatWidgets/SearchSignatures/searchsignaturesoptionswidget.cpp \
     $$PWD/../FormatWidgets/SearchSignatures/searchsignatureswidget.cpp \
     $$PWD/../FormatWidgets/SearchStrings/dialogsearchstrings.cpp \
     $$PWD/../FormatWidgets/SearchStrings/searchstringswidget.cpp \
+    $$PWD/../FormatWidgets/SearchValues/dialogsearchvalues.cpp \
+    $$PWD/../FormatWidgets/SearchValues/searchvalueswidget.cpp \
     $$PWD/../FormatWidgets/dialogmodelinfo.cpp \
     $$PWD/../FormatWidgets/dialogprocessdata.cpp \
     $$PWD/../FormatWidgets/dialogsectionheader.cpp \
@@ -186,9 +201,18 @@ SOURCES += \
     $$PWD/../FormatWidgets/invwidget.cpp \
     $$PWD/../FormatWidgets/processdata.cpp \
     $$PWD/../FormatWidgets/toolswidget.cpp \
+    $$PWD/../Formats/audio/xmp3.cpp \
+    $$PWD/../Formats/images/xbmp.cpp \
+    $$PWD/../Formats/images/xgif.cpp \
+    $$PWD/../Formats/images/xicon.cpp \
+    $$PWD/../Formats/images/xjpeg.cpp \
+    $$PWD/../Formats/images/xpng.cpp \
+    $$PWD/../Formats/images/xtiff.cpp \
     $$PWD/../Formats/scanitem.cpp \
     $$PWD/../Formats/scanitemmodel.cpp \
     $$PWD/../Formats/subdevice.cpp \
+    $$PWD/../Formats/video/xmp4.cpp \
+    $$PWD/../Formats/video/xriff.cpp \
     $$PWD/../Formats/xbinary.cpp \
     $$PWD/../Formats/xcom.cpp \
     $$PWD/../Formats/xelf.cpp \
@@ -212,9 +236,11 @@ SOURCES += \
     $$PWD/../StaticScan/staticscanitemmodel.cpp \
     $$PWD/../StaticScan/staticscanoptionswidget.cpp \
     $$PWD/../XAboutWidget/xaboutwidget.cpp \
+    $$PWD/../XArchive/x_ar.cpp \
     $$PWD/../XArchive/xarchive.cpp \
     $$PWD/../XArchive/xarchives.cpp \
     $$PWD/../XArchive/xcab.cpp \
+    $$PWD/../XArchive/xgzip.cpp \
     $$PWD/../XArchive/xmachofat.cpp \
     $$PWD/../XArchive/xrar.cpp \
     $$PWD/../XArchive/xsevenzip.cpp \
@@ -240,12 +266,17 @@ SOURCES += \
     $$PWD/../XEntropyWidget/dialogentropyprocess.cpp \
     $$PWD/../XEntropyWidget/entropyprocess.cpp \
     $$PWD/../XEntropyWidget/xentropywidget.cpp \
+    $$PWD/../XExtractor/xextractor.cpp \
+    $$PWD/../XExtractorWidget/dialogextractorprocess.cpp \
+    $$PWD/../XExtractorWidget/dialogxextractor.cpp \
+    $$PWD/../XExtractorWidget/xextractorwidget.cpp \
     $$PWD/../XFileInfo/dialogxfileinfo.cpp \
     $$PWD/../XFileInfo/dialogxfileinfoprocess.cpp \
     $$PWD/../XFileInfo/xfileinfo.cpp \
     $$PWD/../XFileInfo/xfileinfoitem.cpp \
     $$PWD/../XFileInfo/xfileinfomodel.cpp \
     $$PWD/../XFileInfo/xfileinfowidget.cpp \
+    $$PWD/../XGithub/xgithub.cpp \
     $$PWD/../XHashWidget/dialoghash.cpp \
     $$PWD/../XHashWidget/dialoghashprocess.cpp \
     $$PWD/../XHashWidget/hashprocess.cpp \
@@ -258,6 +289,7 @@ SOURCES += \
     $$PWD/../XHexView/xhexviewwidget.cpp \
     $$PWD/../XInfoDB/dialogxinfodbtransferprocess.cpp \
     $$PWD/../XInfoDB/xinfodb.cpp \
+    $$PWD/../XInfoDB/xinfodboptionswidget.cpp \
     $$PWD/../XInfoDB/xinfodbtransfer.cpp \
     $$PWD/../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp \
     $$PWD/../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp \
@@ -404,6 +436,28 @@ SOURCES += \
     $$PWD/../XShortcuts/xshortcutswidget.cpp \
     $$PWD/../XSymbolsWidget/dialogxsymbols.cpp \
     $$PWD/../XSymbolsWidget/xsymbolswidget.cpp \
+    $$PWD/../XUpdate/xupdate.cpp \
+    $$PWD/../archive_widget/archive_widget.cpp \
+    $$PWD/../archive_widget/createviewmodelprocess.cpp \
+    $$PWD/../archive_widget/dialogarchive.cpp \
+    $$PWD/../archive_widget/dialogcreateviewmodel.cpp \
+    $$PWD/../archive_widget/dialogshowimage.cpp \
+    $$PWD/../archive_widget/dialogshowtext.cpp \
+    $$PWD/../archive_widget/dialogunpackfile.cpp \
+    $$PWD/../archive_widget/unpackfileprocess.cpp \
+    $$PWD/../die_script/binary_script.cpp \
+    $$PWD/../die_script/com_script.cpp \
+    $$PWD/../die_script/die_script.cpp \
+    $$PWD/../die_script/die_scriptengine.cpp \
+    $$PWD/../die_script/elf_script.cpp \
+    $$PWD/../die_script/global_script.cpp \
+    $$PWD/../die_script/le_script.cpp \
+    $$PWD/../die_script/lx_script.cpp \
+    $$PWD/../die_script/mach_script.cpp \
+    $$PWD/../die_script/msdos_script.cpp \
+    $$PWD/../die_script/ne_script.cpp \
+    $$PWD/../die_script/pe_script.cpp \
+    $$PWD/../die_script/xscriptengine.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     guimainwindow.cpp \
