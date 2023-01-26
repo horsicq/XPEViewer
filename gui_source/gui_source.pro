@@ -1,4 +1,5 @@
 QT       += core gui widgets
+QT       += sql
 
 TARGET = xpeviewer
 
