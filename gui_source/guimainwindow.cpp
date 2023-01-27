@@ -197,7 +197,8 @@ void GuiMainWindow::processFile(QString sFileName)
         if (g_pFile) {
             XPE pe(g_pFile);
             if (pe.isValid()) {
-                g_pXInfo->setDevice(g_pFile, pe.getFileType());
+                g_pXInfo->setDevice(g_pFile);
+                g_pXInfo->setFileType(pe.getFileType());
 
                 ui->stackedWidgetMain->setCurrentIndex(1);
                 g_formatOptions.bIsImage = false;
