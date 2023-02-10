@@ -10,6 +10,8 @@ PE file viewer/editor for Windows, Linux and MacOS.
 * How to build: https://github.com/horsicq/XPEViewer/blob/master/docs/BUILD.md
 * Changelog: https://github.com/horsicq/XPEViewer/blob/master/changelog.txt
 
+You can help with translation: https://github.com/horsicq/XTranslation
+
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/mascots/xpeviewer.png "Mascot")
 
 ![alt text](https://github.com/horsicq/XPEViewer/blob/master/docs/1.png "1")
