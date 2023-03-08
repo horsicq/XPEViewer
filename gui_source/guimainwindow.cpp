@@ -60,6 +60,10 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
 
+    g_xShortcuts.addId(XShortcuts::X_ID_FILE_OPEN);
+    g_xShortcuts.addId(XShortcuts::X_ID_FILE_CLOSE);
+    g_xShortcuts.addId(XShortcuts::X_ID_FILE_EXIT);
+
     g_xShortcuts.addGroup(XShortcuts::GROUPID_STRINGS);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_SIGNATURES);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_HEX);
@@ -73,6 +77,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     connect(&g_xOptions, SIGNAL(openFile(QString)), this, SLOT(processFile(QString)));
 
     createMenus();
+    updateShortcuts();
 
     adjustWindow();
 
@@ -94,38 +99,38 @@ GuiMainWindow::~GuiMainWindow()
 
 void GuiMainWindow::createMenus()
 {
-    QMenu *pMenuFile = new QMenu(tr("File"), ui->menubar);
-    QMenu *pMenuTools = new QMenu(tr("Tools"), ui->menubar);
-    QMenu *pMenuHelp = new QMenu(tr("Help"), ui->menubar);
+    g_pMenuFile = new QMenu(tr("File"), ui->menubar);
+    g_pMenuTools = new QMenu(tr("Tools"), ui->menubar);
+    g_pMenuHelp = new QMenu(tr("Help"), ui->menubar);
 
-    ui->menubar->addAction(pMenuFile->menuAction());
-    ui->menubar->addAction(pMenuTools->menuAction());
-    ui->menubar->addAction(pMenuHelp->menuAction());
+    g_pActionOpen = new QAction(tr("Open"), this);
+    g_pActionClose = new QAction(tr("Close"), this);
+    g_pActionExit = new QAction(tr("Exit"), this);
+    g_pActionOptions = new QAction(tr("Options"), this);
+    g_pActionAbout = new QAction(tr("About"), this);
+    g_pActionShortcuts = new QAction(tr("Shortcuts"), this);
+    g_pActionDemangle = new QAction(tr("Demangle"), this);
 
-    QAction *pActionOpen = new QAction(tr("Open"), this);
-    QAction *pActionClose = new QAction(tr("Close"), this);
-    QAction *pActionExit = new QAction(tr("Exit"), this);
-    QAction *pActionOptions = new QAction(tr("Options"), this);
-    QAction *pActionAbout = new QAction(tr("About"), this);
-    QAction *pActionShortcuts = new QAction(tr("Shortcuts"), this);
-    QAction *pActionDemangle = new QAction(tr("Demangle"), this);
+    ui->menubar->addAction(g_pMenuFile->menuAction());
+    ui->menubar->addAction(g_pMenuTools->menuAction());
+    ui->menubar->addAction(g_pMenuHelp->menuAction());
 
-    pMenuFile->addAction(pActionOpen);
-    pMenuFile->addMenu(g_xOptions.createRecentFilesMenu(this));
-    pMenuFile->addAction(pActionClose);
-    pMenuFile->addAction(pActionExit);
-    pMenuTools->addAction(pActionDemangle);
-    pMenuTools->addAction(pActionShortcuts);
-    pMenuTools->addAction(pActionOptions);
-    pMenuHelp->addAction(pActionAbout);
+    g_pMenuFile->addAction(g_pActionOpen);
+    g_pMenuFile->addMenu(g_xOptions.createRecentFilesMenu(this));
+    g_pMenuFile->addAction(g_pActionClose);
+    g_pMenuFile->addAction(g_pActionExit);
+    g_pMenuTools->addAction(g_pActionDemangle);
+    g_pMenuTools->addAction(g_pActionShortcuts);
+    g_pMenuTools->addAction(g_pActionOptions);
+    g_pMenuHelp->addAction(g_pActionAbout);
 
-    connect(pActionOpen, SIGNAL(triggered()), this, SLOT(actionOpenSlot()));
-    connect(pActionClose, SIGNAL(triggered()), this, SLOT(actionCloseSlot()));
-    connect(pActionExit, SIGNAL(triggered()), this, SLOT(actionExitSlot()));
-    connect(pActionOptions, SIGNAL(triggered()), this, SLOT(actionOptionsSlot()));
-    connect(pActionAbout, SIGNAL(triggered()), this, SLOT(actionAboutSlot()));
-    connect(pActionShortcuts, SIGNAL(triggered()), this, SLOT(actionShortcutsSlot()));
-    connect(pActionDemangle, SIGNAL(triggered()), this, SLOT(actionDemangleSlot()));
+    connect(g_pActionOpen, SIGNAL(triggered()), this, SLOT(actionOpenSlot()));
+    connect(g_pActionClose, SIGNAL(triggered()), this, SLOT(actionCloseSlot()));
+    connect(g_pActionExit, SIGNAL(triggered()), this, SLOT(actionExitSlot()));
+    connect(g_pActionOptions, SIGNAL(triggered()), this, SLOT(actionOptionsSlot()));
+    connect(g_pActionAbout, SIGNAL(triggered()), this, SLOT(actionAboutSlot()));
+    connect(g_pActionShortcuts, SIGNAL(triggered()), this, SLOT(actionShortcutsSlot()));
+    connect(g_pActionDemangle, SIGNAL(triggered()), this, SLOT(actionDemangleSlot()));
 }
 
 void GuiMainWindow::actionOpenSlot()
@@ -242,6 +247,13 @@ void GuiMainWindow::closeCurrentFile()
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
 }
 
+void GuiMainWindow::updateShortcuts()
+{
+    g_pActionOpen->setShortcut(g_xShortcuts.getShortcut(X_ID_FILE_OPEN));
+    g_pActionClose->setShortcut(g_xShortcuts.getShortcut(X_ID_FILE_CLOSE));
+    g_pActionExit->setShortcut(g_xShortcuts.getShortcut(X_ID_FILE_EXIT));
+}
+
 void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent)
 {
     pEvent->acceptProposedAction();
@@ -278,6 +290,8 @@ void GuiMainWindow::actionShortcutsSlot()
     dialogShortcuts.exec();
 
     adjustWindow();
+
+    updateShortcuts();
 }
 
 void GuiMainWindow::actionDemangleSlot()

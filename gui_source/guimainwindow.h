@@ -55,6 +55,7 @@ private slots:
     void adjustWindow();
     void processFile(QString sFileName);
     void closeCurrentFile();
+    void updateShortcuts();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *pEvent) override;
@@ -68,6 +69,16 @@ private:
     FW_DEF::OPTIONS g_formatOptions;
     QFile *g_pFile;
     XInfoDB *g_pXInfo;
+    QMenu *g_pMenuFile;
+    QMenu *g_pMenuTools;
+    QMenu *g_pMenuHelp;
+    QAction *g_pActionOpen;
+    QAction *g_pActionClose;
+    QAction *g_pActionExit;
+    QAction *g_pActionOptions;
+    QAction *g_pActionAbout;
+    QAction *g_pActionShortcuts;
+    QAction *g_pActionDemangle;
 };
 
 #endif  // GUIMAINWINDOW_H
