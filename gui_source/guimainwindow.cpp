@@ -26,6 +26,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 {
     ui->setupUi(this);
 
+    XYara::initialize();
+
     g_pFile = nullptr;
     g_pXInfo = nullptr;
 
@@ -95,6 +97,8 @@ GuiMainWindow::~GuiMainWindow()
     g_xShortcuts.save();
 
     delete ui;
+
+    XYara::finalize();
 }
 
 void GuiMainWindow::createMenus()

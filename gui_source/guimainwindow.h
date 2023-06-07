@@ -31,6 +31,7 @@
 #include "dialogoptions.h"
 #include "dialogshortcuts.h"
 #include "pewidget.h"
+#include "xyara.h"
 
 namespace Ui {
 class GuiMainWindow;
