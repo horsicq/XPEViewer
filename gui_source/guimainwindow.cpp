@@ -51,12 +51,14 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_FILE_CONTEXT, "*");
 #endif
 
-    NFDOptionsWidget::setDefaultValues(&g_xOptions);
+    DIEOptionsWidget::setDefaultValues(&g_xOptions);
     SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
     XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
     XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
     XOnlineToolsOptionsWidget::setDefaultValues(&g_xOptions);
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
+
+    g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
 
     g_xOptions.load();
 
