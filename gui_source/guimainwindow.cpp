@@ -64,9 +64,9 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
 
-    g_xShortcuts.addId(XShortcuts::X_ID_FILE_OPEN);
-    g_xShortcuts.addId(XShortcuts::X_ID_FILE_CLOSE);
-    g_xShortcuts.addId(XShortcuts::X_ID_FILE_EXIT);
+    g_xShortcuts.addId(X_ID_FILE_OPEN);
+    g_xShortcuts.addId(X_ID_FILE_CLOSE);
+    g_xShortcuts.addId(X_ID_FILE_EXIT);
 
     g_xShortcuts.addGroup(XShortcuts::GROUPID_STRINGS);
     g_xShortcuts.addGroup(XShortcuts::GROUPID_SIGNATURES);
