@@ -79,6 +79,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->widgetViewer->setGlobal(&g_xShortcuts, &g_xOptions);
 
     connect(&g_xOptions, SIGNAL(openFile(QString)), this, SLOT(processFile(QString)));
+    connect(&g_xOptions, SIGNAL(errorMessage(QString)), this, SLOT(errorMessage(QString)));
 
     createMenus();
     updateShortcuts();
@@ -188,7 +189,7 @@ void GuiMainWindow::adjustWindow()
     }
 }
 
-void GuiMainWindow::processFile(QString sFileName)
+void GuiMainWindow::processFile(const QString &sFileName)
 {
     if ((sFileName != "") && (QFileInfo(sFileName).isFile())) {
         g_xOptions.setLastFileName(sFileName);
@@ -232,6 +233,11 @@ void GuiMainWindow::processFile(QString sFileName)
     } else {
         QMessageBox::critical(this, tr("Error"), tr("Cannot open file"));
     }
+}
+
+void GuiMainWindow::errorMessage(const QString &sText)
+{
+    QMessageBox::critical(this, tr("Error"), sText);
 }
 
 void GuiMainWindow::closeCurrentFile()
