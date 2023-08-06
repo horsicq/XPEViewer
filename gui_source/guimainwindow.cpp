@@ -79,7 +79,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     ui->widgetViewer->setGlobal(&g_xShortcuts, &g_xOptions);
 
     connect(&g_xOptions, SIGNAL(openFile(QString)), this, SLOT(processFile(QString)));
-    connect(&g_xOptions, SIGNAL(errorMessage(QString)), this, SLOT(errorMessage(QString)));
+    connect(&g_xOptions, SIGNAL(errorMessage(QString)), this, SLOT(errorMessageSlot(QString)));
 
     createMenus();
     updateShortcuts();
@@ -235,7 +235,7 @@ void GuiMainWindow::processFile(const QString &sFileName)
     }
 }
 
-void GuiMainWindow::errorMessage(const QString &sText)
+void GuiMainWindow::errorMessageSlot(const QString &sText)
 {
     QMessageBox::critical(this, tr("Error"), sText);
 }
