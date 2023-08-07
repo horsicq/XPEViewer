@@ -57,9 +57,9 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
     XOnlineToolsOptionsWidget::setDefaultValues(&g_xOptions);
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
-
+#ifdef USE_YARA
     g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
-
+#endif
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);

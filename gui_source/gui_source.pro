@@ -31,6 +31,7 @@ include(../build.pri)
 
 XCONFIG += use_disasm
 XCONFIG += use_extrabuttons
+XCONFIG += use_yara
 
 !contains(XCONFIG, pewidget) {
     XCONFIG += pewidget
