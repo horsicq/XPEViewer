@@ -13,7 +13,7 @@ Install packages:
 
 - sudo apt-get install --quiet --assume-yes git
 - sudo apt-get install --quiet --assume-yes build-essential
-- sudo apt-get install --quiet --assume-yes qt5-default qtbase5-dev qttools5-dev-tools
+- sudo apt-get install --quiet --assume-yes qt5-default qtbase5-dev qttools5-dev-tools qtscript5-dev
 
 git clone --recursive https://github.com/horsicq/XPEViewer.git
 
@@ -27,7 +27,7 @@ How to build on Linux(Automake)
 Qt framework has to be installed on the system.
 
 - (Ubuntu) Install GIT: sudo apt-get install --quiet --assume-yes git
-- (Ubuntu 20.04)Install Qt Framework: sudo apt-get install --quiet --assume-yes build-essential qt5-default qtbase5-dev qttools5-dev-tools
+- (Ubuntu 20.04)Install Qt Framework: sudo apt-get install --quiet --assume-yes build-essential qt5-default qtbase5-dev qttools5-dev-tools qtscript5-dev
 
 Clone project: git clone --recursive https://github.com/horsicq/XPEViewer.git
 
