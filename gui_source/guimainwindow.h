@@ -55,7 +55,7 @@ private slots:
     void actionShortcutsSlot();
     void actionOptionsSlot();
     void actionAboutSlot();
-    void adjustWindow();
+    void adjustView();
     void processFile(const QString &sFileName);
     void errorMessageSlot(const QString &sText);
     void closeCurrentFile();

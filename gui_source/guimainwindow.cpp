@@ -40,7 +40,10 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_VIEW_STYLE, "Fusion");
     g_xOptions.addID(XOptions::ID_VIEW_QSS, "");
     g_xOptions.addID(XOptions::ID_VIEW_LANG, "System");
-    g_xOptions.addID(XOptions::ID_VIEW_FONT, "");
+    g_xOptions.addID(XOptions::ID_VIEW_FONT_CONTROLS, XOptions::getDefaultFont().toString());
+    g_xOptions.addID(XOptions::ID_VIEW_FONT_TABLEVIEWS, XOptions::getMonoFont().toString());
+    g_xOptions.addID(XOptions::ID_VIEW_FONT_TREEVIEWS, XOptions::getDefaultFont().toString());
+    g_xOptions.addID(XOptions::ID_VIEW_FONT_TEXTEDITS, XOptions::getMonoFont().toString());
     g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP, false);
     g_xOptions.addID(XOptions::ID_VIEW_SHOWLOGO, false);
     g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY, true);
@@ -63,6 +66,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
+    g_xShortcuts.setNative(g_xOptions.isNative(), g_xOptions.getApplicationDataPath());
 
     g_xShortcuts.addId(X_ID_FILE_OPEN);
     g_xShortcuts.addId(X_ID_FILE_CLOSE);
@@ -84,7 +88,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     createMenus();
     updateShortcuts();
 
-    adjustWindow();
+    adjustView();
 
     if (QCoreApplication::arguments().count() > 1) {
         QString sFileName = QCoreApplication::arguments().at(1);
@@ -169,7 +173,7 @@ void GuiMainWindow::actionOptionsSlot()
     DialogOptions dialogOptions(this, &g_xOptions, XOptions::GROUPID_FILE);
     dialogOptions.exec();
 
-    adjustWindow();
+    adjustView();
 }
 
 void GuiMainWindow::actionAboutSlot()
@@ -178,11 +182,12 @@ void GuiMainWindow::actionAboutSlot()
     dialogAbout.exec();
 }
 
-void GuiMainWindow::adjustWindow()
+void GuiMainWindow::adjustView()
 {
-    ui->widgetViewer->adjustView();
+    g_xOptions.adjustStayOnTop(this);
+    g_xOptions.adjustWidget(this, XOptions::ID_VIEW_FONT_CONTROLS);
 
-    g_xOptions.adjustWindow(this);
+    ui->widgetViewer->adjustView();
 
     if (g_xOptions.isShowLogo()) {
         ui->labelLogo->show();
@@ -223,7 +228,7 @@ void GuiMainWindow::processFile(const QString &sFileName)
 
                 ui->widgetViewer->reload();
 
-                adjustWindow();
+                adjustView();
 
                 setWindowTitle(sFileName);
             } else {
@@ -303,7 +308,7 @@ void GuiMainWindow::actionShortcutsSlot()
 
     dialogShortcuts.exec();
 
-    adjustWindow();
+    adjustView();
 
     updateShortcuts();
 }
