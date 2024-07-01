@@ -16,6 +16,9 @@ mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/signatures
 cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/signatures/
 cp -Rf $X_SOURCE_PATH/XInfoDB/info/                                 $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
 cp -Rf $X_SOURCE_PATH/images/                                       $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
+cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db/                            $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
+cp -Rf $X_SOURCE_PATH/Detect-It-Easy/db_custom/                     $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
+cp -Rf $X_SOURCE_PATH/XYara/yara_rules/                             $X_SOURCE_PATH/release/appDir/usr/lib/xpeviewer/
 
 cd $X_SOURCE_PATH/release
 

@@ -19,14 +19,18 @@ TRANSLATIONS = \
         translation/xpeviewer_zh_TW.ts
 
 FORMS += \
+    $$PWD/../Controls/dialogbits8.ui \
+    $$PWD/../FormatDialogs/dialogdatainspector.ui \
     $$PWD/../FormatDialogs/dialogdump.ui \
-    $$PWD/../FormatDialogs/dialogdumpprocess.ui \
     $$PWD/../FormatDialogs/dialogeditstring.ui \
     $$PWD/../FormatDialogs/dialogfindtext.ui \
     $$PWD/../FormatDialogs/dialoggotoaddress.ui \
     $$PWD/../FormatDialogs/dialoghexsignature.ui \
+    $$PWD/../FormatDialogs/dialogremove.ui \
+    $$PWD/../FormatDialogs/dialogresize.ui \
     $$PWD/../FormatDialogs/dialogsearch.ui \
     $$PWD/../FormatDialogs/dialogsearchprocess.ui \
+    $$PWD/../FormatDialogs/dialogshowdata.ui \
     $$PWD/../FormatDialogs/dialogtextinfo.ui \
     $$PWD/../FormatDialogs/xdialogprocess.ui \
     $$PWD/../FormatWidgets/Binary/binarywidget.ui \
@@ -64,7 +68,6 @@ FORMS += \
     $$PWD/../FormatWidgets/SearchValues/dialogsearchvalues.ui \
     $$PWD/../FormatWidgets/SearchValues/searchvalueswidget.ui \
     $$PWD/../FormatWidgets/dialogmodelinfo.ui \
-    $$PWD/../FormatWidgets/dialogprocessdata.ui \
     $$PWD/../FormatWidgets/dialogsectionheader.ui \
     $$PWD/../FormatWidgets/formatswidget.ui \
     $$PWD/../FormatWidgets/toolswidget.ui \
@@ -75,54 +78,69 @@ FORMS += \
     $$PWD/../StaticScan/heurwidget.ui \
     $$PWD/../StaticScan/staticscanoptionswidget.ui \
     $$PWD/../XAboutWidget/xaboutwidget.ui \
+    $$PWD/../XDataConvertorWidget/dialogxdataconvertor.ui \
+    $$PWD/../XDataConvertorWidget/xdataconvertorwidget.ui \
     $$PWD/../XDemangleWidget/dialogdemangle.ui \
     $$PWD/../XDemangleWidget/xdemanglewidget.ui \
     $$PWD/../XDisasmView/dialogmultidisasm.ui \
     $$PWD/../XDisasmView/dialogmultidisasmsignature.ui \
-    $$PWD/../XDisasmView/dialogxdisasmviewcolors.ui \
     $$PWD/../XDisasmView/xdisasmviewoptionswidget.ui \
     $$PWD/../XDisasmView/xmultidisasmwidget.ui \
     $$PWD/../XDynStructsWidget/dialogxdynstructs.ui \
     $$PWD/../XDynStructsWidget/xdynstructsoptionswidget.ui \
     $$PWD/../XDynStructsWidget/xdynstructswidget.ui \
     $$PWD/../XEntropyWidget/dialogentropy.ui \
-    $$PWD/../XEntropyWidget/dialogentropyprocess.ui \
     $$PWD/../XEntropyWidget/xentropywidget.ui \
     $$PWD/../XExtractorWidget/dialogxextractor.ui \
     $$PWD/../XExtractorWidget/xextractorwidget.ui \
     $$PWD/../XFileInfo/dialogxfileinfo.ui \
-    $$PWD/../XFileInfo/dialogxfileinfoprocess.ui \
     $$PWD/../XFileInfo/xfileinfowidget.ui \
     $$PWD/../XHashWidget/dialoghash.ui \
-    $$PWD/../XHashWidget/dialoghashprocess.ui \
     $$PWD/../XHashWidget/xhashwidget.ui \
     $$PWD/../XHexEdit/dialoghexedit.ui \
     $$PWD/../XHexView/dialoghexview.ui \
     $$PWD/../XHexView/xhexviewoptionswidget.ui \
     $$PWD/../XHexView/xhexviewwidget.ui \
-    $$PWD/../XInfoDB/dialogxinfodbtransferprocess.ui \
     $$PWD/../XInfoDB/xinfodboptionswidget.ui \
     $$PWD/../XMemoryMapWidget/dialogmemorymap.ui \
     $$PWD/../XMemoryMapWidget/xmemorymapwidget.ui \
     $$PWD/../XOnlineTools/dialogxvirustotal.ui \
     $$PWD/../XOnlineTools/xonlinetoolsoptionswidget.ui \
     $$PWD/../XOnlineTools/xvirustotalwidget.ui \
+    $$PWD/../XOptions/dialogviewcolors.ui \
     $$PWD/../XOptions/xoptionswidget.ui \
     $$PWD/../XShortcuts/dialogshortcuts.ui \
+    $$PWD/../XSymbolsWidget/dialogbookmarks.ui \
     $$PWD/../XSymbolsWidget/dialogxsymbols.ui \
     $$PWD/../XSymbolsWidget/xsymbolswidget.ui \
+    $$PWD/../XVisualizationWidget/dialogvisualization.ui \
+    $$PWD/../XVisualizationWidget/xvisualizationwidget.ui \
     $$PWD/../archive_widget/archive_widget.ui \
     $$PWD/../archive_widget/dialogarchive.ui \
-    $$PWD/../archive_widget/dialogcreateviewmodel.ui \
     $$PWD/../archive_widget/dialogshowimage.ui \
     $$PWD/../archive_widget/dialogshowtext.ui \
-    $$PWD/../archive_widget/dialogunpackfile.ui \
+    $$PWD/../die_widget/dialogdiehexviewer.ui \
+    $$PWD/../die_widget/dialogdiescandirectory.ui \
+    $$PWD/../die_widget/dialogdiesignatures.ui \
+    $$PWD/../die_widget/dialogdiesignatureselapsed.ui \
+    $$PWD/../die_widget/die_widget.ui \
+    $$PWD/../die_widget/dieoptionswidget.ui \
+    $$PWD/../die_widget/diewidgetadvanced.ui \
     dialogabout.ui \
     dialogoptions.ui \
-    guimainwindow.ui
+    guimainwindow.ui \
+    $$PWD/../nfd_widget/dialognfdscan.ui \
+    $$PWD/../nfd_widget/dialognfdscandirectory.ui \
+    $$PWD/../nfd_widget/dialognfdwidgetadvanced.ui \
+    $$PWD/../nfd_widget/nfd_widget.ui \
+    $$PWD/../nfd_widget/nfdoptionswidget.ui \
+    $$PWD/../nfd_widget/nfdwidgetadvanced.ui \
+    $$PWD/../yara_widget/dialogyarawidgetadvanced.ui \
+    $$PWD/../yara_widget/yara_widget.ui \
+    $$PWD/../yara_widget/yarawidgetadvanced.ui
 
 SOURCES += \
-    $$PWD/../Controls/hexvalidator.cpp \
+    $$PWD/../Controls/dialogbits8.cpp \
     $$PWD/../Controls/subclassofqstyleditemdelegate.cpp \
     $$PWD/../Controls/xabstracttableview.cpp \
     $$PWD/../Controls/xcomboboxex.cpp \
@@ -131,13 +149,18 @@ SOURCES += \
     $$PWD/../Controls/xdevicetableview.cpp \
     $$PWD/../Controls/xhtml.cpp \
     $$PWD/../Controls/xlineedithex.cpp \
+    $$PWD/../Controls/xlineeditvalidator.cpp \
+    $$PWD/../FormatDialogs/dialogdatainspector.cpp \
     $$PWD/../FormatDialogs/dialogdumpprocess.cpp \
     $$PWD/../FormatDialogs/dialogeditstring.cpp \
     $$PWD/../FormatDialogs/dialogfindtext.cpp \
     $$PWD/../FormatDialogs/dialoggotoaddress.cpp \
     $$PWD/../FormatDialogs/dialoghexsignature.cpp \
+    $$PWD/../FormatDialogs/dialogremove.cpp \
+    $$PWD/../FormatDialogs/dialogresize.cpp \
     $$PWD/../FormatDialogs/dialogsearch.cpp \
     $$PWD/../FormatDialogs/dialogsearchprocess.cpp \
+    $$PWD/../FormatDialogs/dialogshowdata.cpp \
     $$PWD/../FormatDialogs/dialogtextinfo.cpp \
     $$PWD/../FormatDialogs/dumpprocess.cpp \
     $$PWD/../FormatDialogs/searchprocess.cpp \
@@ -215,6 +238,7 @@ SOURCES += \
     $$PWD/../Formats/video/xriff.cpp \
     $$PWD/../Formats/xbinary.cpp \
     $$PWD/../Formats/xcom.cpp \
+    $$PWD/../Formats/xdataconvertor.cpp \
     $$PWD/../Formats/xelf.cpp \
     $$PWD/../Formats/xformats.cpp \
     $$PWD/../Formats/xiodevice.cpp \
@@ -225,6 +249,7 @@ SOURCES += \
     $$PWD/../Formats/xpe.cpp \
     $$PWD/../SpecAbstract/signatures.cpp \
     $$PWD/../SpecAbstract/specabstract.cpp \
+    $$PWD/../SpecAbstract/staticscan.cpp \
     $$PWD/../StaticScan/dialogstaticscan.cpp \
     $$PWD/../StaticScan/dialogstaticscandirectory.cpp \
     $$PWD/../StaticScan/dialogstaticscanprocess.cpp \
@@ -237,24 +262,39 @@ SOURCES += \
     $$PWD/../StaticScan/staticscanoptionswidget.cpp \
     $$PWD/../XAboutWidget/xaboutwidget.cpp \
     $$PWD/../XArchive/x_ar.cpp \
+    $$PWD/../XArchive/xapk.cpp \
+    $$PWD/../XArchive/xapks.cpp \
     $$PWD/../XArchive/xarchive.cpp \
     $$PWD/../XArchive/xarchives.cpp \
     $$PWD/../XArchive/xcab.cpp \
+    $$PWD/../XArchive/xcompress.cpp \
+    $$PWD/../XArchive/xcompresseddevice.cpp \
+    $$PWD/../XArchive/xdeb.cpp \
     $$PWD/../XArchive/xgzip.cpp \
+    $$PWD/../XArchive/xipa.cpp \
+    $$PWD/../XArchive/xjar.cpp \
+    $$PWD/../XArchive/xlha.cpp \
     $$PWD/../XArchive/xmachofat.cpp \
+    $$PWD/../XArchive/xnpm.cpp \
     $$PWD/../XArchive/xrar.cpp \
     $$PWD/../XArchive/xsevenzip.cpp \
+    $$PWD/../XArchive/xtar.cpp \
+    $$PWD/../XArchive/xtgz.cpp \
     $$PWD/../XArchive/xzip.cpp \
+    $$PWD/../XArchive/xzlib.cpp \
     $$PWD/../XCapstone/xcapstone.cpp \
     $$PWD/../XCppfilt/xcppfilt.cpp \
     $$PWD/../XDEX/xandroidbinary.cpp \
     $$PWD/../XDEX/xdex.cpp \
+    $$PWD/../XDataConvertorWidget/dialogxdataconvertor.cpp \
+    $$PWD/../XDataConvertorWidget/dialogxdataconvertorprocess.cpp \
+    $$PWD/../XDataConvertorWidget/xdataconvertorwidget.cpp \
+    $$PWD/../XDecompiler/xdecompiler.cpp \
     $$PWD/../XDemangle/xdemangle.cpp \
     $$PWD/../XDemangleWidget/dialogdemangle.cpp \
     $$PWD/../XDemangleWidget/xdemanglewidget.cpp \
     $$PWD/../XDisasmView/dialogmultidisasm.cpp \
     $$PWD/../XDisasmView/dialogmultidisasmsignature.cpp \
-    $$PWD/../XDisasmView/dialogxdisasmviewcolors.cpp \
     $$PWD/../XDisasmView/xdisasmview.cpp \
     $$PWD/../XDisasmView/xdisasmviewoptionswidget.cpp \
     $$PWD/../XDisasmView/xmultidisasmwidget.cpp \
@@ -291,6 +331,7 @@ SOURCES += \
     $$PWD/../XInfoDB/xinfodb.cpp \
     $$PWD/../XInfoDB/xinfodboptionswidget.cpp \
     $$PWD/../XInfoDB/xinfodbtransfer.cpp \
+    $$PWD/../XInfoDB/xinfomenu.cpp \
     $$PWD/../XLLVMDemangler/3rdparty/llvm/Demangle/Demangle.cpp \
     $$PWD/../XLLVMDemangler/3rdparty/llvm/Demangle/ItaniumDemangle.cpp \
     $$PWD/../XLLVMDemangler/3rdparty/llvm/Demangle/MicrosoftDemangle.cpp \
@@ -303,6 +344,8 @@ SOURCES += \
     $$PWD/../XOnlineTools/xonlinetoolsoptionswidget.cpp \
     $$PWD/../XOnlineTools/xvirustotal.cpp \
     $$PWD/../XOnlineTools/xvirustotalwidget.cpp \
+    $$PWD/../XOptions/codecs/codec_cp437.cpp \
+    $$PWD/../XOptions/dialogviewcolors.cpp \
     $$PWD/../XOptions/xoptions.cpp \
     $$PWD/../XOptions/xoptionswidget.cpp \
     $$PWD/../XPDF/xpdf.cpp \
@@ -434,9 +477,19 @@ SOURCES += \
     $$PWD/../XShortcuts/xshortcutsdialog.cpp \
     $$PWD/../XShortcuts/xshortcutstscrollarea.cpp \
     $$PWD/../XShortcuts/xshortcutswidget.cpp \
+    $$PWD/../XSymbolsWidget/dialogbookmarks.cpp \
     $$PWD/../XSymbolsWidget/dialogxsymbols.cpp \
     $$PWD/../XSymbolsWidget/xsymbolswidget.cpp \
     $$PWD/../XUpdate/xupdate.cpp \
+    $$PWD/../XVisualizationWidget/dialogvisualization.cpp \
+    $$PWD/../XVisualizationWidget/dialogvisualizationprocess.cpp \
+    $$PWD/../XVisualizationWidget/xfilearrow.cpp \
+    $$PWD/../XVisualizationWidget/xfiledescription.cpp \
+    $$PWD/../XVisualizationWidget/xfileimage.cpp \
+    $$PWD/../XVisualizationWidget/xvisualization.cpp \
+    $$PWD/../XVisualizationWidget/xvisualizationimage.cpp \
+    $$PWD/../XVisualizationWidget/xvisualizationwidget.cpp \
+    $$PWD/../XYara/xyara.cpp \
     $$PWD/../archive_widget/archive_widget.cpp \
     $$PWD/../archive_widget/createviewmodelprocess.cpp \
     $$PWD/../archive_widget/dialogarchive.cpp \
@@ -445,20 +498,50 @@ SOURCES += \
     $$PWD/../archive_widget/dialogshowtext.cpp \
     $$PWD/../archive_widget/dialogunpackfile.cpp \
     $$PWD/../archive_widget/unpackfileprocess.cpp \
+    $$PWD/../die_script/apk_script.cpp \
+    $$PWD/../die_script/archive_script.cpp \
     $$PWD/../die_script/binary_script.cpp \
     $$PWD/../die_script/com_script.cpp \
+    $$PWD/../die_script/dex_script.cpp \
     $$PWD/../die_script/die_script.cpp \
     $$PWD/../die_script/die_scriptengine.cpp \
     $$PWD/../die_script/elf_script.cpp \
     $$PWD/../die_script/global_script.cpp \
+    $$PWD/../die_script/ipa_script.cpp \
+    $$PWD/../die_script/jar_script.cpp \
     $$PWD/../die_script/le_script.cpp \
     $$PWD/../die_script/lx_script.cpp \
     $$PWD/../die_script/mach_script.cpp \
     $$PWD/../die_script/msdos_script.cpp \
     $$PWD/../die_script/ne_script.cpp \
+    $$PWD/../die_script/npm_script.cpp \
     $$PWD/../die_script/pe_script.cpp \
+    $$PWD/../die_script/util_script.cpp \
     $$PWD/../die_script/xscriptengine.cpp \
+    $$PWD/../die_script/zip_script.cpp \
+    $$PWD/../die_widget/dialogdiehexviewer.cpp \
+    $$PWD/../die_widget/dialogdiescandirectory.cpp \
+    $$PWD/../die_widget/dialogdiescanprocess.cpp \
+    $$PWD/../die_widget/dialogdiesignatures.cpp \
+    $$PWD/../die_widget/dialogdiesignatureselapsed.cpp \
+    $$PWD/../die_widget/die_highlighter.cpp \
+    $$PWD/../die_widget/die_signatureedit.cpp \
+    $$PWD/../die_widget/die_widget.cpp \
+    $$PWD/../die_widget/dieoptionswidget.cpp \
+    $$PWD/../die_widget/diewidgetadvanced.cpp \
     dialogabout.cpp \
     dialogoptions.cpp \
     guimainwindow.cpp \
-    main_gui.cpp
+    main_gui.cpp \
+    $$PWD/../nfd_widget/dialognfdscan.cpp \
+    $$PWD/../nfd_widget/dialognfdscandirectory.cpp \
+    $$PWD/../nfd_widget/dialognfdscanprocess.cpp \
+    $$PWD/../nfd_widget/dialognfdwidgetadvanced.cpp \
+    $$PWD/../nfd_widget/nfd_widget.cpp \
+    $$PWD/../nfd_widget/nfdoptionswidget.cpp \
+    $$PWD/../nfd_widget/nfdwidgetadvanced.cpp \
+    $$PWD/../yara_widget/dialogyarawidgetadvanced.cpp \
+    $$PWD/../yara_widget/xyaradialogprocess.cpp \
+    $$PWD/../yara_widget/yara_widget.cpp \
+    $$PWD/../yara_widget/yarawidgetadvanced.cpp
+
