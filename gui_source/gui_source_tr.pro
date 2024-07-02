@@ -1,7 +1,9 @@
 TRANSLATIONS = \
         translation/xpeviewer_ar.ts \
+        translation/xpeviewer_bn.ts \
         translation/xpeviewer_de.ts \
         translation/xpeviewer_es.ts \
+        translation/xpeviewer_fa.ts \
         translation/xpeviewer_fr.ts \
         translation/xpeviewer_he.ts \
         translation/xpeviewer_id.ts \
