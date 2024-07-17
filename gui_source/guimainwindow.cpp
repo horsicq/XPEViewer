@@ -171,6 +171,7 @@ void GuiMainWindow::actionExitSlot()
 void GuiMainWindow::actionOptionsSlot()
 {
     DialogOptions dialogOptions(this, &g_xOptions, XOptions::GROUPID_FILE);
+    dialogOptions.setGlobal(&g_xShortcuts, &g_xOptions);
     dialogOptions.exec();
 
     adjustView();

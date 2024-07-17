@@ -41,12 +41,17 @@ namespace Ui {
 class DialogOptions;
 }
 
-class DialogOptions : public QDialog {
+class DialogOptions : public XShortcutsDialog {
     Q_OBJECT
 
 public:
     explicit DialogOptions(QWidget *pParent, XOptions *pOptions, XOptions::GROUPID groupId);
     ~DialogOptions();
+
+    virtual void adjustView();
+
+protected:
+    virtual void registerShortcuts(bool bState);
 
 private:
     Ui::DialogOptions *ui;
