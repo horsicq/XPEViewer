@@ -87,7 +87,7 @@ DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::Dialog
                             "color:#ff0000;\">http://www.capstone-engine.org</span></a></p>")
                             .arg(QString::number(CS_VERSION_MAJOR), QString::number(CS_VERSION_MINOR), QString::number(CS_VERSION_EXTRA));
 
-    _data.sLogoPath = ":/pics/logo.png";
+    _data.sLogoPath = ":/images/about.png";
     _data.sUpdatesLink = "https://github.com/horsicq/XPEViewer/releases";
     _data.sThanksLink = "https://github.com/horsicq/XPEViewer/blob/master/THANKS.md";
 
