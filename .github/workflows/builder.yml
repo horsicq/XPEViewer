@@ -102,18 +102,17 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.deb
             
   build-windows-32:
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
         with:
-          msbuild-architecture: x86
-          vs-version: '[16.0,17.0)'
+         arch: x86
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
@@ -160,18 +159,17 @@ jobs:
             ${{ env.RELEASE_PATH }}/*.zip
 
   build-windows-64:
-    runs-on: windows-2019
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
 
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
         with:
-          msbuild-architecture: x64
-          vs-version: '[16.0,17.0)'
+         arch: x64
 
       - name: Install Qt
         uses: jurplel/install-qt-action@v4
