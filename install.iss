@@ -1,5 +1,5 @@
 #define MyAppName "XPEViewer"
-#define MyAppVersion "0.03"
+#define MyAppVersion "0.05"
 #define MyAppPublisher "NTInfo"
 #define MyAppURL "ntinfo.biz"
 #define MyAppExeName "xpeviewer.exe"
@@ -40,4 +40,5 @@ Type: filesandordirs; Name: {app}\*;
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall
+
 
