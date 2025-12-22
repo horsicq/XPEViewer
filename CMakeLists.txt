@@ -6,6 +6,8 @@ if(WIN32)
     set (CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019/")
 endif()
 
+add_definitions(-DQT_SCRIPT_LIB)
+
 if(APPLE)
     set (CMAKE_PREFIX_PATH $ENV{HOME}/Qt/5.15.2/clang_64/)
     set (CMAKE_OSX_ARCHITECTURES x86_64)
