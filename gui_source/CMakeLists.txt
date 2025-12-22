@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(xpeviewer VERSION 0.05 LANGUAGES CXX)
+project(xpeviewer VERSION 0.06 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -83,3 +83,4 @@ if(WIN32)
     target_link_libraries(${PROJECT_NAME} Wintrust)
     target_link_libraries(${PROJECT_NAME} Crypt32)
 endif()
+
