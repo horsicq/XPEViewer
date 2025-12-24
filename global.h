@@ -25,11 +25,10 @@
 
 #define X_APPLICATIONDISPLAYNAME "XPEViewer"
 #define X_APPLICATIONNAME "xpeviewer"
-#define X_APPLICATIONVERSION "0.06"
+#define X_APPLICATIONVERSION "0.05"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "xpeviewer.ini"
 #define X_SHORTCUTSFILE "shortcuts.ini"
 
 #endif  // _GLOBAL_H
-
