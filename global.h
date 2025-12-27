@@ -32,4 +32,3 @@
 #define X_SHORTCUTSFILE "shortcuts.ini"
 
 #endif  // _GLOBAL_H
-
