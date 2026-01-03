@@ -1,0 +1,5 @@
+*.o
+.qmake.stash
+build/
+Makefile
+config.log
