@@ -52,7 +52,7 @@ sudo apt-get install --quiet --assume-yes build-essential qt6-base-dev qt6-base-
 
 ```bash
 git clone --recursive https://github.com/horsicq/XPEViewer.git
-cd DIE-engine
+cd XPEViewer
 ```
 
 #### Build
@@ -141,7 +141,7 @@ sudo apt-get install --quiet --assume-yes build-essential qt6-base-dev qt6-base-
 
 ```bash
 git clone --recursive https://github.com/horsicq/XPEViewer.git
-cd DIE-engine
+cd XPEViewer
 ```
 
 #### Build
