@@ -38,6 +38,32 @@ cd XPEViewer
 - make
 - sudo make install
 
+# How to build on Linux(QT6)
+
+### Qt framework has to be installed on the system.
+
+#### (Ubuntu) Install Qt Framework:
+
+```bash
+sudo apt-get install --quiet --assume-yes build-essential qt6-base-dev qt6-base-dev-tools qt6-tools-dev-tools qt6-5compat-dev libqt6svg6-dev qt6-declarative-dev
+```
+
+#### Clone this repo recursively:
+
+```bash
+git clone --recursive https://github.com/horsicq/XPEViewer.git
+cd DIE-engine
+```
+
+#### Build
+
+```bash
+mkdir build
+cd build
+qmake6 ../die_source.pro CONFIG+=release
+make
+```
+
 How to build on OSX
 =======
 
@@ -100,3 +126,29 @@ cd XPEViewer
 cmake .
 
 make
+
+# How to build on Linux(QT6/Debug)
+
+### Qt framework has to be installed on the system.
+
+#### (Ubuntu) Install Qt Framework:
+
+```bash
+sudo apt-get install --quiet --assume-yes build-essential qt6-base-dev qt6-base-dev-tools qt6-tools-dev-tools qt6-5compat-dev libqt6svg6-dev qt6-declarative-dev
+```
+
+#### Clone this repo recursively:
+
+```bash
+git clone --recursive https://github.com/horsicq/XPEViewer.git
+cd DIE-engine
+```
+
+#### Build
+
+```bash
+mkdir build
+cd build
+qmake6 ../die_source.pro CONFIG+=debug CONFIG-=release
+make
+```
