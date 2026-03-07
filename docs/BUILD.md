@@ -60,7 +60,7 @@ cd XPEViewer
 ```bash
 mkdir build
 cd build
-qmake6 ../die_source.pro CONFIG+=release
+qmake6 ../xpeviewer_source.pro CONFIG+=release
 make
 ```
 
@@ -149,6 +149,6 @@ cd XPEViewer
 ```bash
 mkdir build
 cd build
-qmake6 ../die_source.pro CONFIG+=debug CONFIG-=release
+qmake6 ../xpeviewer_source.pro CONFIG+=debug CONFIG-=release
 make
 ```
