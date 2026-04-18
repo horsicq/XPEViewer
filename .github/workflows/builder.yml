@@ -17,7 +17,7 @@ jobs:
   build-ubuntu-24:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -33,7 +33,7 @@ jobs:
           bash -x build_dpkg.sh
 
       - name: Upload Release as Download
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -46,7 +46,7 @@ jobs:
   build-ubuntu-24-arm:
     runs-on: ubuntu-24.04-arm
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -62,7 +62,7 @@ jobs:
           bash -x build_dpkg.sh
 
       - name: Upload Release as Download
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -75,7 +75,7 @@ jobs:
   build-ubuntu-22:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -91,7 +91,7 @@ jobs:
           bash -x build_dpkg.sh
 
       - name: Upload Release as Download
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -104,7 +104,7 @@ jobs:
   build-windows-32:
     runs-on: windows-2022
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -148,7 +148,7 @@ jobs:
           )
 
       - name: Upload Release as Download
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
@@ -161,7 +161,7 @@ jobs:
   build-windows-64:
     runs-on: windows-2022
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
          submodules: 'recursive'
          path: ${{ env.SRC_PATH }}
@@ -205,7 +205,7 @@ jobs:
           )
 
       - name: Upload Release as Download
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
