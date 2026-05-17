@@ -5,7 +5,7 @@ on:
   release:
     types: [created]
   schedule:
-    - cron: '0 0 * * MON'
+    - cron: '0 0 * * *'
 
 env:
   SRC_PATH: ${{ github.workspace }}/src
