@@ -508,7 +508,7 @@ SOURCES += \
     $$PWD/../die_script/die_script.cpp \
     $$PWD/../die_script/die_scriptengine.cpp \
     $$PWD/../die_script/elf_script.cpp \
-    $$PWD/../die_script/global_script.cpp \
+    $$PWD/../die_script/die_global_script.cpp \
     $$PWD/../die_script/ipa_script.cpp \
     $$PWD/../die_script/jar_script.cpp \
     $$PWD/../die_script/le_script.cpp \
