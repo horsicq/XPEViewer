@@ -6,13 +6,6 @@ CONFIG(debug, debug|release) {
     DESTDIR = $$PWD/build/release
 }
 
-#win32-g++ {
-#   QMAKE_CXXFLAGS += -Werror
-#}
-#win32-msvc*{
-#   QMAKE_CXXFLAGS += /WX
-#}
-
 # Windows minGW
 win32-g++* {
     QMAKE_CFLAGS  += -Wno-missing-field-initializers
@@ -61,5 +54,3 @@ contains(DEFINES, CREATE_PDB) {
     QMAKE_CXXFLAGS += /Zi
     QMAKE_LFLAGS += /DEBUG 
 }
-
-
