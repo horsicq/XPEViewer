@@ -61,7 +61,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     XOnlineToolsOptionsWidget::setDefaultValues(&g_xOptions);
     XInfoDBOptionsWidget::setDefaultValues(&g_xOptions);
 #ifdef USE_YARA
-    g_xOptions.addID(XOptions::ID_SCAN_YARARULESPATH, "$data/yara_rules");
+    g_xOptions.addID(XOptions::ID_SCAN_YARA_DATABASE_PATH, "$data/yara_rules");
 #endif
     g_xOptions.load();
 
