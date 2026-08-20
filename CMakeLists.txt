@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 project(XPEViewer)
+option(USE_DIE "Enable Detect It Easy integration" ON)
 
 if(WIN32)
     set (CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019/")
