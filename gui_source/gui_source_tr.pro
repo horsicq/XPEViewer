@@ -264,25 +264,25 @@ SOURCES += \
     $$PWD/../StaticScan/staticscanoptionswidget.cpp \
     $$PWD/../XAboutWidget/xaboutwidget.cpp \
     $$PWD/../XArchive/x_ar.cpp \
-    $$PWD/../XArchive/xapk.cpp \
-    $$PWD/../XArchive/xapks.cpp \
-    $$PWD/../XArchive/xarchive.cpp \
+    $$PWD/../Formats/archives/xapk.cpp \
+    $$PWD/../Formats/archives/xapks.cpp \
+    $$PWD/../Formats/xarchive.cpp \
     $$PWD/../XArchive/xarchives.cpp \
     $$PWD/../XArchive/xcab.cpp \
     $$PWD/../XArchive/xcompress.cpp \
     $$PWD/../XArchive/xcompresseddevice.cpp \
     $$PWD/../XArchive/xdeb.cpp \
-    $$PWD/../XArchive/xgzip.cpp \
-    $$PWD/../XArchive/xipa.cpp \
-    $$PWD/../XArchive/xjar.cpp \
+    $$PWD/../Formats/archives/xgzip.cpp \
+    $$PWD/../Formats/archives/xipa.cpp \
+    $$PWD/../Formats/archives/xjar.cpp \
     $$PWD/../XArchive/xlha.cpp \
-    $$PWD/../XArchive/xmachofat.cpp \
-    $$PWD/../XArchive/xnpm.cpp \
+    $$PWD/../Formats/exec/xmachofat.cpp \
+    $$PWD/../Formats/archives/xnpm.cpp \
     $$PWD/../XArchive/xrar.cpp \
     $$PWD/../XArchive/xsevenzip.cpp \
-    $$PWD/../XArchive/xtar.cpp \
+    $$PWD/../Formats/archives/xtar.cpp \
     $$PWD/../XArchive/xtgz.cpp \
-    $$PWD/../XArchive/xzip.cpp \
+    $$PWD/../Formats/archives/xzip.cpp \
     $$PWD/../XArchive/xzlib.cpp \
     $$PWD/../XCapstone/xcapstone.cpp \
     $$PWD/../XCppfilt/xcppfilt.cpp \
